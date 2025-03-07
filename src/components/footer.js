@@ -38,25 +38,25 @@ const Footer = () => {
                   <h6 className="text-uppercase fw-bold">Social Network</h6>
                   <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px", backgroundColor: "#7c4dff", height: "2px" }} />
                   <p>
-                    <a href="#!" className="text-white">
-                      Facebook
+                    <a href="https://x.com/lvcsolutions?s=21" className="text-white" target="_blank" rel="noreferrer">
+                      X
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
+                    <a href="https://www.linkedin.com/in/venkat-gunji-29752127b/" className="text-white " target="_blank" rel="noreferrer">
                       Linkedin
                     </a>
                   </p>
-                  <p>
-                    <a href="#!" className="text-white">
+                  <p> 
+                    <a href="https://www.instagram.com/lvcsolutions?igsh=Y2Y4OG92eDlnNmh4&utm_source=qr" className="text-white" target="_blank" rel="noreferrer">  
                       Instagram
                     </a>
                   </p>
-                  <p>
+                  {/* <p>
                     <a href="#!" className="text-white">
                     Facebook
                     </a>
-                  </p>
+                  </p> */}
                 </div>
 
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
@@ -101,12 +101,12 @@ const Footer = () => {
                     <i className="fas fa-home mr-3"></i> 5015 Addison Circle, #1025,
                     Addison,TX 75001, United States
                   </p>
-                  <p>
+                  {/* <p>
                     <i className="fas fa-envelope mr-3"></i> info@example.com
                   </p>
                   <p>
                     <i className="fas fa-phone mr-3"></i> + 01 60 275 65 614
-                  </p>
+                  </p> */}
                   <p>
                     <i className="fas fa-print mr-3"></i>info@lvc-solutions.com
                   </p>
