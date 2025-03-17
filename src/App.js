@@ -8,6 +8,8 @@ import Insight from "./components/insight"
 // import Footer from './components/footer';
 import Header from './components/header';
 import Contact from './components/contact';
+import Projects from './components/projects';
+import Careers from './components/careers';
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -24,6 +26,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/insight" element={<Insight />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/careers" element={<Careers />} />
           {/* <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} /> */}
         </Routes>

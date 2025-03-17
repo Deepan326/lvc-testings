@@ -1,13 +1,28 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect} from "react";
+import { Link} from "react-router-dom"; //Added Link import for the contact us / talk with us buttons
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
 import Footer from "./footer.js";
+import { useNavigate } from "react-router-dom";
+import FounderImage from "../assets/founder.jpg";
+import MicrosoftLogo from '../assets/microsoft.png';
+import OracleLogo from '../assets/oracle.png';
+import GoogleLogo from '../assets/google.png';
+import AwsLogo from '../assets/aws.png';
+import SalesLogo from '../assets/salesforce.png';
+
+
 const AboutUs = () => {
   
   const [inView, setInView] = useState(false);
 
-
+  const navigate = useNavigate();
+    
+  const handleNavigation = (path) => {
+        navigate(path);
+        window.scrollTo(0, 0);
+    };
 
   const myRef = useRef();
   const chipsRef = useRef([]);
@@ -45,14 +60,28 @@ const AboutUs = () => {
     };
   }, []);
 
-  // Chips for animation
-  const chips = [
-    "Good",
-    "Awesome",
-    "Nice",
-    "Creative",
-    "Efficient",
-    "Innovative",
+  // Companies for animation
+  const companies = [
+    {
+      name: 'Microsoft',
+      logo: MicrosoftLogo
+    },
+    {
+      name: 'Oracle',
+      logo: OracleLogo
+    },
+    {
+      name: 'Google',
+      logo: GoogleLogo
+    },
+    {
+      name: 'AWS',
+      logo: AwsLogo
+    },
+    {
+      name: 'Salesforce',
+      logo: SalesLogo
+    }
   ];
 
   return (
@@ -67,7 +96,7 @@ const AboutUs = () => {
               Driving Success Through Data, Technology, and Tailored Enterprise
               Solutions
             </h1>
-            <button className="btn btn-primary-whatwedo">Contact Us</button>
+            <Link to="/contact" className="btn btn-primary-whatwedo">Contact Us</Link>
           </div>
         </div>
       </div>
@@ -87,20 +116,24 @@ const AboutUs = () => {
       </div>
       <div className="containersection">
         <div className="text-content position-relative z-index-2">
-          <h2 className="image-banner-heading text-uppercase">A Message From  Our Founder</h2>
-          <div className="image-banner-text position-relative">
-"We're here to do more than build a company—we're building a community. Innovation drives us, but our purpose is deeper. Creating designs that matter, paths that inspire, and connections that grow into something bigger than all of us.",
-<br></br> <span style={{fontSize:"14px",fontWeight:"lighter"}}>Founder & CEO  Venkat Gunji",</span>
+          <div className="founder-header">
+            <h2 className="image-banner-heading text-uppercase">
+              A Message From Our Founder
+            </h2>
+            <hr className="founder-underline" />
           </div>
-          <a
-            href="../"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="image-banner-link text-decoration-none position-relative tcs-section-click cta-arrow-animation"
-          >
-            Join us
-            <span className="visually-hidden">&nbsp; of &nbsp; OUR PEOPLE</span>
-          </a>
+          <div className="founder-content">
+            <div className="image-banner-text position-relative">
+              "We're here to do more than build a company—we're building a community. Innovation drives us, but our purpose is deeper. Creating designs that matter, paths that inspire, and connections that grow into something bigger than all of us."
+            </div>
+            <div className="founder-profile">
+              <img src={FounderImage} alt="Founder" className="founder-image" />
+              <div className="founder-info">
+                <h3>Venkat Gunji</h3>
+                <p>Founder & CEO</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -253,7 +286,7 @@ We strive to enable organizations to achieve their full potential by offering ta
           </h1>
         </motion.div>
 
-        {/*  Chips with Random Colors */}
+        {/*  Companies with Logos */}
         <div
           ref={chipsRef}
           style={{
@@ -268,31 +301,26 @@ We strive to enable organizations to achieve their full potential by offering ta
             pointerEvents: "none",
           }}
         >
-          {chips.map((chip, index) => (
+          {companies.map((company, index) => (
             <motion.div
               key={index}
               initial={{ y: -100, opacity: 0 }}
               animate={{
-                y: 550, // Change the final Y value to determine where chips fall to
+                y: 550, // Change the final Y value to determine where logos fall to
                 opacity: 1,
                 transition: {
                   duration: 3,
                   ease: "easeInOut",
-                  delay: index * 0.1, // Stagger delay for a rain effect
+                  delay: index * 0.2, // Stagger delay for a rain effect
                 },
               }}
-              style={{
-                padding: "8px 15px",
-                backgroundColor: getRandomColor(), // Random color for each chip
-                color: "#fff",
-                borderRadius: "25px",
-                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                fontSize: "16px",
-                textAlign: "center",
-                cursor: "pointer",
-              }}
+              className="company-logo-container"
             >
-              {chip}
+              <img 
+                src={company.logo}
+                alt={company.name}
+                className="company-logo"
+              />
             </motion.div>
           ))}
         </div>
@@ -304,13 +332,26 @@ We strive to enable organizations to achieve their full potential by offering ta
             <h2>Transformation starts here</h2>
             <br></br>
             <p>Imagine your future</p>
-            <button className="Connect-button">Connect With Us</button>
+            <button 
+            className="Connect-button"
+            onClick={() => {
+              handleNavigation("/contact");
+            }}
+            >Connect With Us</button>
           </div>
           <div className="divider"></div>
           <div className="footer-section-flex-column">
             <p>FIND OUT MORE</p>
-            <button className="Connect-button-service">Our Services</button>
-            <button className="Connect-button-contact ">Contact Us</button>
+            <button className="Connect-button-service"
+            onClick={() => {
+              handleNavigation("/services");
+            }}
+            >Our Services</button>
+            <button className="Connect-button-contact "
+            onClick={() => {
+              handleNavigation("/contact");
+            }}
+            >Contact Us</button>
           </div>
         </div>
       </div>

@@ -51,8 +51,15 @@ const Header = () => {
                   Insights
                 </Link>
               </li>
+              {/* NEED TO DO: Add a projects component/page */}
+              <li className="nav-item"> 
+                <Link to="/projects" className="nav-link">
+                  Projects
+                </Link>
+              </li>
+              {/* NEED TO DO: Add a careers component/page */}
               <li className="nav-item">
-                <Link to="/blog" className="nav-link">
+                <Link to="/careers" className="nav-link">
                   Careers
                 </Link>
               </li>

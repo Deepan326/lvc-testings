@@ -8,9 +8,18 @@ import Slide1 from "../assets/slide1.png";
 import Slide2 from "../assets/slide2.png";
 import Slide3 from "../assets/slide3.png";
 import Footer from "./footer.js";
+import { useNavigate } from "react-router-dom";
+import PartnerImage from "../assets/partner.jpg"
 
 
 const Home = () => {
+
+  const navigate = useNavigate();
+      
+  const handleNavigation = (path) => {
+          navigate(path);
+          window.scrollTo(0, 0);
+      };
 
   const [showAllServices, setShowAllServices] = useState(false);
   
@@ -59,7 +68,12 @@ const Home = () => {
         <CarouselComponent />
       </div>
       <div className="section2">
-        <h1>Trusted by our Customers & Partners</h1>
+        <h1>Trusted by our Partners</h1>
+        <div className="partner-logos-container">
+          <div className="partner-logos">
+          <img src={PartnerImage} alt="Partner Logo" className="partner-logo" />
+       </div>
+     </div>
       </div>
 
       {/* Material Icons Section */}
@@ -181,18 +195,31 @@ const Home = () => {
 <div className="footer-section">
         <div className="footer-section-flex">
           <div>
-          <h2>Transformation starts here
-         </h2><br></br>
-          <p>Imagine your future</p>
-          <button className="Connect-button">Connect With Us</button>
+            <h2>Transformation starts here</h2>
+            <br></br>
+            <p>Imagine your future</p>
+            <button 
+            className="Connect-button"
+            onClick={() => {
+              handleNavigation("/contact");
+            }}
+            >Connect With Us</button>
           </div>
           <div className="divider"></div>
           <div className="footer-section-flex-column">
-          <p>FIND OUT MORE</p>
-          <button className="Connect-button-service">Our Services</button>
-          <button className="Connect-button-contact">Contact Us</button>
+            <p>FIND OUT MORE</p>
+            <button className="Connect-button-service"
+            onClick={() => {
+              handleNavigation("/services");
+            }}
+            >Our Services</button>
+            <button className="Connect-button-contact "
+            onClick={() => {
+              handleNavigation("/contact");
+            }}
+            >Contact Us</button>
           </div>
-      </div>   
+        </div>
       </div>
       <Footer/>
     </main>

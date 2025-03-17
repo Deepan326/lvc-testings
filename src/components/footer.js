@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; //added link import for the useful links
 import logo from "../assets/logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style.css";
@@ -29,7 +30,9 @@ const Footer = () => {
                   <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px", backgroundColor: "#7c4dff", height: "2px" }} />
                   <p>
                   
-                  <img src={logo} alt="Company Logo" className="logo" />
+                  <Link to="/" onClick={() => window.scrollTo(0, 0)} style={{ display: 'inline-block' }}>
+                    <img src={logo} alt="Company Logo" className="logo" />
+                  </Link>
                 
                   </p>
                 </div>
@@ -63,32 +66,42 @@ const Footer = () => {
                   <h6 className="text-uppercase fw-bold">Useful links</h6>
                   <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px", backgroundColor: "#7c4dff", height: "2px" }} />
                   <p>
-                    <a href="#!" className="text-white">
+                    <a href="/" className="text-white">
                       Home
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
+                    <a href="/about" className="text-white">
                      Who we are
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
+                    <a href="/services" className="text-white">
                       Services
                     </a>
                   </p>
-                  <p>
+                  {/* <p>
                     <a href="#!" className="text-white">
                      About Us
                     </a>
-                  </p>
+                  </p> */}
                   <p>
-                    <a href="#!" className="text-white">
+                    <a href="/insight" className="text-white">
                   Insights
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
+                    <a href="/projects" className="text-white">
+                      Projects
+                    </a>
+                  </p>
+                  <p>
+                    <a href="/careers" className="text-white">
+                      Careers
+                    </a>
+                  </p>
+                  <p>
+                    <a href="/contact" className="text-white">
                       Contact us
                     </a>
                   </p>

@@ -951,7 +951,6 @@ font-size: 3rem;
 
 .tabsecction{
   background-color: white;
-  margin-top: 55px;
   padding-top: 25px;
 }
 
@@ -1023,9 +1022,12 @@ font-size: 3rem;
 }
 
 .tab-image {
-  width: auto;
-  height: 350px;
+  width: 500px;  /* Fixed width */
+  height: 350px; /* Fixed height */
+  object-fit: cover;
 }
+
+
 
 .tab-paragraph {
   flex: 1;
@@ -1257,11 +1259,22 @@ font-size: 3rem;
     flex: none;
     width: 100%;
   }
+  .footer-section {
+    padding: 60px 30px;
+  }
+  
+  .footer-section-flex {
+    gap: 4rem;
+  }
 }
 
 .insight-motion-profile {
-   font-size: 8rem;
-    color: white;
+  font-size: 8rem;
+  color: white;
+  margin-bottom: 5rem; /* Increased spacing below title */
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
  
 /* Responsive Design for Mobile (320px to 425px) */
@@ -1269,13 +1282,36 @@ font-size: 3rem;
   .industries-item{
     flex: 1 1 calc(100% - 20px); 
   }
-.footer-section{
-padding: 5px;
-box-sizing: border-box;
-}
-.footer-section-flex{
-  gap:5px;
-}
+.footer-section {
+    padding: 40px 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .footer-section-flex {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .footer-section-flex h2 {
+    font-size: 2rem;
+    text-align: start;
+    margin-bottom: 1rem;
+  }
+
+  .footer-section-flex-column {
+    width: 100%;
+  }
+
+  .Connect-button,
+  .Connect-button-service,
+  .Connect-button-contact {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    height: auto;
+    min-height: 45px;
+  }
 
 .divider{
   display: none;
@@ -1304,9 +1340,6 @@ box-sizing: border-box;
 .tab-image {
   width: auto;
   height: 190px;
-}
-.insight-motion-profile {
-  font-size: 4rem;
 }
 .about-cta{
   min-height: 100vh !important;
@@ -1352,4 +1385,567 @@ box-sizing: border-box;
 .grid-item-whatwedo.text{
   width: 100%;
 }
+}
+/* Add these styles after your existing CSS */
+
+.careers-section-herobanner {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Add overlay for better text visibility */
+.careers-section-herobanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Update existing styles to work with video */
+.careers-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.careers-title {
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #fff;
+  margin-bottom: 2pc;
+  width: 75%;
+  text-align: start;
+}
+
+.careers-description {
+  font-style: normal;
+  font-size: 1.75rem;
+  /* line-height: 4rem; */
+  color: #fff;
+  margin-bottom: 2pc;
+  width: 75%;
+  
+}
+
+
+.btn-primary-careers {
+  color: white;
+  font-weight: 400;
+  z-index: 2;
+  padding: 12px 14px;
+  border-radius: 25px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  border: none;
+  background: #2469bc;
+  border-radius: 6.25rem;
+  font-size: 1.125rem;
+  letter-spacing: 0.03125rem;
+  height: 3.5rem;
+  max-height: 56px;
+  line-height: 160%;
+  padding: 9pt 2pc;
+}
+
+.btn-primary-careers:hover {
+  background: #205eaa;
+}
+
+/* Add these styles after your existing CSS */
+
+.projects-section-herobanner {
+  background-image: url('https://images.unsplash.com/photo-1622316977830-efe0a9d8a5ce?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* You can change this image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This makes the background image fixed */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  color: #fff;
+  position: relative;
+}
+
+.projects-title {
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #fff;
+  margin-bottom: 2pc;
+  width: 75%;
+  text-align: start;
+}
+
+.projects-description {
+  font-style: normal;
+  font-size: 1.75rem;
+  color: #fff;
+  margin-bottom: 2pc;
+  width: 75%;
+}
+
+.btn-primary-projects {
+  color: white;
+  font-weight: 400;
+  z-index: 2;
+  padding: 12px 14px;
+  border-radius: 25px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  border: none;
+  background: #2469bc;
+  border-radius: 6.25rem;
+  font-size: 1.125rem;
+  letter-spacing: 0.03125rem;
+  height: 3.5rem;
+  max-height: 56px;
+  line-height: 160%;
+  padding: 9pt 2pc;
+}
+
+.btn-primary-projects:hover {
+  background: #205eaa;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.partner-logo {
+  max-width: 250px;
+  width: 100%;
+  height: auto;/* Makes dark logos white */
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .partner-logo {
+    max-width: 200px;
+  }
+}
+
+.founder-header {
+  margin-bottom: 1rem;
+}
+.founder-header h2{
+  font-size: 1rem;
+}
+
+.founder-underline {
+  width: 100%;
+  margin: 1rem 0;
+  border: none;
+  border-top: 2px solid #fff;
+  opacity: 0.8;
+}
+
+.founder-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.founder-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.founder-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.founder-info {
+  color: #fff;
+}
+
+.founder-info h3 {
+  font-size: 1.2rem;
+
+}
+
+.founder-info p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .founder-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .founder-image {
+    margin: 0 auto;
+  }
+}
+
+.company-logo-container {
+  padding: 10px;
+  background: white;
+  border-radius: 25px;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.company-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.about-cta {
+  background-color: black;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .insight-motion-profile {
+    font-size: 2.5rem;
+    margin-bottom: 8rem; /* Even more spacing on mobile */
+  }
+
+  .company-logo-container {
+    width: 200px;
+    height: 60px;
+  }
+}
+/* LVC Difference Section */
+.lvc-difference-section {
+  background-color: #000000;
+  padding: 6rem 2rem;
+  margin: 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  margin-bottom: 2rem;
+}
+
+.difference-cards-swiper {
+  padding: 2rem;
+  max-width: 100%;
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  height: 450px;
+  transition: all 0.3s ease;
+}
+
+.difference-card {
+  height: 600px;
+  background: #1e2222;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.difference-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image {
+  height: 400px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.difference-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 2rem;
+  background: #1e2222;
+}
+
+.card-content h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.card-content p {
+  color: #f1f1f1;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.learn-more {
+  color: #2469bc;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.difference-card:hover .learn-more {
+  transform: translateX(10px);
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.5rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .section-header h1 {
+    font-size: 3rem;
+  }
+
+  .difference-card {
+    height: 550px;
+  }
+
+  .card-image {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lvc-difference-section {
+    padding: 4rem 1rem;
+  }
+
+  .section-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .difference-card {
+    height: 500px;
+  }
+
+  .card-image {
+    height: 300px;
+  }
+
+  .card-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .card-content p {
+    font-size: 1rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* Application Form Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Project Modal Styles */
+.project-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.project-modal-content {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  color: white;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.modal-info {
+  margin-top: 1.5rem;
+}
+
+.modal-description {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.modal-details h3 {
+  margin: 1.5rem 0 0.5rem;
+  color: #4a90e2;
+}
+
+.modal-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-details li {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.modal-details li:before {
+  content: "•";
+  color: #4a90e2;
+  position: absolute;
+  left: 0;
 }

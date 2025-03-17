@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,8 +11,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./footer.js";
+import { useNavigate } from "react-router-dom";
 
 const Insight = () => {
+  const navigate = useNavigate();
+    
+  const handleNavigation = (path) => {
+      navigate(path);
+      window.scrollTo(0, 0);
+  };
+
   const [showAllServices, setShowAllServices] = useState(false);
   const [inView, setInView] = useState(false);
   const toggleServices = () => {
@@ -112,7 +121,7 @@ const Insight = () => {
             <hr className="underline" />
             <h1 className="insight-title">Where Ideas Meet Action</h1>
             <h5>Insights that shape the future.</h5>
-            <button className="btn btn-primary-insight">Let's talk</button>
+             <Link to="/contact" className="btn btn-primary-insight">Let's Talk</Link>
           </div>
         </div>
       </div>
@@ -333,13 +342,26 @@ const Insight = () => {
             <h2>Transformation starts here</h2>
             <br></br>
             <p>Imagine your future</p>
-            <button className="Connect-button">Connect With Us</button>
+            <button 
+            className="Connect-button"
+            onClick={() => {
+              handleNavigation("/contact");
+            }}
+            >Connect With Us</button>
           </div>
           <div className="divider"></div>
           <div className="footer-section-flex-column">
             <p>FIND OUT MORE</p>
-            <button className="Connect-button-service">Our Services</button>
-            <button className="Connect-button-contact ">Contact Us</button>
+            <button className="Connect-button-service"
+            onClick={() => {
+              handleNavigation("/services");
+            }}
+            >Our Services</button>
+            <button className="Connect-button-contact "
+            onClick={() => {
+              handleNavigation("/contact");
+            }}
+            >Contact Us</button>
           </div>
         </div>
       </div>
