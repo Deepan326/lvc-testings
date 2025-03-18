@@ -979,12 +979,13 @@ p {
 }
 .tab-content-wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 20px;
   margin-top: 20px;
   justify-content: space-evenly;
-  flex-wrap: wrap;
   padding: 1rem;
+  width: 100%;
 }
 .tab-paragraph-width {
   padding: 0 1rem;
@@ -1253,6 +1254,17 @@ p {
   z-index: 2;
 }
 
+.tab-image-container {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+}
+.tab-image {
+  width: 100% !important;
+  height: auto;
+  object-fit: cover;
+}
+
 /* Responsive Design for Mobile (320px to 425px) */
 @media (min-width: 320px) and (max-width: 426px) {
   .industries-item {
@@ -1317,12 +1329,7 @@ p {
   }
   /*  about us page*/
   /* @media (max-width: 425px) { */
-  .tab-image-container {
-    width: 100%;
-  }
-  .tab-image {
-    width: 100% !important;
-  }
+
   /* } */
   /* @media (min-width: 426px) {
     .tab-image {
@@ -1635,6 +1642,7 @@ p {
   background-color: #000000;
   padding: 6rem 2rem;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .section-header {
