@@ -1,28 +1,26 @@
-import React, { useState, useRef, useEffect} from "react";
-import { Link} from "react-router-dom"; //Added Link import for the contact us / talk with us buttons
+import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom"; //Added Link import for the contact us / talk with us buttons
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { motion } from "framer-motion";
 import Footer from "./footer.js";
 import { useNavigate } from "react-router-dom";
 import FounderImage from "../assets/founder.jpg";
-import MicrosoftLogo from '../assets/microsoft.png';
-import OracleLogo from '../assets/oracle.png';
-import GoogleLogo from '../assets/google.png';
-import AwsLogo from '../assets/aws.png';
-import SalesLogo from '../assets/salesforce.png';
-
+import MicrosoftLogo from "../assets/microsoft.png";
+import OracleLogo from "../assets/oracle.png";
+import GoogleLogo from "../assets/google.png";
+import AwsLogo from "../assets/aws.png";
+import SalesLogo from "../assets/salesforce.png";
 
 const AboutUs = () => {
-  
   const [inView, setInView] = useState(false);
 
   const navigate = useNavigate();
-    
+
   const handleNavigation = (path) => {
-        navigate(path);
-        window.scrollTo(0, 0);
-    };
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
 
   const myRef = useRef();
   const chipsRef = useRef([]);
@@ -63,25 +61,25 @@ const AboutUs = () => {
   // Companies for animation
   const companies = [
     {
-      name: 'Microsoft',
-      logo: MicrosoftLogo
+      name: "Microsoft",
+      logo: MicrosoftLogo,
     },
     {
-      name: 'Oracle',
-      logo: OracleLogo
+      name: "Oracle",
+      logo: OracleLogo,
     },
     {
-      name: 'Google',
-      logo: GoogleLogo
+      name: "Google",
+      logo: GoogleLogo,
     },
     {
-      name: 'AWS',
-      logo: AwsLogo
+      name: "AWS",
+      logo: AwsLogo,
     },
     {
-      name: 'Salesforce',
-      logo: SalesLogo
-    }
+      name: "Salesforce",
+      logo: SalesLogo,
+    },
   ];
 
   return (
@@ -96,7 +94,9 @@ const AboutUs = () => {
               Driving Success Through Data, Technology, and Tailored Enterprise
               Solutions
             </h1>
-            <Link to="/contact" className="btn btn-primary-whatwedo">Contact Us</Link>
+            <Link to="/contact" className="btn btn-primary-whatwedo">
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>
@@ -124,7 +124,10 @@ const AboutUs = () => {
           </div>
           <div className="founder-content">
             <div className="image-banner-text position-relative">
-              "We're here to do more than build a company—we're building a community. Innovation drives us, but our purpose is deeper. Creating designs that matter, paths that inspire, and connections that grow into something bigger than all of us."
+              "We're here to do more than build a company—we're building a
+              community. Innovation drives us, but our purpose is deeper.
+              Creating designs that matter, paths that inspire, and connections
+              that grow into something bigger than all of us."
             </div>
             <div className="founder-profile">
               <img src={FounderImage} alt="Founder" className="founder-image" />
@@ -136,7 +139,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
 
       <div className="tabsecction">
         <h1>Why Us</h1>
@@ -192,7 +194,7 @@ const AboutUs = () => {
             aria-labelledby="pills-home-tab"
           >
             <div className="tab-content-wrapper">
-              <div>
+              <div className="tab-image-container">
                 <img
                   src="https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?q=80&w=1783&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Mission"
@@ -202,9 +204,16 @@ const AboutUs = () => {
               <div className="tab-paragraph-width">
                 <h1>Our Mission</h1>
                 <p className="tab-paragraph">
-                At LVC Solutions, our mission is to empower businesses by delivering innovative solutions that drive growth, streamline operations, and inspire transformation. We are dedicated to providing exceptional services that address complex challenges while fostering lasting partnerships built on trust, integrity, and excellence.
-
-We strive to enable organizations to achieve their full potential by offering tailored solutions that adapt to ever-changing business landscapes. At LVC Solutions, our goal is to go beyond expectations, creating impactful outcomes that lead to long-term success.
+                  At LVC Solutions, our mission is to empower businesses by
+                  delivering innovative solutions that drive growth, streamline
+                  operations, and inspire transformation. We are dedicated to
+                  providing exceptional services that address complex challenges
+                  while fostering lasting partnerships built on trust,
+                  integrity, and excellence. We strive to enable organizations
+                  to achieve their full potential by offering tailored solutions
+                  that adapt to ever-changing business landscapes. At LVC
+                  Solutions, our goal is to go beyond expectations, creating
+                  impactful outcomes that lead to long-term success.
                 </p>
               </div>
             </div>
@@ -226,8 +235,17 @@ We strive to enable organizations to achieve their full potential by offering ta
               <div className="tab-paragraph-width">
                 <h1>Our Vision</h1>
                 <p className="tab-paragraph">
-                At LVC Solutions, our vision is to be a trusted partner for businesses, delivering transformative solutions that empower them to innovate, grow, and thrive in a rapidly evolving world. We strive to help organizations across industries unlock their full potential through tailored strategies, exceptional service, and a commitment to excellence.
-             By fostering innovation, embracing change, and focusing on creating meaningful value, we aim to shape a future where businesses achieve sustainable growth and success. At LVC Solutions, we envision a world where technology and creativity converge to redefine possibilities
+                  At LVC Solutions, our vision is to be a trusted partner for
+                  businesses, delivering transformative solutions that empower
+                  them to innovate, grow, and thrive in a rapidly evolving
+                  world. We strive to help organizations across industries
+                  unlock their full potential through tailored strategies,
+                  exceptional service, and a commitment to excellence. By
+                  fostering innovation, embracing change, and focusing on
+                  creating meaningful value, we aim to shape a future where
+                  businesses achieve sustainable growth and success. At LVC
+                  Solutions, we envision a world where technology and creativity
+                  converge to redefine possibilities
                 </p>
               </div>
             </div>
@@ -266,9 +284,8 @@ We strive to enable organizations to achieve their full potential by offering ta
         className="about-cta"
         ref={myRef}
         style={{
-          minHeight: "100vh",
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "start",
           alignItems: "center",
           position: "relative",
           backgroundColor: "#black",
@@ -279,11 +296,7 @@ We strive to enable organizations to achieve their full potential by offering ta
           animate={{ opacity: inView ? 1 : 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <h1
-            className="insight-motion-profile"
-          >
-            Trusted by 100+ companies
-          </h1>
+          <h1 className="insight-motion-profile">Trusted by 100+ companies</h1>
         </motion.div>
 
         {/*  Companies with Logos */}
@@ -291,7 +304,7 @@ We strive to enable organizations to achieve their full potential by offering ta
           ref={chipsRef}
           style={{
             position: "absolute",
-            top: 0,
+            top: -300,
             width: "100%",
             display: "flex",
             justifyContent: "center",
@@ -316,7 +329,7 @@ We strive to enable organizations to achieve their full potential by offering ta
               }}
               className="company-logo-container"
             >
-              <img 
+              <img
                 src={company.logo}
                 alt={company.name}
                 className="company-logo"
@@ -332,32 +345,39 @@ We strive to enable organizations to achieve their full potential by offering ta
             <h2>Transformation starts here</h2>
             <br></br>
             <p>Imagine your future</p>
-            <button 
-            className="Connect-button"
-            onClick={() => {
-              handleNavigation("/contact");
-            }}
-            >Connect With Us</button>
+            <button
+              className="Connect-button"
+              onClick={() => {
+                handleNavigation("/contact");
+              }}
+            >
+              Connect With Us
+            </button>
           </div>
           <div className="divider"></div>
           <div className="footer-section-flex-column">
             <p>FIND OUT MORE</p>
-            <button className="Connect-button-service"
-            onClick={() => {
-              handleNavigation("/services");
-            }}
-            >Our Services</button>
-            <button className="Connect-button-contact "
-            onClick={() => {
-              handleNavigation("/contact");
-            }}
-            >Contact Us</button>
+            <button
+              className="Connect-button-service"
+              onClick={() => {
+                handleNavigation("/services");
+              }}
+            >
+              Our Services
+            </button>
+            <button
+              className="Connect-button-contact "
+              onClick={() => {
+                handleNavigation("/contact");
+              }}
+            >
+              Contact Us
+            </button>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
-    
   );
 };
 
