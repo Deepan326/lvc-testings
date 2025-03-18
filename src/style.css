@@ -1119,7 +1119,38 @@ p {
   /* width: 500px !important; */
 }
 .about-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
   background-color: black;
+  padding: 2rem;
+}
+
+@media (max-width: 459px) {
+  .about-cta {
+    min-height: 800px !important;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 1024px) {
+  .about-cta {
+    min-height: 600px !important;
+  }
+
+  .about-cta h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .about-cta {
+    min-height: 500px !important;
+  }
+
+  .about-cta h1 {
+    font-size: 4rem;
+  }
 }
 
 .contact-page {
@@ -1248,9 +1279,7 @@ p {
 .insight-motion-profile {
   font-size: 8rem;
   color: white;
-  margin-bottom: 5rem; /* Increased spacing below title */
   text-align: center;
-  position: relative;
   z-index: 2;
 }
 
@@ -1337,9 +1366,7 @@ p {
       height: 400px;
     }
   } */
-  .about-cta {
-    min-height: 100vh !important;
-  }
+
   .nav-pills .nav-link {
     margin-left: 4px;
   }
@@ -1620,16 +1647,9 @@ p {
   border-radius: 20px;
 }
 
-.about-cta {
-  background-color: black;
-  overflow: hidden;
-  padding: 2rem;
-}
-
 @media (max-width: 768px) {
   .insight-motion-profile {
     font-size: 2.5rem;
-    margin-bottom: 8rem; /* Even more spacing on mobile */
   }
 
   .company-logo-container {

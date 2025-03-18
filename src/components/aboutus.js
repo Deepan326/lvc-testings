@@ -285,7 +285,7 @@ const AboutUs = () => {
         ref={myRef}
         style={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "start",
           alignItems: "center",
           position: "relative",
           backgroundColor: "#black",
@@ -304,7 +304,7 @@ const AboutUs = () => {
           ref={chipsRef}
           style={{
             position: "absolute",
-            top: 0,
+            top: -300,
             width: "100%",
             display: "flex",
             justifyContent: "center",
