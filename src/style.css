@@ -1361,8 +1361,8 @@ p {
     line-height: normal;
   }
   .swiper-wrapper {
-    flex-wrap: wrap !important;
-    overflow-x: hidden;
+    display: flex !important;
+    flex-direction: row !important;
   }
   .swiper-slide {
     width: 100% !important;
@@ -1374,7 +1374,7 @@ p {
     margin-bottom: 25px;
   }
   .swiper-button-next {
-    opacity: 0;
+    opacity: 100;
   }
   .swiper-button-prev.swiper-button-disabled {
     opacity: 0;
@@ -1666,7 +1666,7 @@ p {
 .difference-cards-swiper {
   padding: 2rem;
   max-width: 100%;
-  overflow: visible !important;
+  overflow: auto;
 }
 
 .swiper-slide {
@@ -1674,23 +1674,22 @@ p {
   transition: all 0.3s ease;
 }
 
+.difference-cards-swiper {
+  width: 100%;
+  overflow: visible;
+}
+
 .difference-card {
-  height: 600px;
   background: #1e2222;
   border-radius: 12px;
-  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: transform 0.3s ease;
+  box-sizing: border-box;
 }
 
 .difference-card:hover {
   transform: translateY(-10px);
-}
-
-.card-image {
-  height: 400px;
-  overflow: hidden;
 }
 
 .card-image img {
@@ -1751,13 +1750,25 @@ p {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (min-width: 1580px) {
+  .difference-card {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1579px) {
+  .difference-card {
+    height: 650px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
   .section-header h1 {
     font-size: 3rem;
   }
 
   .difference-card {
-    height: 550px;
+    height: 600px;
   }
 
   .card-image {
@@ -1765,7 +1776,11 @@ p {
   }
 }
 
-@media (max-width: 768px) {
+.card-image {
+  overflow-y: hidden;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
   .lvc-difference-section {
     padding: 4rem 1rem;
   }
@@ -1798,6 +1813,16 @@ p {
   .swiper-button-prev {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .difference-card {
+    height: 600px;
+  }
+
+  .card-image {
+    height: 300px;
   }
 }
 /* Application Form Modal Styles */

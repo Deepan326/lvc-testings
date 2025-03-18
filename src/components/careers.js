@@ -288,15 +288,16 @@ const Careers = () => {
         <Swiper
           modules={[Navigation]}
           navigation
-          spaceBetween={30}
-          slidesPerView={3}
+          spaceBetween={10}
+          slidesPerView={1}
           initialSlide={0}
           rewind={true}
           centeredSlides={false}
           breakpoints={{
             320: {
               slidesPerView: 1,
-              spaceBetween: 20,
+              spaceBetween: 10,
+              centeredSlides: true,
             },
             768: {
               slidesPerView: 2,
