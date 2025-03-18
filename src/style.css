@@ -1774,11 +1774,19 @@ p {
   .difference-card {
     height: 600px;
   }
+
+  .card-image {
+    height: 400px;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1579px) {
   .difference-card {
     height: 650px;
+  }
+
+  .card-image {
+    height: 350px;
   }
 }
 
