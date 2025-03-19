@@ -2057,3 +2057,14 @@ p {
   margin-top: 10px;
   display: block;
 }
+/* Mobile responsive adjustments */
+@media screen and (max-width: 768px) {
+  .whatwedo-section-herobanner,
+  .insight-section-herobanner,
+  .about-section-herobanner,
+  .careers-section-herobanner,
+  .projects-section-herobanner {
+    height: 80vh;
+    padding: 0 20px;
+  }
+}
