@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import '../style.css';
 
 const ApplicationForm = ({ isOpen, onClose, position }) => {
@@ -6,21 +7,42 @@ const ApplicationForm = ({ isOpen, onClose, position }) => {
     firstName: '',
     lastName: '',
     email: '',
-    resume: null
+    resumeLink: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
-    onClose();
-  };
+    setIsSubmitting(true);
 
-  const handleFileChange = (e) => {
-    setFormData({
-      ...formData,
-      resume: e.target.files[0]
-    });
+    try {
+      await emailjs.send(
+        'service_v26d5ek', // Replace with your Service ID
+        'template_c8kfjrp', // Replace with your Template ID
+        {
+          from_name: `${formData.firstName} ${formData.lastName}`,
+          from_email: formData.email,
+          position: position,
+          resume_link: formData.resumeLink,
+          message: `New application received for ${position} position`
+        },
+        '2xIece6a1l3NxkU0o' // Replace with your Public Key
+      );
+
+      alert('Application submitted successfully!');
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        resumeLink: ''
+      });
+      onClose();
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Failed to submit application. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (!isOpen) return null;
@@ -61,17 +83,39 @@ const ApplicationForm = ({ isOpen, onClose, position }) => {
             />
           </div>
           <div className="form-group">
-            <label>Resume</label>
+            <label>Resume Submission</label>
+            <p className="email-instruction">
+              📩 <strong>Email your resume to: </strong>
+              <a href="mailto:hrmanager@lvc-solutions.com">hrmanager@lvc-solutions.com</a>
+            </p>
+            <p className="divider-text">OR</p>
             <input
-              type="file"
+              type="url"
               required
-              accept=".pdf,.doc,.docx"
-              onChange={handleFileChange}
+              placeholder="Paste your Google Drive resume link here"
+              value={formData.resumeLink}
+              onChange={(e) => setFormData({...formData, resumeLink: e.target.value})}
             />
+            <small className="form-text warning-text">
+              ⚠️ Ensure your resume is <strong>publicly accessible</strong> or shared with HR
+            </small>
           </div>
           <div className="form-actions">
-            <button type="submit" className="btn btn-primary-whatwedo">Submit Application</button>
-            <button type="button" className="btn btn-secondary" onClick={onClose}>Cancel</button>
+            <button 
+              type="submit" 
+              className="btn btn-primary-whatwedo"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? 'Submitting...' : 'Submit Application'}
+            </button>
+            <button 
+              type="button" 
+              className="btn btn-secondary" 
+              onClick={onClose}
+              disabled={isSubmitting}
+            >
+              Cancel
+            </button>
           </div>
         </form>
       </div>

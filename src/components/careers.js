@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./footer.js";
 import { Link, useNavigate } from "react-router-dom";
@@ -14,6 +14,7 @@ const Careers = () => {
   const navigate = useNavigate();
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [selectedPosition, setSelectedPosition] = useState("");
+  const openRolesRef = useRef(null);
 
   const handleNavigation = (path) => {
     navigate(path);
@@ -23,6 +24,10 @@ const Careers = () => {
   const handleApplyClick = (position) => {
     setSelectedPosition(position);
     setIsFormOpen(true);
+  };
+
+  const scrollToOpenRoles = () => {
+    openRolesRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -42,9 +47,12 @@ const Careers = () => {
               We're building an amazing team of talented individuals. Check back
               soon for exciting career opportunities at LVC Solutions!
             </p>
-            <Link to="/contact" className="btn btn-primary-whatwedo">
+            <button 
+              onClick={scrollToOpenRoles}
+              className="btn btn-primary-whatwedo"
+            >
               Apply Now
-            </Link>
+            </button>
           </div>
         </div>
       </div>
@@ -391,7 +399,7 @@ const Careers = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="tabsecction">
+      <div className="tabsecction" ref={openRolesRef}>
         <h1>Open Roles</h1>
         <ul class="nav nav-pills mb-3" id="roles-tab" role="tablist">
           <li class="nav-item" role="presentation">

@@ -2023,3 +2023,37 @@ p {
   position: absolute;
   left: 0;
 }
+.form-text {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+.email-instruction {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.email-instruction a {
+  color: #2469bc;
+  text-decoration: none;
+}
+
+.email-instruction a:hover {
+  text-decoration: underline;
+}
+
+.divider-text {
+  text-align: center;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.warning-text {
+  color: #856404;
+  background-color: #fff3cd;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: block;
+}
