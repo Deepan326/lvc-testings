@@ -17,16 +17,16 @@ const ApplicationForm = ({ isOpen, onClose, position }) => {
 
     try {
       await emailjs.send(
-        'service_v26d5ek', // Replace with your Service ID
-        'template_c8kfjrp', // Replace with your Template ID
+        'service_v26d5ek',
+        'template_c8kfjrp',
         {
-          from_name: `${formData.firstName} ${formData.lastName}`,
-          from_email: formData.email,
           position: position,
-          resume_link: formData.resumeLink,
-          message: `New application received for ${position} position`
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          resumeLink: formData.resumeLink
         },
-        '2xIece6a1l3NxkU0o' // Replace with your Public Key
+        '2xIece6a1l3NxkU0o'
       );
 
       alert('Application submitted successfully!');
