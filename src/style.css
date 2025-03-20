@@ -2063,7 +2063,8 @@ p {
   .insight-section-herobanner,
   .about-section-herobanner,
   .careers-section-herobanner,
-  .projects-section-herobanner {
+  .projects-section-herobanner,
+  .About-section-herobanner {
     background-attachment: scroll; /* Change to scroll on mobile */
     background-position: center center;
   }
