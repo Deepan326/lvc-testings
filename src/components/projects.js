@@ -434,7 +434,6 @@ const Projects = () => {
             <p className="projects-subtitle">Projects</p>
             <hr className="underline" />
             <h1 className="projects-title">Our Projects</h1>
-            <h5 className="projects-description">Coming Soon</h5>
             <p className="mb-4" style={{ color: "#f1f1f1" }}>
               We are working on exciting projects that we can't wait to share
               with you. Check back soon to see our latest work!

@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../style.css";
+import softwareSolutions from "../assets/development.mp4";
 
 function UncontrolledExample() {
   const styles = {
@@ -63,7 +64,7 @@ function UncontrolledExample() {
           <div style={styles.videoWrapper}>
             <video
               style={styles.video}
-              src="https://videos.pexels.com/video-files/4017225/4017225-uhd_2560_1440_30fps.mp4"
+              src={softwareSolutions}
               autoPlay
               loop
               muted

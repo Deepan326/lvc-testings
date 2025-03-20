@@ -2064,7 +2064,7 @@ p {
   .about-section-herobanner,
   .careers-section-herobanner,
   .projects-section-herobanner {
-    height: 80vh;
-    padding: 0 20px;
+    background-attachment: scroll; /* Change to scroll on mobile */
+    background-position: center center;
   }
 }

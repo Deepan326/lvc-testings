@@ -42,7 +42,6 @@ const Careers = () => {
             <p className="careers-subtitle">Careers</p>
             <hr className="underline" />
             <h1 className="careers-title">Join Our Team</h1>
-            <h5 className="careers-description">Opportunities Coming Soon</h5>
             <p className="mb-4" style={{ color: "#f1f1f1" }}>
               We're building an amazing team of talented individuals. Check back
               soon for exciting career opportunities at LVC Solutions!
