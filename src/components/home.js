@@ -3,13 +3,11 @@ import CarouselComponent from "./carsouel.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style.css";
 import Industries from "../components/services.js"
-import ThirdImage from "../assets/img3_home.jpg";
-import Slide1 from "../assets/slide1.png";
-import Slide2 from "../assets/slide2.png";
-import Slide3 from "../assets/slide3.png";
 import Footer from "./footer.js";
 import { useNavigate } from "react-router-dom";
-import PartnerImage from "../assets/partner.jpg"
+import Logo from "../assets/lvc-icon.jpg";
+import SpotLogo from "../assets/lvcSpo.jpg";
+import AcaLogo from "../assets/lvcAca.jpg";
 
 
 const Home = () => {
@@ -28,15 +26,15 @@ const Home = () => {
     };
   
     const images = [
-      { src: "https://cdn.pixabay.com/photo/2018/09/21/07/07/e-commerce-3692440_1280.jpg", alt: "E-commerce Development", title: "E-commerce Development" },
-      { src: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Website Growth", title: "Website Growth" },
-      { src: "https://abetterwebsite.com.au/wp-content/uploads/2018/06/website-maintenance-services.jpg", alt: "Website Maintenance and Support", title: "Website Maintenance and Support" },
-      { src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", alt: "Website Design", title: "Website Design" },
-      { src: "https://images.pexels.com/photos/5473302/pexels-photo-5473302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", alt: "Cybersecurity", title: "Cybersecurity" },
-      { src: "https://images.pexels.com/photos/4508751/pexels-photo-4508751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", alt: "Cloud", title: "Cloud" },
-      { src: "https://images.pexels.com/photos/4491461/pexels-photo-4491461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", alt: "Consulting", title: "Consulting" },
-      { src: "https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", alt: "Data & Analytics", title: "Data & Analytics" },
-      { src: "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", alt: "Artificial Intelligence", title: "Artificial Intelligence" },
+      { src: "https://images.pexels.com/photos/34577/pexels-photo.jpg", alt: "E-commerce Development", title: "E-commerce Development" },
+      { src: "https://images.pexels.com/photos/1181474/pexels-photo-1181474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", alt: "Website Growth", title: "Website Growth" },
+      { src: "https://images.pexels.com/photos/8867247/pexels-photo-8867247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", alt: "Website Maintenance and Support", title: "Website Maintenance and Support" },
+      { src: "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", alt: "Website Design", title: "Website Design" },
+      { src: "https://images.pexels.com/photos/8247921/pexels-photo-8247921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", alt: "Cybersecurity", title: "Cybersecurity" },
+      { src: "https://media.istockphoto.com/id/532187422/photo/cloud-uploading-from-mobile-phone-for-file-sharing-and-collaboration.jpg?b=1&s=612x612&w=0&k=20&c=yQsLHA-8AmPjbNcwanBAxMKosyt7e4D1rJPEvMvaShg=", alt: "Cloud", title: "Cloud" },
+      { src: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", alt: "Consulting", title: "Consulting" },
+      { src: "https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", alt: "Data & Analytics", title: "Data & Analytics" },
+      { src: "https://images.pexels.com/photos/16629368/pexels-photo-16629368/free-photo-of-webpage-of-chatgpt-a-prototype-ai-chatbot-is-seen-on-the-website-of-openai-on-a-smartphone-examples-capabilities-and-limitations-are-shown.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", alt: "Artificial Intelligence", title: "Artificial Intelligence" },
 
     ];
 
@@ -68,10 +66,12 @@ const Home = () => {
         <CarouselComponent />
       </div>
       <div className="section2">
-        <h1>Trusted by our Partners</h1>
+        <h1>LVC ECOSYSTEM</h1>
         <div className="partner-logos-container">
           <div className="partner-logos">
-          <img src={PartnerImage} alt="Partner Logo" className="partner-logo" />
+          <img src={SpotLogo} alt="Partner Logo" className="partner-logo" />
+          <img src={Logo} alt="Partner Logo" className="partner-logo" />
+          <img src={AcaLogo} alt="Partner Logo" className="partner-logo" />
        </div>
      </div>
       </div>
@@ -92,7 +92,7 @@ const Home = () => {
             <div key={index} className="col-md-4 position-relative image-container">
               <img className="w-100 custom-image" src={img.src} alt={img.alt} />
               <div className="overlay-text">
-                <h2>{img.title}</h2>
+                <h2 >{img.title}</h2>
               </div>
             </div>
           ))}
@@ -146,7 +146,7 @@ const Home = () => {
           <div className="col-md-6 image-section" ref={imageRef}>
             <img
               className="d-block w-100 custom-carousel-image"
-              src={ThirdImage}
+              src="https://images.pexels.com/photos/3184428/pexels-photo-3184428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt="What We Offer"
             />
           </div>
@@ -163,7 +163,7 @@ const Home = () => {
     <div className="col-md-4 position-relative image-container">
       <img
         className="w-100 custom-image"
-        src={Slide3}
+        src="https://images.pexels.com/photos/7947968/pexels-photo-7947968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         alt="Reveal Goals"
       />
       <div className="overlay-text">
@@ -173,7 +173,7 @@ const Home = () => {
     <div className="col-md-4 position-relative image-container">
       <img
         className="w-100 custom-image"
-        src={Slide2}
+        src="https://images.pexels.com/photos/7414305/pexels-photo-7414305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         alt="Reveal Goals"
       />
       <div className="overlay-text">
@@ -183,7 +183,7 @@ const Home = () => {
     <div className="col-md-4 position-relative image-container">
       <img
         className="w-100 custom-image"
-        src={Slide1}
+        src="https://images.pexels.com/photos/4226122/pexels-photo-4226122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         alt="Reveal Goals"
       />
       <div className="overlay-text">

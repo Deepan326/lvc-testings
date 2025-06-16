@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.svg";
+import logo from "../assets/lvc-icon.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style.css";
 

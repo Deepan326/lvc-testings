@@ -42,7 +42,7 @@ function UncontrolledExample() {
           <div style={styles.videoWrapper}>
             <video
               style={styles.video}
-              src="https://videos.pexels.com/video-files/7308103/7308103-hd_1920_1080_24fps.mp4"
+              src="https://videos.pexels.com/video-files/7579657/7579657-uhd_2732_1440_25fps.mp4"
               autoPlay
               loop
               muted
@@ -64,7 +64,7 @@ function UncontrolledExample() {
           <div style={styles.videoWrapper}>
             <video
               style={styles.video}
-              src={softwareSolutions}
+              src="https://videos.pexels.com/video-files/29538693/12715219_1920_1080_30fps.mp4"
               autoPlay
               loop
               muted
@@ -85,14 +85,14 @@ function UncontrolledExample() {
           <div style={styles.videoWrapper}>
             <video
               style={styles.video}
-              src="https://videos.pexels.com/video-files/852423/852423-hd_1920_1080_24fps.mp4"
+              src="https://videos.pexels.com/video-files/17428642/17428642-hd_1920_1080_25fps.mp4"
               autoPlay
               loop
               muted
               playsInline
             />
             <div style={styles.caption} className="carousel-caption-style">
-              <h1>Future-Ready Solutions</h1>
+              <h1>Applications of Tommorow, Today</h1>
               <hr />
               <p className="carousel-description">
                 Leverage our expertise in cloud transformation and engineering excellence
