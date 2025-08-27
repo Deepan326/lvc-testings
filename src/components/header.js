@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/lvc-icon.jpg";
+import search from "../assets/white-search-logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style.css";
 
@@ -52,7 +53,7 @@ const Header = () => {
                 </Link>
               </li>
               {/* NEED TO DO: Add a projects component/page */}
-              <li className="nav-item"> 
+              <li className="nav-item">
                 <Link to="/projects" className="nav-link">
                   Projects
                 </Link>
@@ -69,6 +70,9 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
+            <button className='search-bar-button'>
+              <img src={search} alt='search bar' id='search-bar-logo' />
+            </button>
           </div>
         </div>
       </nav>

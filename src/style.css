@@ -9,21 +9,28 @@ body {
   font-weight: weight;
   font-style: normal;
 }
+
 /* Add to your existing CSS file (e.g., style.css) */
 .custom-navbar {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensure it's above other content */
-  background-color: #000; /* Optional: set background color */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+  z-index: 1000;
+  /* Ensure it's above other content */
+  background-color: #000;
+  /* Optional: set background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Optional: add shadow */
 }
+
 .navbar-collapse {
   background: black;
 }
+
 .navbar-toggler-icon {
   background-color: white;
 }
+
 .navbar-nav .nav-link {
   margin-left: 45px;
   color: #f4f4f4;
@@ -47,6 +54,7 @@ body {
   height: auto;
   cursor: pointer;
 }
+
 .navbar {
   height: 80px;
   background-color: #000;
@@ -72,13 +80,16 @@ body {
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(0);
   }
 }
+
 .careers-main {
   width: 100%;
 }
+
 .custom-carousel-image {
   height: 600px;
   object-fit: cover;
@@ -189,10 +200,12 @@ body {
   border-top: 2px solid white;
   padding-top: 25px;
 }
+
 .heading-service {
   font-weight: 500;
   line-height: 40px;
 }
+
 /*icons */
 /* In your style.css or a separate CSS file */
 .material-icons-section {
@@ -203,15 +216,19 @@ body {
 }
 
 .material-symbols-outlined {
-  font-size: 48px; /* You can adjust the size */
-  color: #848484; /* Change the color if needed */
+  font-size: 48px;
+  /* You can adjust the size */
+  color: #848484;
+  /* Change the color if needed */
   transition: transform 0.3s ease;
 }
 
 .material-symbols-outlined:hover {
-  transform: scale(1.2); /* Add a hover effect */
+  transform: scale(1.2);
+  /* Add a hover effect */
   color: #f1f1f1;
 }
+
 /* services */
 /* General container styling */
 .services-container {
@@ -269,10 +286,12 @@ h1 {
   cursor: pointer;
   margin-bottom: 2rem;
 }
+
 .industries-item :hover {
   border-bottom: 3px solid #2469bc;
   transform: translateY(-5px);
 }
+
 /* Material icon styling */
 .service-icon {
   font-size: 24px;
@@ -302,7 +321,8 @@ p {
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .service-item {
-    flex: 1 1 100%; /* Stack items on smaller screens */
+    flex: 1 1 100%;
+    /* Stack items on smaller screens */
   }
 }
 
@@ -325,6 +345,7 @@ p {
   line-height: 32px;
   font-size: 16px;
 }
+
 .section-4-heading {
   font-size: 32px !important;
   margin-bottom: 100px;
@@ -342,13 +363,15 @@ p {
   transition: transform 0.5s ease, filter 0.5s ease;
   filter: brightness(0.8);
 }
+
 .custom-carousel-video {
   filter: brightness(0.4);
 }
 
 .custom-carousel-image:hover {
   /* transform: scale(0.7);  */
-  filter: brightness(1); /* Restore original brightness on hover */
+  filter: brightness(1);
+  /* Restore original brightness on hover */
 }
 
 /* Image container */
@@ -356,6 +379,7 @@ p {
   position: relative;
   overflow: hidden;
 }
+
 .g-4 {
   display: flex;
   flex-wrap: wrap !important;
@@ -366,6 +390,7 @@ p {
   /* display: block; */
   width: 100%;
 }
+
 .gradient-overlay {
   position: absolute;
   top: 0;
@@ -397,6 +422,7 @@ p {
 .image-container:hover::after {
   opacity: 1;
 }
+
 .custom-image {
   height: 350px;
   object-fit: cover;
@@ -417,10 +443,12 @@ p {
 .custom-image:after {
   background: linear-gradient(90deg, #000 30%, transparent);
 }
+
 .overlay-text h2 {
   font-size: 1.2rem;
   box-sizing: border-box;
 }
+
 .overlay-text h3 {
   font-size: 18px;
   margin-bottom: 5px;
@@ -429,6 +457,7 @@ p {
 .overlay-text p {
   font-size: 16px;
 }
+
 .custom-image-overlay {
   position: absolute;
   top: 0;
@@ -437,11 +466,14 @@ p {
   height: 100%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   z-index: 2;
-  border-radius: 5px; /* Optional: smooth edges */
+  border-radius: 5px;
+  /* Optional: smooth edges */
 }
+
 .industies-item {
   border-bottom: 1px solid #212121;
 }
+
 .section2aboutus p {
   font-size: clamp(14px, 1.2vw, 24px);
   line-height: 180%;
@@ -476,6 +508,7 @@ p {
   height: 100vh;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .section-heading,
 .section-heading-tagline {
   font-size: 3rem;
@@ -486,16 +519,19 @@ p {
   color: white;
   padding-top: 25px;
 }
+
 .section-heading-tagline {
   display: flex;
   width: 33%;
   font-size: 2rem;
 }
+
 .underline {
   width: 100%;
   margin: 0 auto 20px auto;
   border: 1px solid #ffffff;
 }
+
 .section2-aboutus {
   background-color: #f1f1f1;
   padding: 100px;
@@ -517,6 +553,7 @@ p {
   color: white;
   font-weight: 600;
 }
+
 .section-aboutus ::before {
   content: "";
   position: absolute;
@@ -559,6 +596,7 @@ p {
   text-align: start;
   margin-bottom: 10px;
 }
+
 .image-banner-text:after {
   left: -25px;
   top: 0;
@@ -569,6 +607,7 @@ p {
   position: absolute;
   border-radius: 5px;
 }
+
 .image-banner-link {
   font-size: 1rem;
   text-transform: uppercase;
@@ -604,6 +643,7 @@ p {
     transform: translateY(-25%);
   }
 }
+
 .Contactus-btn {
   border: none;
   background: #2469bc;
@@ -646,7 +686,7 @@ p {
 /* .image-container  {
   flex-wrap: wrap;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 } */
 
 .text-container {
@@ -698,7 +738,8 @@ p {
 
 .grid-gallery {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Five images per row */
+  grid-template-columns: repeat(5, 1fr);
+  /* Five images per row */
   gap: 1rem;
   margin-top: 1rem;
   padding: 5rem;
@@ -725,11 +766,13 @@ p {
   background-color: #e6e8ea;
   color: #1e2222;
 }
+
 .footer-section {
   background-color: #1e2222;
   color: white;
   padding: 120px;
 }
+
 .footer-section-flex {
   display: flex;
   flex-direction: row;
@@ -737,14 +780,17 @@ p {
   flex-wrap: wrap;
   gap: 8rem;
 }
+
 .footer-section-flex h2 {
   font-size: 3rem;
 }
+
 .footer-section-flex-column {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 .footer-section .Connect-button {
   border-radius: 6.25rem;
   font-size: 1.125rem;
@@ -760,6 +806,7 @@ p {
   border-color: #b4b4b8 !important;
   color: white;
 }
+
 .Connect-button-service,
 .Connect-button-contact {
   font-size: 0.875rem;
@@ -773,16 +820,19 @@ p {
   background: #1e2222 !important;
   border-color: #b4b4b8 !important;
 }
+
 .footer-section button:hover {
   background: #dfdfe0 !important;
   border-color: #1e2222 !important;
   color: #1e2222;
 }
+
 .divider {
   width: 1px;
   background-color: #ccc;
   margin: 0 20px;
 }
+
 .view-more-btn {
   font-size: 1.125rem;
   line-height: 2rem;
@@ -797,10 +847,12 @@ p {
 }
 
 .About-section-herobanner {
-  background: url("./assets/img2.jpg"); /* Ensure the path is correct */
+  background: url("./assets/img2.jpg");
+  /* Ensure the path is correct */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* This makes the background image fixed */
+  background-attachment: fixed;
+  /* This makes the background image fixed */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -808,11 +860,14 @@ p {
   color: #fff;
   position: relative;
 }
+
 .whatwedo-section-herobanner {
-  background-image: url("./assets/landing2.png"); /* Ensure the path is correct */
+  background-image: url("./assets/landing2.png");
+  /* Ensure the path is correct */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* This makes the background image fixed */
+  background-attachment: fixed;
+  /* This makes the background image fixed */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -831,6 +886,7 @@ p {
   width: 75%;
   text-align: start;
 }
+
 .whatwedo-description,
 .insight-description {
   font-style: normal;
@@ -840,6 +896,7 @@ p {
   margin-bottom: 2pc;
   width: 75%;
 }
+
 .whatwe-do-title,
 .insight-do-title {
   color: black;
@@ -870,19 +927,24 @@ p {
   line-height: 160%;
   padding: 9pt 2pc;
 }
+
 .btn-primary-whatwedo:hover {
   background: #205eaa;
 }
+
 .grid-section-whatwedo {
   padding: 50px;
   background-color: #f9f9f9;
-  text-align: start; /* Adjust based on your design */
+  text-align: start;
+  /* Adjust based on your design */
 }
 
 .grid-container-whatwedo {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
-  gap: 20px; /* Space between columns */
+  grid-template-columns: 1fr 1fr;
+  /* Two equal columns */
+  gap: 20px;
+  /* Space between columns */
   align-items: center;
 }
 
@@ -894,8 +956,10 @@ p {
 
 .grid-item-whatwedo img {
   width: 100%;
-  max-width: 500px; /* Limit the image size */
-  border-radius: 10px; /* Optional for rounded corners */
+  max-width: 500px;
+  /* Limit the image size */
+  border-radius: 10px;
+  /* Optional for rounded corners */
 }
 
 .grid-item-whatwedo.text {
@@ -910,13 +974,15 @@ p {
 .grid-item-whatwedo.text h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #333; /* Adjust for text color */
+  color: #333;
+  /* Adjust for text color */
 }
 
 .grid-item-whatwedo.text p {
   font-size: 1.125rem;
   margin-bottom: 20px;
-  color: #555; /* Adjust for text color */
+  color: #555;
+  /* Adjust for text color */
 }
 
 @media (max-width: 768px) {
@@ -926,11 +992,13 @@ p {
   }
 
   .grid-item-whatwedo {
-    margin-bottom: 20px; /* Add spacing between image and text */
+    margin-bottom: 20px;
+    /* Add spacing between image and text */
   }
 
   .grid-item-whatwedo img {
-    max-width: 100%; /* Ensure image scales well on smaller screens */
+    max-width: 100%;
+    /* Ensure image scales well on smaller screens */
   }
 }
 
@@ -942,20 +1010,24 @@ p {
 .nav-btn-tab {
   background: none;
 }
+
 .nav-link {
   color: black;
 }
+
 .nav-pills {
   --bs-nav-pills-border-radius: var(--bs-border-radius);
   --bs-nav-pills-link-active-color: black;
-  --bs-nav-pills-link-active-bg: transparent; /* Keep the background transparent */
+  --bs-nav-pills-link-active-bg: transparent;
+  /* Keep the background transparent */
 }
 
 .nav-pills .nav-link {
   color: #555;
   font-size: 16px;
   border: none;
-  border-bottom: 2px solid transparent; /* Default state with no underline */
+  border-bottom: 2px solid transparent;
+  /* Default state with no underline */
   background-color: transparent;
   transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
   margin-left: 5rem;
@@ -974,10 +1046,12 @@ p {
   border-bottom: 2px solid #007bff;
   border-radius: 0px;
 }
+
 .nav-link:focus,
 .nav-link:hover {
   border-bottom: 1 1px solid #007bff;
 }
+
 .tab-content-wrapper {
   display: flex;
   flex-direction: column;
@@ -988,6 +1062,7 @@ p {
   padding: 1rem;
   width: 100%;
 }
+
 .tab-paragraph-width {
   padding: 0 1rem;
 }
@@ -1003,6 +1078,7 @@ p {
     width: 100%;
     text-align: justify;
   }
+
   .section2aboutus p {
     padding: 25px;
   }
@@ -1015,12 +1091,15 @@ p {
   color: black;
   font-weight: 500;
 }
+
 /* */
 .insight-section-herobanner {
-  background-image: url("https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Ensure the path is correct */
+  background-image: url("https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* Ensure the path is correct */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* This makes the background image fixed */
+  background-attachment: fixed;
+  /* This makes the background image fixed */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -1036,6 +1115,7 @@ p {
 .swiper-image {
   height: 550px;
 }
+
 .overlay-text-insight {
   position: absolute;
   top: 250px;
@@ -1044,6 +1124,7 @@ p {
   z-index: 2;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
+
 @media (max-width: 1023px) {
   .latest-news-container {
     display: flex;
@@ -1072,14 +1153,17 @@ p {
   background-color: white;
   padding: 50px !important;
 }
+
 .isight-wrapper {
   background-color: white;
 }
+
 .isight-wrapper h1 {
   text-align: start;
   padding-top: 50px;
   margin-left: 15px;
 }
+
 .swiper-image-container:before {
   content: "";
   position: absolute;
@@ -1087,17 +1171,17 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%);
   z-index: 1;
 }
+
 .getupdate-number {
   color: white;
   font-size: 4rem;
 }
+
 .swiper-image-container {
   overflow: hidden;
   position: relative;
@@ -1113,6 +1197,7 @@ p {
 .swiper-image-container:hover .swiper-image {
   transform: scale(1);
 }
+
 .insight-readmore-cta:before {
   position: absolute;
   content: "";
@@ -1125,6 +1210,7 @@ p {
   bottom: -8px;
   left: 0;
 }
+
 .insight-readmore-cta:hover:before {
   opacity: 1;
 }
@@ -1137,6 +1223,7 @@ p {
   /* width: -webkit-fill-available; */
   width: fit-content;
 }
+
 .pt-customer-review {
   background-color: #faf9f6;
   text-align: center;
@@ -1144,6 +1231,7 @@ p {
   border-radius: 25px;
   /* width: 500px !important; */
 }
+
 .about-cta {
   display: flex;
   flex-direction: column;
@@ -1293,6 +1381,7 @@ p {
     flex: none;
     width: 100%;
   }
+
   .footer-section {
     padding: 60px 30px;
   }
@@ -1314,6 +1403,7 @@ p {
   max-width: 1400px;
   height: auto;
 }
+
 .tab-image {
   width: 100% !important;
   height: auto;
@@ -1325,6 +1415,7 @@ p {
   .industries-item {
     flex: 1 1 calc(100% - 20px);
   }
+
   .footer-section {
     padding: 40px 20px;
     box-sizing: border-box;
@@ -1359,29 +1450,36 @@ p {
   .divider {
     display: none;
   }
+
   .main {
     margin-top: 50px;
   }
+
   .carousel-caption-style {
-    bottom: 40px; /* Add more space for smaller screens */
+    bottom: 40px;
+    /* Add more space for smaller screens */
     padding: 10px;
   }
 
   .carousel-caption-style h1 {
-    font-size: 1.5rem; /* Reduce the font size for very small screens */
+    font-size: 1.5rem;
+    /* Reduce the font size for very small screens */
   }
 
   .carousel-description {
-    font-size: 0.85rem; /* Adjust description font size even more */
+    font-size: 0.85rem;
+    /* Adjust description font size even more */
   }
 
   .read-more-btn {
     font-size: 0.85rem;
     padding: 6px 12px;
   }
+
   .container-fluid {
     width: 100%;
   }
+
   /*  about us page*/
   /* @media (max-width: 425px) { */
 
@@ -1396,6 +1494,7 @@ p {
   .nav-pills .nav-link {
     margin-left: 4px;
   }
+
   .whatwedo-title {
     font-style: normal;
     font-size: 2rem;
@@ -1404,6 +1503,7 @@ p {
     text-align: start;
     line-height: normal;
   }
+
   /* insights*/
   .insight-title {
     font-style: normal;
@@ -1413,29 +1513,36 @@ p {
     text-align: start;
     line-height: normal;
   }
+
   .swiper-wrapper {
     display: flex !important;
     flex-direction: row !important;
   }
+
   .swiper-slide {
     width: 100% !important;
   }
+
   .pt-customer-review {
     padding: 15px;
     box-sizing: border-box;
     line-height: 10px;
     margin-bottom: 25px;
   }
+
   .swiper-button-next {
     opacity: 100;
   }
+
   .swiper-button-prev.swiper-button-disabled {
     opacity: 0;
   }
+
   .grid-item-whatwedo.text {
     width: 100%;
   }
 }
+
 /* Add these styles after your existing CSS */
 
 .careers-section-herobanner {
@@ -1522,10 +1629,12 @@ p {
 /* Add these styles after your existing CSS */
 
 .projects-section-herobanner {
-  background-image: url("https://images.unsplash.com/photo-1622316977830-efe0a9d8a5ce?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* You can change this image */
+  background-image: url("https://images.unsplash.com/photo-1622316977830-efe0a9d8a5ce?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* You can change this image */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* This makes the background image fixed */
+  background-attachment: fixed;
+  /* This makes the background image fixed */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -1583,7 +1692,8 @@ p {
 .partner-logo {
   max-width: 250px;
   width: 100%;
-  height: auto; /* Makes dark logos white */
+  height: auto;
+  /* Makes dark logos white */
   transition: opacity 0.3s ease;
 }
 
@@ -1596,6 +1706,7 @@ p {
 .founder-header {
   margin-bottom: 1rem;
 }
+
 .founder-header h2 {
   font-size: 1rem;
 }
@@ -1683,6 +1794,7 @@ p {
     height: 60px;
   }
 }
+
 /* LVC Difference Section */
 .lvc-difference-section {
   background-color: #000000;
@@ -1879,6 +1991,7 @@ p {
     height: 300px;
   }
 }
+
 /* Application Form Modal Styles */
 .modal-overlay {
   position: fixed;
@@ -2023,12 +2136,14 @@ p {
   position: absolute;
   left: 0;
 }
+
 .form-text {
   display: block;
   margin-top: 0.25rem;
   font-size: 0.875rem;
   color: #6c757d;
 }
+
 .email-instruction {
   margin: 10px 0;
   font-size: 1rem;
@@ -2057,15 +2172,42 @@ p {
   margin-top: 10px;
   display: block;
 }
+
 /* Mobile responsive adjustments */
 @media screen and (max-width: 768px) {
+
   .whatwedo-section-herobanner,
   .insight-section-herobanner,
   .about-section-herobanner,
   .careers-section-herobanner,
   .projects-section-herobanner,
   .About-section-herobanner {
-    background-attachment: scroll; /* Change to scroll on mobile */
+    background-attachment: scroll;
+    /* Change to scroll on mobile */
     background-position: center center;
   }
+}
+
+
+/* search bar */
+#search-bar-logo {
+  height: 100%;
+  width: 100%;
+}
+
+.search-bar-button {
+  position: absolute;
+  border: none;
+  height: 30px;
+  width: 30px;
+  top: 25px;
+  right: 30px;
+  padding: 0px;
+  background-color: white;
+  transition: transform 0.3s ease-in-out
+}
+.search-bar-button:hover {
+  cursor: pointer;
+  transform: scale(1.2)
+
 }
