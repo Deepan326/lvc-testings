@@ -1,6 +1,5 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/home';
 import About from './components/aboutus';
 import Service from "./components/whatwedo"
@@ -12,8 +11,10 @@ import Projects from './components/projects';
 import Careers from './components/careers';
 
 
+import ProductsPage from './components/products';
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- 
+
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           {/* <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/products" element={<ProductsPage />} />
         </Routes>
       </div>
       {/* <Footer /> */}
