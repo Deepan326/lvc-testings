@@ -42,7 +42,7 @@ function UncontrolledExample() {
           <div style={styles.videoWrapper}>
             <video
               style={styles.video}
-              src="https://videos.pexels.com/video-files/7579657/7579657-uhd_2732_1440_25fps.mp4"
+              src="https://www.pexels.com/download/video/11274330/"
               autoPlay
               loop
               muted
@@ -64,7 +64,7 @@ function UncontrolledExample() {
           <div style={styles.videoWrapper}>
             <video
               style={styles.video}
-              src="https://videos.pexels.com/video-files/29538693/12715219_1920_1080_30fps.mp4"
+              src="https://www.pexels.com/download/video/3125427/"
               autoPlay
               loop
               muted
@@ -85,7 +85,7 @@ function UncontrolledExample() {
           <div style={styles.videoWrapper}>
             <video
               style={styles.video}
-              src="https://videos.pexels.com/video-files/17428642/17428642-hd_1920_1080_25fps.mp4"
+              src="https://www.pexels.com/download/video/3130284/"
               autoPlay
               loop
               muted
