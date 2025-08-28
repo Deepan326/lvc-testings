@@ -69,8 +69,13 @@ const Header = () => {
                   Contact Us
                 </Link>
               </li>
+              {/* For smaller screens */}
+              <li className="nav-item d-block d-md-none">
+                <Link to="/" className="nav-link">Search</Link>
+              </li>
             </ul>
-            <button className='search-bar-button'>
+            {/* for bigger screens */}
+            <button className="search-bar-button d-none d-md-block">
               <img src={search} alt='search bar' id='search-bar-logo' />
             </button>
           </div>
