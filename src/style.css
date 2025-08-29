@@ -2279,3 +2279,8 @@ p {
   color: #fff;
   position: relative;
 }
+
+.blogs-container{
+  background-color: white;
+  padding: 48px 46px
+}
