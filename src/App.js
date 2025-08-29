@@ -9,6 +9,7 @@ import Insight from "./components/insight"
 import Header from './components/header';
 import Contact from './components/contact';
 import Projects from './components/projects';
+import ITServices from './components/itServicesPage.js';
 import Careers from './components/careers';
 
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/insight" element={<Insight />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/itServices" element={<ITServices />} />
           <Route path="/careers" element={<Careers />} />
           {/* <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} /> */}
