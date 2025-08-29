@@ -29,7 +29,7 @@ const Header = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-dark navbar-toggler-icon"></span>
           </button>
 
           {/* Centered navigation links */}
@@ -80,10 +80,6 @@ const Header = () => {
                   Contact Us
                 </Link>
               </li>
-              {/* For smaller screens display block, >= lg display is none */}
-              {/* <li className="nav-item d-block d-lg-none">
-                <Link to="/" className="nav-link">Search</Link>
-              </li> */}
             </ul>
 
           </div>
