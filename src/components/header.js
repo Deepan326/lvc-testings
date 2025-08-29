@@ -7,7 +7,7 @@ import "../style.css";
 const Header = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg custom-navbar">
+      <nav className="navbar navbar-expand-custom custom-navbar">
         <div className="container-fluid">
           {/* Logo aligned to the left */}
 
@@ -16,7 +16,9 @@ const Header = () => {
             <img src={logo} alt="Company Logo" className="logo" />
           </Link>
 
-
+          <button className="search-bar-button">
+            <img src={search} alt='search bar' id='search-bar-logo' />
+          </button>
           {/* Navbar toggler for mobile view */}
           <button
             className="navbar-toggler"
@@ -79,14 +81,11 @@ const Header = () => {
                 </Link>
               </li>
               {/* For smaller screens display block, >= lg display is none */}
-              <li className="nav-item d-block d-lg-none">
+              {/* <li className="nav-item d-block d-lg-none">
                 <Link to="/" className="nav-link">Search</Link>
-              </li>
+              </li> */}
             </ul>
-            {/* for bigger screens display is hidden unless >= lg screen*/}
-            <button className="search-bar-button d-none d-lg-block">
-              <img src={search} alt='search bar' id='search-bar-logo' />
-            </button>
+
           </div>
         </div>
       </nav>

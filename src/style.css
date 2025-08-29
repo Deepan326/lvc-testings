@@ -2198,18 +2198,60 @@ p {
 .search-bar-button {
   position: absolute;
   border: none;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   top: 25px;
   right: 30px;
   padding: 0px;
-  background-color: white;
+  background-color: black;
   transition: transform 0.3s ease-in-out
 }
+
 .search-bar-button:hover {
   cursor: pointer;
   transform: scale(1.2)
-
 }
 
 
+@media (min-width: 1080px) {
+  .navbar-expand-custom .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-item {
+    margin: 0 10px;
+  }
+
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
+}
+
+@media (max-width: 1079px) {
+  .navbar-expand-custom .navbar-collapse {
+    flex-basis: 100%;
+  }
+
+  .navbar-expand-custom .navbar-toggler {
+    display: block;
+  }
+
+  .search-bar-button {
+    position: absolute;
+    border: none;
+    height: 20px;
+    width: 20px;
+    top: 25px;
+    right: 70px;
+    padding: 0px;
+    background-color: black;
+    transition: transform 0.3s ease-in-out
+  }
+
+}
