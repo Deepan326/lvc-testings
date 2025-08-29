@@ -883,7 +883,8 @@ p {
 }
 
 .whatwedo-title,
-.insight-title {
+.insight-title,
+.blog-title {
   font-style: normal;
   font-size: 4rem;
   line-height: 4rem;
@@ -2260,4 +2261,21 @@ p {
     transition: transform 0.3s ease-in-out
   }
 
+}
+
+
+/* Blog section */
+.blog-section-herobanner {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/024/063/506/non_2x/networking-at-business-conference-blurred-professionals-exchanging-business-cards-ai-generated-free-photo.jpg');
+  /* Ensure the path is correct */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* This makes the background image fixed */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  color: #fff;
+  position: relative;
 }

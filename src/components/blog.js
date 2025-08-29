@@ -1,6 +1,6 @@
 
 function BlogPage() {
-    // example blog posts
+  // example blog posts
   const posts = [
     {
       id: 1,
@@ -25,23 +25,38 @@ function BlogPage() {
     }
   ];
   return (
-      <div className="blog-container">
-      <header className="blog-header">
-        <h1>LVC Solutions Blog</h1>
-        <p>Insights, updates, and ideas from our team.</p>
-      </header>
+    <main>
+      <div className='blog-section-herobanner'>
+        <div classname='blog-container'>
+          <div className='blog-content'>
+            <p className="blog-subtitle">Blog</p>
+            <hr className="underline" />
+            <h1 className="blog-title">LVC Solutions Blog</h1>
+            <h5>Insights, updates, and ideas from our team.</h5>
+          </div>
+        </div>
+      </div>
 
-      <main className="blog-content">
-           {/* basic blog post mappings ..... */}
-        {posts.map((post) => (
-          <article key={post.id} className="blog-post">
-            <h2>{post.title}</h2>
-            <small>{post.date}</small>
-            <p>{post.content}</p>
-          </article>
-        ))}
-      </main>
-    </div>
+
+
+    </main>
+    //   <div className="blog-container">
+    //   <header className="blog-header">
+    //     <h1>LVC Solutions Blog</h1>
+    //     <p>Insights, updates, and ideas from our team.</p>
+    //   </header>
+
+    //   <main className="blog-content">
+    //        {/* basic blog post mappings ..... */}
+    //     {posts.map((post) => (
+    //       <article key={post.id} className="blog-post">
+    //         <h2>{post.title}</h2>
+    //         <small>{post.date}</small>
+    //         <p>{post.content}</p>
+    //       </article>
+    //     ))}
+    //   </main>
+    // </div>
   );
 }
 
