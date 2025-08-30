@@ -344,7 +344,9 @@ const AboutUs = () => {
           <div>
             <h2>Transformation starts here</h2>
             <br></br>
-            <p>Imagine your future</p>
+            <p>At LVC Solutions, transformation starts where vision meets action. We’re not just a software company—we’re your dedicated partner in reimagining what's possible.<br />
+             Rooted in innovation and driven by real-world results, we empower businesses to cross the digital frontier with confidence and agility.<br />
+             Let's build tomorrow—starting now.</p>
             <button
               className="Connect-button"
               onClick={() => {

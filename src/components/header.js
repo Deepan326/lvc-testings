@@ -1,10 +1,37 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/lvc-icon.jpg";
+import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "../style.css";
 
 const Header = () => {
+
+   useEffect(() => {
+    const el = document.getElementById("itServicesDropdown");
+    if (!el || !window.bootstrap) return;
+
+    // Create or get the dropdown instance (Bootstrap 5)
+    const dd = window.bootstrap.Dropdown.getOrCreateInstance(el, {
+      display: "static",   // keeps menu within navbar; no portal
+      autoClose: true
+    });
+
+    // Optional: if something else is swallowing the click, force toggle
+    const clickHandler = (e) => {
+      // don't navigate anywhere, just toggle the menu
+      e.preventDefault();
+      dd.toggle();
+    };
+    el.addEventListener("click", clickHandler);
+
+    return () => {
+      el.removeEventListener("click", clickHandler);
+      dd.dispose();
+    };
+  }, []);
+
+  
   return (
     <header>
       <nav className="navbar navbar-expand-lg custom-navbar">
@@ -51,19 +78,40 @@ const Header = () => {
                   Insights
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/blog" className="nav-link">
+                  Blog
+                </Link>
+              </li>
               {/* NEED TO DO: Add a projects component/page */}
-              <li className="nav-item"> 
+              <li className="nav-item">
                 <Link to="/projects" className="nav-link">
                   Projects
                 </Link>
               </li>
+            <li className="nav-item dropdown">
+  <button
+    type="button"
+    id="itServicesDropdown"
+    className="nav-link dropdown-toggle"
+    data-bs-toggle="dropdown"
+    data-bs-display="static"
+    aria-expanded="false"
+  >
+    IT Services
+  </button>
 
+  {/* IMPORTANT: menu is a child of the same li.nav-item.dropdown */}
+  <ul className="dropdown-menu" aria-labelledby="itServicesDropdown">
+    <li><a className="dropdown-item" href="/services">Services</a></li>
+    <li><a className="dropdown-item" href="/projects">Projects</a></li>
+  </ul>
+</li>
               <li className="nav-item">
-                <Link to="/itServices" className="nav-link">
-                  IT Services
+                <Link to="/products" className="nav-link">
+                  Products
                 </Link>
               </li>
-
               {/* NEED TO DO: Add a careers component/page */}
               <li className="nav-item">
                 <Link to="/careers" className="nav-link">
