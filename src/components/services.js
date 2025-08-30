@@ -51,19 +51,19 @@ const Home = () => {
         </div>
       </div>
       <section className="grid-section-whatwedo">
-      <div className="grid-container-whatwedo">
-        <div className="grid-item-whatwedo ">
-          <img src="https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sample" className="grid-image" />
+        <div className="grid-container-whatwedo">
+          <div className="grid-item-whatwedo ">
+            <img src="https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sample" className="grid-image" />
+          </div>
+          <div className="grid-item-whatwedo text">
+            <h2>Innovative Solutions</h2>
+            <p>
+              We deliver cutting-edge solutions that transform businesses and drive growth. 
+              Discover how our expertise can empower your journey to success.
+            </p>
+          </div>
         </div>
-        <div className="grid-item-whatwedo text">
-          <h2>Innovative Solutions</h2>
-          <p>
-            We deliver cutting-edge solutions that transform businesses and drive growth. 
-            Discover how our expertise can empower your journey to success.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
       <h1 className="whatwe-do-title">Industries we serve</h1>
       <Industries />
       <div className="container py-5">
@@ -92,7 +92,6 @@ const Home = () => {
               </div>
             ))}
         </div>
-       
 
         {/* Toggle Button */}
         <div className="text-center mt-4">
