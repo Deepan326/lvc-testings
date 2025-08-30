@@ -69,11 +69,11 @@ const Home = () => {
         <h1>LVC ECOSYSTEM</h1>
         <div className="partner-logos-container">
           <div className="partner-logos">
-          <img src={SpotLogo} alt="Partner Logo" className="partner-logo" />
-          <img src={Logo} alt="Partner Logo" className="partner-logo" />
-          <img src={AcaLogo} alt="Partner Logo" className="partner-logo" />
-       </div>
-     </div>
+            <img src={SpotLogo} alt="Partner Logo" className="partner-logo" />
+            <img src={Logo} alt="Partner Logo" className="partner-logo" />
+            <img src={AcaLogo} alt="Partner Logo" className="partner-logo" />
+          </div>
+        </div>
       </div>
 
       {/* Material Icons Section */}
@@ -84,38 +84,38 @@ const Home = () => {
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" className="company-logo" />
     </div> */}
       <div className="row services-section-home">
-      <div style={{backgroundColor:"white",}}className="container py-5">
-        <h1  style={{color:"black",}}className="services-herotitle">Services We Offer</h1>
-        <div className="row">
-          {/* Show first 6 images */}
-          {images.slice(0, 6).map((img, index) => (
-            <div key={index} className="col-md-4 position-relative image-container">
-              <img className="w-100 custom-image" src={img.src} alt={img.alt} />
-              <div className="overlay-text">
-                <h2 >{img.title}</h2>
-              </div>
-            </div>
-          ))}
-
-          {/* Show additional images only if `showAllServices` is true */}
-          {showAllServices &&
-            images.slice(6).map((img, index) => (
+        <div style={{backgroundColor:"white",}}className="container py-5">
+          <h1  style={{color:"black",}}className="services-herotitle">Services We Offer</h1>
+          <div className="row">
+            {/* Show first 6 images */}
+            {images.slice(0, 6).map((img, index) => (
               <div key={index} className="col-md-4 position-relative image-container">
                 <img className="w-100 custom-image" src={img.src} alt={img.alt} />
                 <div className="overlay-text">
-                  <h2>{img.title}</h2>
+                  <h2 >{img.title}</h2>
                 </div>
               </div>
             ))}
-        </div>
 
-        {/* Toggle Button */}
-        <div className="text-center mt-4">
-          <button className="view-more-btn" onClick={toggleServices}>
-            {showAllServices ? "Show Less" : "View More "}
-          </button> 
+            {/* Show additional images only if `showAllServices` is true */}
+            {showAllServices &&
+              images.slice(6).map((img, index) => (
+                <div key={index} className="col-md-4 position-relative image-container">
+                  <img className="w-100 custom-image" src={img.src} alt={img.alt} />
+                  <div className="overlay-text">
+                    <h2>{img.title}</h2>
+                  </div>
+                </div>
+              ))}
+          </div>
+
+          {/* Toggle Button */}
+          <div className="text-center mt-4">
+            <button className="view-more-btn" onClick={toggleServices}>
+              {showAllServices ? "Show Less" : "View More "}
+            </button> 
+          </div>
         </div>
-      </div>
       </div>
  
       
@@ -152,47 +152,47 @@ const Home = () => {
           </div>
         </div>
       </div>
-<div>
-<Industries/>
-</div>
-<div className="section-5">
-     <h1 style={{textAlign:"start",color:"white"}}>Transform your Goals in to reality </h1>
-   </div>
-<div className="container py-5">
-  <div className="row">
-    <div className="col-md-4 position-relative image-container">
-      <img
-        className="w-100 custom-image"
-        src="https://images.pexels.com/photos/7947968/pexels-photo-7947968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        alt="Reveal Goals"
-      />
-      <div className="overlay-text">
-        <h2>Identify goals</h2>
+      <div>
+      <Industries/>
       </div>
-    </div>
-    <div className="col-md-4 position-relative image-container">
-      <img
-        className="w-100 custom-image"
-        src="https://images.pexels.com/photos/7414305/pexels-photo-7414305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        alt="Reveal Goals"
-      />
-      <div className="overlay-text">
-        <h2>Design & Planning</h2>
+      <div className="section-5">
+        <h1 style={{textAlign:"start",color:"white"}}>Transform your Goals in to reality </h1>
       </div>
-    </div>
-    <div className="col-md-4 position-relative image-container">
-      <img
-        className="w-100 custom-image"
-        src="https://images.pexels.com/photos/4226122/pexels-photo-4226122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        alt="Reveal Goals"
-      />
-      <div className="overlay-text">
-        <h2>Execution & Reveal</h2>
+      <div className="container py-5">
+        <div className="row">
+          <div className="col-md-4 position-relative image-container">
+            <img
+              className="w-100 custom-image"
+              src="https://images.pexels.com/photos/7947968/pexels-photo-7947968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Reveal Goals"
+            />
+            <div className="overlay-text">
+              <h2>Identify goals</h2>
+            </div>
+          </div>
+          <div className="col-md-4 position-relative image-container">
+            <img
+              className="w-100 custom-image"
+              src="https://images.pexels.com/photos/7414305/pexels-photo-7414305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Reveal Goals"
+            />
+            <div className="overlay-text">
+              <h2>Design & Planning</h2>
+            </div>
+          </div>
+          <div className="col-md-4 position-relative image-container">
+            <img
+              className="w-100 custom-image"
+              src="https://images.pexels.com/photos/4226122/pexels-photo-4226122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Reveal Goals"
+            />
+            <div className="overlay-text">
+              <h2>Execution & Reveal</h2>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-<div className="footer-section">
+      <div className="footer-section">
         <div className="footer-section-flex">
           <div>
             <h2>Transformation starts here</h2>
@@ -225,10 +225,6 @@ const Home = () => {
       </div>
       <Footer/>
     </main>
-
-  
-
-    
   );
 };
 
