@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/home';
 import About from './components/aboutus';
-import Service from "./components/whatwedo"
+import Service from "./components/services"
 import Insight from "./components/insight"
 // import Footer from './components/footer';
 import Header from './components/header';
