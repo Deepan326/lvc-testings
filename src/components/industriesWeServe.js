@@ -29,7 +29,7 @@ const Home = () => {
           {services.map((service, index) => (
             <div key={index} className="col-md-6  col-sm-12 industries-item ">
               <h2 style={{fontSize:"1rem",cursor:"pointer"}}>
-                <span className="material-symbols-outlined industry-service-icon">
+                <span className="material-symbols-outlined industries-we-serve-icon">
                   {service.icon}
                 </span>
                 {service.title}

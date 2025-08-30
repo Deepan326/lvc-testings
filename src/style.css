@@ -257,7 +257,7 @@ h1 {
   transform: translateY(-5px);
 }
 /* Material icon stylingindustry- */
-.industry-service-icon {
+.industries-we-serve-icon {
   font-size: 24px;
   margin-right: 10px;
   color: #2469bc;
@@ -804,7 +804,7 @@ p {
   margin-bottom: 2pc;
   width: 75%;
 }
-.whatwe-do-title,
+.industries-we-serve-title,
 .insight-do-title {
   color: black;
   text-align: start;

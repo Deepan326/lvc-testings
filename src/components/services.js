@@ -64,7 +64,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <h1 className="whatwe-do-title">Industries we serve</h1>
+      <h1 className="industries-we-serve-title">Industries we serve</h1>
       <Industries />
       <div className="container py-5">
         <h1 className="whatwe-do-herotitle">Services We Offer</h1>
@@ -74,7 +74,7 @@ const Home = () => {
             <div key={index} className="col-md-4 position-relative image-container ">
               <img className="w-100 custom-image" src={img.src} alt={img.alt} />
               <div className="overlay-text">
-                <h2 className="whatwe-do-title-text">{img.title}</h2>
+                <h2 className="industries-we-serve-title-text">{img.title}</h2>
               </div>
               <div class="gradient-overlay"></div>
             </div>
