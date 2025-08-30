@@ -26,6 +26,7 @@ body {
 .navbar-collapse {
   background: black;
 }
+
 /*
 .navbar-toggler-icon {
   background-color: black;
@@ -2188,7 +2189,8 @@ p {
   .about-section-herobanner,
   .careers-section-herobanner,
   .projects-section-herobanner,
-  .About-section-herobanner {
+  .About-section-herobanner,
+  .blog-section-herobanner {
     background-attachment: scroll;
     /* Change to scroll on mobile */
     background-position: center center;
@@ -2280,7 +2282,64 @@ p {
   position: relative;
 }
 
-.blogs-container{
+.blogs-container {
   background-color: white;
   padding: 48px 46px
+}
+
+
+.blog-posts-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  width: 100%;
+}
+
+.blog-posts {
+  margin: 5px 15px;
+  width: 30%
+}
+
+.blog-posts-imgs {
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+  padding: 5px 0px;
+  border-radius: 1rem;
+}
+
+.underline-2 {
+  width: 100%;
+  align-content: start;
+  margin: 0 auto 20px auto;
+  border: .5px solid #000000;
+}
+
+/* .blog-posts:hover {
+  transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+} */
+
+.blog-herotitle {
+  color: white;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width:1200px) {
+  .blog-posts {
+    margin: 5px 15px;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width:780px) {
+  .blog-posts {
+    margin: 5px 15px;
+    width: 95%;
+  }
 }
