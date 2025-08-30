@@ -35,12 +35,12 @@ const Home = () => {
 
   return (
     <main>
-      <div className="it-services-section-herobanner">
-        <div className="it-services-container">
-            <div className="it-services-content">
-                <p className="it-services-subtitle">IT Services</p>
+      <div className="services-section-herobanner">
+        <div className="services-container">
+            <div className="services-content">
+                <p className="services-subtitle">IT Services</p>
                 <hr className="underline" />
-                <h1 className="it-services-title">Our Services</h1>
+                <h1 className="services-title">Our Services</h1>
                 <p className="mb-4" style={{ color: "#f1f1f1"}}>
                     We are offering services across industries! Check below to see what services we offer!
                 </p>
