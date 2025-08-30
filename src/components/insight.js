@@ -15,7 +15,6 @@ import Footer from "./footer.js";
 
 const Insight = () => {
   const [showAllServices, setShowAllServices] = useState(false);
-  const [inView, setInView] = useState(false);
   const toggleServices = () => {
     setShowAllServices((prev) => !prev);
   };

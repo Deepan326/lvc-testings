@@ -5,14 +5,12 @@ import TransformationStartsHere from "./transformationStartsHere.js";
 import Footer from "./footer.js";
 import { Link } from "react-router-dom";
 import "../style.css";
-import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
 const Projects = () => {
-  const navigate = useNavigate();
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projectsData = {
@@ -423,10 +421,6 @@ const Projects = () => {
     },
   };
 
-  const handleNavigation = (path) => {
-    navigate(path);
-    window.scrollTo(0, 0);
-  };
   return (
     <main>
       <div className="projects-section-herobanner">
