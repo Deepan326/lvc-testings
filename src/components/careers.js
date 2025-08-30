@@ -1,7 +1,8 @@
 import React, { useState, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import TransformationStartsHere from "./transformationStartsHere.js";
 import Footer from "./footer.js";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../style.css";
 import backgroundVideo from "../assets/video.mp4";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -804,45 +805,7 @@ const Careers = () => {
           </div>
         </div>
       </div>
-      <div className="footer-section">
-        <div className="footer-section-flex">
-          <div>
-            <h2>Transformation starts here</h2>
-            <br></br>
-            <p>At LVC Solutions, transformation starts where vision meets action. We’re not just a software company—we’re your dedicated partner in reimagining what's possible.<br />
-             Rooted in innovation and driven by real-world results, we empower businesses to cross the digital frontier with confidence and agility.<br />
-             Let's build tomorrow—starting now.</p>
-            <button
-              className="Connect-button"
-              onClick={() => {
-                handleNavigation("/contact");
-              }}
-            >
-              Connect With Us
-            </button>
-          </div>
-          <div className="divider"></div>
-          <div className="footer-section-flex-column">
-            <p>FIND OUT MORE</p>
-            <button
-              className="Connect-button-service"
-              onClick={() => {
-                handleNavigation("/services");
-              }}
-            >
-              Our Services
-            </button>
-            <button
-              className="Connect-button-contact "
-              onClick={() => {
-                handleNavigation("/contact");
-              }}
-            >
-              Contact Us
-            </button>
-          </div>
-        </div>
-      </div>
+      <TransformationStartsHere/>
       <Footer />
       <ApplicationForm
         isOpen={isFormOpen}
