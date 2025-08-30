@@ -64,11 +64,6 @@ const Header = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link to="/services" className="nav-link">
-                  What We Do
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link to="/about" className="nav-link">
                   Who We Are
                 </Link>
@@ -89,24 +84,24 @@ const Header = () => {
                   Projects
                 </Link>
               </li>
-            <li className="nav-item dropdown">
-  <button
-    type="button"
-    id="itServicesDropdown"
-    className="nav-link dropdown-toggle"
-    data-bs-toggle="dropdown"
-    data-bs-display="static"
-    aria-expanded="false"
-  >
-    IT Services
-  </button>
+              <li className="nav-item dropdown">
+                <button
+                  type="button"
+                  id="itServicesDropdown"
+                  className="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  data-bs-display="static"
+                  aria-expanded="false"
+                >
+                  IT Services
+                </button>
 
-  {/* IMPORTANT: menu is a child of the same li.nav-item.dropdown */}
-  <ul className="dropdown-menu" aria-labelledby="itServicesDropdown">
-    <li><a className="dropdown-item" href="/services">Services</a></li>
-    <li><a className="dropdown-item" href="/projects">Projects</a></li>
-  </ul>
-</li>
+                {/* IMPORTANT: menu is a child of the same li.nav-item.dropdown */}
+                <ul className="dropdown-menu" aria-labelledby="itServicesDropdown">
+                  <li><a className="dropdown-item" href="/services">Services</a></li>
+                  <li><a className="dropdown-item" href="/projects">Projects</a></li>
+                </ul>
+              </li>
               <li className="nav-item">
                 <Link to="/products" className="nav-link">
                   Products

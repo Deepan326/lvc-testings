@@ -35,14 +35,19 @@ const Home = () => {
 
   return (
     <main>
-      <div className="whatwedo-section-herobanner">
-        <div className="whatwedo-container">
-          <div className="whatwedo-content">
-            <p className="whatwedo-subtitle">What we do</p>
-            <hr className="underline" />
-            <h1 className="whatwedo-title">Driving Innovations Across Industries</h1>
-            <Link to="/contact" className="btn btn-primary-whatwedo">Let's Talk</Link>
-          </div>
+      <div className="it-services-section-herobanner">
+        <div className="it-services-container">
+            <div className="it-services-content">
+                <p className="it-services-subtitle">IT Services</p>
+                <hr className="underline" />
+                <h1 className="it-services-title">Our Services</h1>
+                <p className="mb-4" style={{ color: "#f1f1f1"}}>
+                    We are offering services across industries! Check below to see what services we offer!
+                </p>
+                <Link to="/contact" className="btn btn-primary-whatwedo">
+                    Contact Us
+                </Link>
+            </div>
         </div>
       </div>
       <section className="grid-section-whatwedo">

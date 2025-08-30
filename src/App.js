@@ -8,7 +8,6 @@ import Insight from "./components/insight"
 import Header from './components/header';
 import Contact from './components/contact';
 import Projects from './components/projects';
-import ITServices from './components/itServicesPage.js';
 import Careers from './components/careers';
 import BlogPage from './components/blog';
 
@@ -29,7 +28,6 @@ function App() {
           <Route path="/insight" element={<Insight />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/itServices" element={<ITServices />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/blog" element={<BlogPage />} />
           {/* <Route path="/about" element={<About />} />
