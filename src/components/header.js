@@ -79,11 +79,6 @@ const Header = () => {
                 </Link>
               </li>
               {/* NEED TO DO: Add a projects component/page */}
-              <li className="nav-item">
-                <Link to="/projects" className="nav-link">
-                  Projects
-                </Link>
-              </li>
               <li className="nav-item dropdown">
                 <button
                   type="button"
