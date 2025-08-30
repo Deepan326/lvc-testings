@@ -2,7 +2,7 @@ import React, { useEffect, useRef,useState } from "react";
 import CarouselComponent from "./carsouel.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style.css";
-import Industries from "../components/services.js"
+import Industries from "./industriesWeServe.js"
 import Footer from "./footer.js";
 import { useNavigate } from "react-router-dom";
 import Logo from "../assets/lvc-icon.jpg";

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style.css';
-import Industries from "../components/services.js";
+import Industries from "./industriesWeServe.js";
 import Footer from "./footer.js";
 import { useNavigate } from "react-router-dom";
 const Home = () => {
