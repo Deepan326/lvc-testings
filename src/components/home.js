@@ -85,7 +85,7 @@ const Home = () => {
     </div> */}
       <div className="row services-section-home">
       <div style={{backgroundColor:"white",}}className="container py-5">
-        <h1  style={{color:"black",}}className="whatwe-do-herotitle">Services We Offer</h1>
+        <h1  style={{color:"black",}}className="services-herotitle">Services We Offer</h1>
         <div className="row">
           {/* Show first 6 images */}
           {images.slice(0, 6).map((img, index) => (

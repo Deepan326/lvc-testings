@@ -131,7 +131,7 @@ const Insight = () => {
       <div style={{ backgroundColor: "black" }} className="container py-5">
         <h1
           style={{ color: "white", textAlign: "start" }}
-          className="whatwe-do-herotitle"
+          className="services-herotitle"
         >
           Insight by Interest
         </h1>
