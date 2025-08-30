@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom"; //Added Link import for the contact us / talk with us buttons
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";

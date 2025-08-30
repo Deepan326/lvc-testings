@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom"; //added link import for the useful links
 import logo from "../assets/lvc-icon.jpg"; // Importing the logo image
 import "bootstrap/dist/css/bootstrap.min.css";
