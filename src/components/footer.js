@@ -16,12 +16,8 @@ const Footer = () => {
         width: "100%",
       }}
     >
-     
-
       <div className="container my-5">
         <footer className="text-center text-lg-start text-white" >
-
-
           <section>
             <div className="container text-center text-md-start mt-5">
               <div className="row mt-3">
@@ -29,11 +25,9 @@ const Footer = () => {
                   <h6 className="text-uppercase fw-bold">LVC Solutions</h6>
                   <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px", backgroundColor: "#7c4dff", height: "2px" }} />
                   <p>
-                  
-                  <Link to="/" onClick={() => window.scrollTo(0, 0)} style={{ display: 'inline-block' }}>
-                    <img src={logo} alt="Company Logo" className="logo" />
-                  </Link>
-                
+                    <Link to="/" onClick={() => window.scrollTo(0, 0)} style={{ display: 'inline-block' }}>
+                      <img src={logo} alt="Company Logo" className="logo" />
+                    </Link>
                   </p>
                 </div>
 
@@ -127,7 +121,6 @@ const Footer = () => {
               </div>
             </div>
           </section>
-
           <div className="text-center p-3" style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
             © 2025 Copyright:
             <a className="text-white" href="/">
