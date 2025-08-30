@@ -2297,8 +2297,11 @@ p {
 }
 
 .blog-posts {
-  margin: 5px 15px;
-  width: 30%
+  margin: 15px 15px;
+  /* display: block; */
+  padding: 0px 5px;
+  width: 30%;
+  transition: .3s;
 }
 
 .blog-posts-imgs {
@@ -2316,13 +2319,19 @@ p {
   border: .5px solid #000000;
 }
 
-/* .blog-posts:hover {
-  transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -o-transform: scale(1.5);
-} */
+.blog-posts:hover {
+  background-color: rgba(180, 180, 180, 0.37);
+  box-shadow: 2px 2px 10px 10px rgba(179, 179, 179, 0.2),
+    -2px -2px 10px 10px rgba(179, 179, 179, 0.2);
+  color: #000;
+  border-radius: 1rem;
+  transform: scale(105%);
+  -ms-transform: scale(105%);
+  -moz-transform: scale(105%);
+  -webkit-transform: scale(105%);
+  -o-transform: scale(105%);
+  z-index: 1;
+}
 
 .blog-herotitle {
   color: white;
