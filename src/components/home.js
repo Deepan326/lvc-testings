@@ -49,7 +49,7 @@ const Home = () => {
       </section>
 
       <div className="section-5">
-        <h1 style={{textAlign:"start",color:"white"}}>Transform your Goals in to reality </h1>
+        <h1 style={{ textAlign:"center", color:"white" }}>Transform your Goals into reality </h1>
       </div>
       <div className="container py-5">
         <div className="row">
