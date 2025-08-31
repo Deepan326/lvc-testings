@@ -913,6 +913,10 @@ p {
   --bs-nav-pills-border-radius: var(--bs-border-radius);
   --bs-nav-pills-link-active-color: black;
   --bs-nav-pills-link-active-bg: transparent; /* Keep the background transparent */
+
+  /* Center the nav pills */
+  display: flex;
+  justify-content: center;
 }
 
 .nav-pills .nav-link {
