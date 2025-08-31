@@ -56,7 +56,7 @@ const Careers = () => {
           </div>
         </div>
       </div>
-      <div className="tabsecction">
+      <div className="tab-section">
         <h1>Why Us</h1>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
@@ -399,7 +399,7 @@ const Careers = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="tabsecction" ref={openRolesRef}>
+      <div className="tab-section" ref={openRolesRef}>
         <h1>Open Roles</h1>
         <ul class="nav nav-pills mb-3" id="roles-tab" role="tablist">
           <li class="nav-item" role="presentation">

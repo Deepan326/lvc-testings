@@ -133,7 +133,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="tabsecction">
+      <div className="tab-section">
         <h1>Why Us</h1>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
