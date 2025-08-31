@@ -1,8 +1,7 @@
-import { useEffect, useRef,useState } from "react";
+import { useState } from "react";
 import CarouselComponent from "./carsouel.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style.css";
-import Industries from "./industriesWeServe.js"
 import TransformationStartsHere from "./transformationStartsHere.js";
 import Footer from "./footer.js";
 import Logo from "../assets/lvc-icon.jpg";
@@ -29,28 +28,6 @@ const Home = () => {
 
     ];
 
-  const textRef = useRef(null);
-  const imageRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("fade-out");
-          } else {
-            entry.target.classList.remove("fade-out");
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    if (textRef.current) observer.observe(textRef.current);
-    if (imageRef.current) observer.observe(imageRef.current);
-
-    return () => observer.disconnect();
-  }, []);
   return (
     <main style={{ padding: "20px",marginTop:"50px" }}>
       <div className="carsouelheight">
@@ -109,43 +86,16 @@ const Home = () => {
         </div>
       </div>
  
-      
-      <div className="container py-5 section-4">
-        <div className="row align-items-center">
-          <div className="col-md-6 text-section" ref={textRef}>
-            <h2 className="mb-4 section-4-heading">What We Offer</h2>
-            <h3>Design Development</h3>
-            <p>
-              Whether you're a start-up aiming to establish your digital
-              presence or a growing enterprise seeking to elevate your brand,
-              we’re here to support your journey. You’ve found a partner
-              dedicated to your success, with the expertise to deliver real
-              results.
-            </p>
-            <p>
-              Over the past 5 years, we’ve worked with countless clients,
-              helping them achieve measurable growth and lasting impact.
-            </p>
-            <p>
-              <strong>
-                Results, innovation, and growth are what we strive to bring to
-                every project.
-              </strong>
-            </p>
-          </div>
+      {/* Empty Section */}
+      <section className="container py-5 section-4">
+        <h1>Section</h1>
+      </section>
 
-          <div className="col-md-6 image-section" ref={imageRef}>
-            <img
-              className="d-block w-100 custom-carousel-image"
-              src="https://images.pexels.com/photos/3184428/pexels-photo-3184428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="What We Offer"
-            />
-          </div>
-        </div>
-      </div>
-      <div>
-      <Industries/>
-      </div>
+      {/* Empty Section */}
+      <section style={{ fontSize: "14px",color:"000",fontWeight:"500",background:"white" }}>
+        <h1>Section</h1>
+      </section>
+
       <div className="section-5">
         <h1 style={{textAlign:"start",color:"white"}}>Transform your Goals in to reality </h1>
       </div>

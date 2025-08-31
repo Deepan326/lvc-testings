@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style.css';
@@ -6,6 +6,29 @@ import Industries from "./industriesWeServe.js";
 import TransformationStartsHere from './transformationStartsHere.js';
 import Footer from "./footer.js";
 const Home = () => {
+
+  const textRef = useRef(null);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("fade-out");
+            } else {
+              entry.target.classList.remove("fade-out");
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+  
+      if (textRef.current) observer.observe(textRef.current);
+      if (imageRef.current) observer.observe(imageRef.current);
+  
+      return () => observer.disconnect();
+    }, []);
 
   const [showAllServices, setShowAllServices] = useState(false);
 
@@ -43,6 +66,7 @@ const Home = () => {
             </div>
         </div>
       </div>
+
       <section className="grid-section-services">
         <div className="grid-container-services">
           <div className="grid-item-services">
@@ -57,8 +81,44 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <div className="container py-5 section-4">
+        <div className="row align-items-center">
+          <div className="col-md-6 text-section" ref={textRef}>
+            <h2 className="mb-4 section-4-heading">What We Offer</h2>
+            <h3>Design Development</h3>
+            <p>
+              Whether you're a start-up aiming to establish your digital
+              presence or a growing enterprise seeking to elevate your brand,
+              we’re here to support your journey. You’ve found a partner
+              dedicated to your success, with the expertise to deliver real
+              results.
+            </p>
+            <p>
+              Over the past 5 years, we’ve worked with countless clients,
+              helping them achieve measurable growth and lasting impact.
+            </p>
+            <p>
+              <strong>
+                Results, innovation, and growth are what we strive to bring to
+                every project.
+              </strong>
+            </p>
+          </div>
+
+          <div className="col-md-6 image-section" ref={imageRef}>
+            <img
+              className="d-block w-100 custom-carousel-image"
+              src="https://images.pexels.com/photos/3184428/pexels-photo-3184428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="What We Offer"
+            />
+          </div>
+        </div>
+      </div>
+
       <h1 className="industries-we-serve-title">Industries we serve</h1>
       <Industries />
+
       <div className="container py-5">
         <h1 className="services-herotitle">Services We Offer</h1>
         <div className="row ">
@@ -72,7 +132,6 @@ const Home = () => {
               <div class="gradient-overlay"></div>
             </div>
           ))}
-
           {/* Show additional images only if `showAllServices` is true */}
           {showAllServices &&
             images.slice(6).map((img, index) => (
