@@ -122,7 +122,7 @@ const Insight = () => {
       {/* Insight by Interest Section */}
       <div style={{ backgroundColor: "black" }} className="container py-5">
         <h1
-          style={{ color: "white", textAlign: "start" }}
+          style={{ color: "white", textAlign: "center" }}
           className="services-herotitle"
         >
           Insight by Interest
@@ -168,7 +168,7 @@ const Insight = () => {
 
       {/* Latest News Section */}
       <div className="isight-wrapper">
-        <h1>Updated with Latest news</h1>
+        <h1 style={{ textAlign: "center" }}>Updated with Latest news</h1>
         <div className="latest-news-container">
           {img.map((img) => (
             <div className="swiper-image-container position-relative">
