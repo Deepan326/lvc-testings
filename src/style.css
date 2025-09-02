@@ -39,9 +39,7 @@ body {
 .navbar-collapse {
   background: black;
 }
-.navbar-toggler-icon {
-  background-color: white;
-}
+
 .navbar-nav .nav-link {
   margin-left: 45px;
   color: #f4f4f4;
@@ -70,7 +68,6 @@ body {
   background-color: #000;
 }
 
-
 .navbar-nav .nav-link:not(.dropdown-toggle)::after {
   content: "";
   position: absolute;
@@ -87,8 +84,15 @@ body {
   animation: slide-in 0.3s forwards;
 }
 
-.navbar-nav .dropdown-toggle::after {
-  border-top-color: currentColor;
+.custom-navbar .navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  /* White hamburger using Bootstrap’s SVG data URI */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .dropdown-menu {
