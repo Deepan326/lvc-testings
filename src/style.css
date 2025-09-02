@@ -15,26 +15,38 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensure it's above other content */
-  background-color: #000; /* Optional: set background color */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+  z-index: 1000;
+  /* Ensure it's above other content */
+  background-color: #000;
+  /* Optional: set background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Optional: add shadow */
   position: sticky;
-  --bs-navbar-color: #f4f4f4;
+  /* --bs-navbar-color: #f4f4f4; */
   --bs-navbar-hover-color: #ffffff;
   --bs-navbar-active-color: #ffffff;
   --bs-navbar-brand-color: #ffffff;
 }
 
 .custom-navbar .dropdown-menu {
-  --bs-dropdown-bg: #000;               /* menu background */
-  --bs-dropdown-color: #fff;            /* base text color */
-  --bs-dropdown-border-color: #111;     /* subtle border */
-  --bs-dropdown-link-color: #fff;       /* link text */
-  --bs-dropdown-link-hover-bg: #111;    /* hover background */
-  --bs-dropdown-link-hover-color: #fff; /* hover text */
-  --bs-dropdown-link-active-bg: #1e2222;/* active/click background */
-  --bs-dropdown-link-active-color: #fff;/* active/click text */
-  --bs-dropdown-divider-bg: #222;       /* divider line */
+  --bs-dropdown-bg: #000;
+  /* menu background */
+  --bs-dropdown-color: #fff;
+  /* base text color */
+  --bs-dropdown-border-color: #111;
+  /* subtle border */
+  --bs-dropdown-link-color: #fff;
+  /* link text */
+  --bs-dropdown-link-hover-bg: #111;
+  /* hover background */
+  --bs-dropdown-link-hover-color: #fff;
+  /* hover text */
+  --bs-dropdown-link-active-bg: #1e2222;
+  /* active/click background */
+  --bs-dropdown-link-active-color: #fff;
+  /* active/click text */
+  --bs-dropdown-divider-bg: #222;
+  /* divider line */
 }
 
 .navbar-collapse {
@@ -231,6 +243,7 @@ body {
   border-top: 2px solid white;
   padding-top: 25px;
 }
+
 /*icons */
 /* In your style.css or a separate CSS file */
 .material-icons-section {
@@ -274,6 +287,7 @@ h1 {
   border-bottom: 3px solid #2469bc;
   transform: translateY(-5px);
 }
+
 /* Material icon stylingindustry- */
 .industries-we-serve-icon {
   font-size: 24px;
@@ -537,7 +551,7 @@ p {
   text-align: justify;
 }
 
-.container header h1{
+.container header h1 {
   color: white
 }
 
@@ -867,6 +881,7 @@ p {
   margin-bottom: 2pc;
   width: 75%;
 }
+
 .industries-we-serve-title,
 .insight-do-title {
   color: black;
@@ -901,6 +916,7 @@ p {
 .btn-primary-whatwedo:hover {
   background: #205eaa;
 }
+
 .grid-section-services {
   padding: 50px;
   background-color: #f9f9f9;
@@ -961,11 +977,13 @@ p {
   }
 
   .grid-item-services {
-    margin-bottom: 20px; /* Add spacing between image and text */
+    margin-bottom: 20px;
+    /* Add spacing between image and text */
   }
 
   .grid-item-services img {
-    max-width: 100%; /* Ensure image scales well on smaller screens */
+    max-width: 100%;
+    /* Ensure image scales well on smaller screens */
   }
 }
 
@@ -985,7 +1003,8 @@ p {
 .nav-pills {
   --bs-nav-pills-border-radius: var(--bs-border-radius);
   --bs-nav-pills-link-active-color: black;
-  --bs-nav-pills-link-active-bg: transparent; /* Keep the background transparent */
+  --bs-nav-pills-link-active-bg: transparent;
+  /* Keep the background transparent */
 
   /* Center the nav pills */
   display: flex;
@@ -1508,6 +1527,7 @@ p {
   .swiper-button-prev.swiper-button-disabled {
     opacity: 0;
   }
+
   .grid-item-services.text {
     width: 100%;
   }
@@ -1614,10 +1634,12 @@ p {
 }
 
 .services-section-herobanner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1415&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* You can change this image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1415&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* You can change this image */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* This makes the background image fixed */
+  background-attachment: fixed;
+  /* This makes the background image fixed */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -2185,11 +2207,25 @@ p {
   border: none;
   height: 20px;
   width: 20px;
-  top: 25px;
-  right: 30px;
+  top: 26px;
+  right: 3%;
   padding: 0px;
   background-color: black;
   transition: transform 0.3s ease-in-out
+}
+
+@media (max-width: 991px){
+  .search-bar-button {
+    position: absolute;
+    border: none;
+    height: 20px;
+    width: 20px;
+    top: 26px;
+    right: 7%;
+    padding: 0px;
+    background-color: black;
+    transition: transform 0.3s ease-in-out
+  }
 }
 
 .search-bar-button:hover {
@@ -2216,29 +2252,6 @@ p {
   .navbar-expand-custom .navbar-toggler {
     display: none;
   }
-}
-
-@media (max-width: 1079px) {
-  .navbar-expand-custom .navbar-collapse {
-    flex-basis: 100%;
-  }
-
-  .navbar-expand-custom .navbar-toggler {
-    display: block;
-  }
-
-  .search-bar-button {
-    position: absolute;
-    border: none;
-    height: 20px;
-    width: 20px;
-    top: 25px;
-    right: 70px;
-    padding: 0px;
-    background-color: black;
-    transition: transform 0.3s ease-in-out
-  }
-
 }
 
 
