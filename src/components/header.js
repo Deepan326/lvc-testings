@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/lvc-icon.jpg";
 import search from "../assets/white-search-logo.png";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "../style.css";
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 const handleNavAction = (e) => {
   const Bootstrap = window.bootstrap;
@@ -35,23 +36,39 @@ const toggleNav = () => {
     .toggle();
 };
 
-const Header = () => {
 
+const Header = () => {
   return (
     <header>
-      {/*<nav className="navbar navbar-expand-custom custom-navbar">*/}
+      {/* search bar modal, needs to be up top so it doesn't have any interference when appearing*/}
+      <div className="modal fade" id="search-bar-modal" tabindex="-1" aria-labelledby="searchBarModal" aria-hidden="true">
+        <div className="modal-dialog">
+          <div className="modal-content bg-dark">
+            <div className="modal-body">
+              <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <nav className="navbar navbar-expand-lg custom-navbar">
         <div className="container-fluid">
-          {/* Logo aligned to the left */}
-
 
           <Link to="/" className="navbar-brand" onClick={handleNavAction}>
             <img src={logo} alt="Company Logo" className="logo" />
           </Link>
 
-          <button className="search-bar-button">
+          {/* search bar button that opens search modal */}
+          <button className="search-bar-button"
+            type='button'
+            data-bs-toggle='modal'
+            data-bs-target='#search-bar-modal'>
             <img src={search} alt='search bar' id='search-bar-logo' />
           </button>
+
+
           {/* Navbar toggler for mobile view */}
           <button
             className="navbar-toggler"

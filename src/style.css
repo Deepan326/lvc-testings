@@ -2214,18 +2214,20 @@ p {
   transition: transform 0.3s ease-in-out
 }
 
-@media (max-width: 991px){
+
+@media (max-width: 991px) {
   .search-bar-button {
     position: absolute;
     border: none;
     height: 20px;
     width: 20px;
     top: 26px;
-    right: 7%;
+    right: 4rem;
     padding: 0px;
     background-color: black;
     transition: transform 0.3s ease-in-out
   }
+
 }
 
 .search-bar-button:hover {
@@ -2369,3 +2371,6 @@ p {
 .blogs-page-number {
   font-size: 25px;
 }
+
+
+/* Search bar modal */
