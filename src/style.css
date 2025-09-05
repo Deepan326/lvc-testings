@@ -2214,6 +2214,27 @@ p {
   transition: transform 0.3s ease-in-out
 }
 
+.modal-dialog {
+  min-width: 100% !important;
+  height: 200px;
+  margin: 0px;
+}
+
+#modal-content-holder {
+  height: 150px;
+  max-width: 100%;
+  width:100%;
+  border-top-right-radius: 0%;
+  border-top-left-radius: 0%;
+}
+
+.modal-body {
+  height: 70%;
+}
+
+.search-bar {
+  height: 100%;
+}
 
 @media (max-width: 991px) {
   .search-bar-button {
@@ -2371,6 +2392,3 @@ p {
 .blogs-page-number {
   font-size: 25px;
 }
-
-
-/* Search bar modal */

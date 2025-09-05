@@ -42,11 +42,10 @@ const Header = () => {
     <header>
       {/* search bar modal, needs to be up top so it doesn't have any interference when appearing*/}
       <div className="modal fade" id="search-bar-modal" tabindex="-1" aria-labelledby="searchBarModal" aria-hidden="true">
-        <div className="modal-dialog">
-          <div className="modal-content bg-dark">
+        <div className="modal-dialog custom-width">
+          <div id='modal-content-holder' className="modal-content bg-dark">
             <div className="modal-body">
-              <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-
+              <input className="search-bar form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"></input>
             </div>
           </div>
         </div>
