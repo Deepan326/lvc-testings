@@ -767,6 +767,11 @@ p {
   gap: 1rem;
 }
 
+.footer-section-flex p {
+  font-size: 1.6rem;
+  /* width: 75%; */
+}
+
 .footer-section .Connect-button {
   border-radius: 6.25rem;
   font-size: 1.125rem;
@@ -2215,7 +2220,7 @@ p {
 #modal-content-holder {
   height: 150px;
   max-width: 100%;
-  width:100%;
+  width: 100%;
   border-top-right-radius: 0%;
   border-top-left-radius: 0%;
 }
