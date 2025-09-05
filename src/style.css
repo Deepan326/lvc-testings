@@ -87,9 +87,12 @@ body {
   height: auto;
   cursor: pointer;
 }
+.logo:hover{
+  border-bottom: 2.4px solid #68457c;
+}
 
 .navbar {
-  height: 80px;
+  height: 100px;
   background-color: #000;
 }
 
