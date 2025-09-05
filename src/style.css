@@ -53,16 +53,6 @@ body {
   background: black;
 }
 
-/*
-.navbar-toggler-icon {
-  background-color: black;
-  filter: invert(100%)
-} */
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
 
 .navbar-nav .nav-link {
   margin-left: 45px;
@@ -76,11 +66,7 @@ body {
   z-index: 2;
 }
 
-/* .navbar-brand{
-    color: #f4f4f4;
-    text-decoration: none;
 
-} */
 .logo {
   width: 4rem;
   margin-left: 16px;
@@ -92,7 +78,6 @@ body {
   height: 80px;
   background-color: #000;
 }
-
 
 .navbar-nav .nav-link:not(.dropdown-toggle)::after {
   content: "";
@@ -110,8 +95,15 @@ body {
   animation: slide-in 0.3s forwards;
 }
 
-.navbar-nav .dropdown-toggle::after {
-  border-top-color: currentColor;
+.custom-navbar .navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  /* White hamburger using Bootstrap’s SVG data URI */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .dropdown-menu {
