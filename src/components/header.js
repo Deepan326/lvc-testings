@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/lvc-icon.jpg";
+import search from "../assets/white-search-logo.png";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../style.css";
 
 const handleNavAction = (e) => {
@@ -34,9 +36,10 @@ const toggleNav = () => {
 };
 
 const Header = () => {
-  
+
   return (
     <header>
+      {/*<nav className="navbar navbar-expand-custom custom-navbar">*/}
       <nav className="navbar navbar-expand-lg custom-navbar">
         <div className="container-fluid">
           {/* Logo aligned to the left */}
@@ -46,16 +49,22 @@ const Header = () => {
             <img src={logo} alt="Company Logo" className="logo" />
           </Link>
 
-
+          <button className="search-bar-button">
+            <img src={search} alt='search bar' id='search-bar-logo' />
+          </button>
           {/* Navbar toggler for mobile view */}
           <button
             className="navbar-toggler"
             type="button"
+            // data-bs-toggle="collapse"
+            // data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
             onClick={toggleNav}
           >
+            {/* <span className="navbar-dark navbar-toggler-icon"></span> */}
+
             <span className="navbar-toggler-icon"></span>
           </button>
 
@@ -115,6 +124,7 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
+
           </div>
         </div>
       </nav>
