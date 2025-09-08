@@ -56,44 +56,6 @@ const Home = () => {
             <img src={SpotLogo} alt="Partner Logo" className="partner-logo" />
           </div>
       </section>
-
-      <div className="section-5">
-        <h1 style={{ textAlign:"center", color:"white" }}>Transform your Goals into reality </h1>
-      </div>
-      <div className="container py-5">
-        <div className="row">
-          <div className="col-md-4 position-relative image-container">
-            <img
-              className="w-100 custom-image"
-              src="https://images.pexels.com/photos/7947968/pexels-photo-7947968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Reveal Goals"
-            />
-            <div className="overlay-text">
-              <h2>Identify goals</h2>
-            </div>
-          </div>
-          <div className="col-md-4 position-relative image-container">
-            <img
-              className="w-100 custom-image"
-              src="https://images.pexels.com/photos/7414305/pexels-photo-7414305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Reveal Goals"
-            />
-            <div className="overlay-text">
-              <h2>Design & Planning</h2>
-            </div>
-          </div>
-          <div className="col-md-4 position-relative image-container">
-            <img
-              className="w-100 custom-image"
-              src="https://images.pexels.com/photos/4226122/pexels-photo-4226122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Reveal Goals"
-            />
-            <div className="overlay-text">
-              <h2>Execution & Reveal</h2>
-            </div>
-          </div>
-        </div>
-      </div>
       <TransformationStartsHere/>
       <Footer/>
     </main>
