@@ -118,45 +118,6 @@ const Home = () => {
       </div>
 
 
-      <h1 className="industries-we-serve-title">Industries we serve</h1>
-      <Industries />
-
-
-      <div className="container py-5">
-        <h1 className="services-herotitle">Services We Offer</h1>
-        <div className="row ">
-          {/* Show first 4 images */}
-          {images.slice(0, 6).map((img, index) => (
-            <div key={index} className="col-md-4 position-relative image-container ">
-              <img className="w-100 custom-image" src={img.src} alt={img.alt} />
-              <div className="overlay-text">
-                <h2 className="industries-we-serve-title-text">{img.title}</h2>
-              </div>
-              <div class="gradient-overlay"></div>
-            </div>
-          ))}
-          {/* Show additional images only if `showAllServices` is true */}
-          {showAllServices &&
-            images.slice(6).map((img, index) => (
-              <div key={index} className="col-md-4 position-relative image-container">
-                <img className="w-100 custom-image" src={img.src} alt={img.alt} />
-                <div className="overlay-text">
-                  <h2>{img.title}</h2>
-                </div>
-                <div class="gradient-overlay"></div>
-              </div>
-            ))}
-        </div>
-
-        {/* Toggle Button */}
-        <div className="text-center mt-4">
-          <button className="view-more-btn" onClick={toggleServices}>
-            {showAllServices ? "Show Less" : "View More "}
-          </button>
-        </div>
-      </div>
-
-
       <div className="section-5">
         <h1 style={{ textAlign:"center", color:"white" }}>Transform your Goals into reality </h1>
       </div>
@@ -192,6 +153,45 @@ const Home = () => {
               <h2>Execution & Reveal</h2>
             </div>
           </div>
+        </div>
+      </div>
+
+
+      <h1 className="industries-we-serve-title">Industries we serve</h1>
+      <Industries />
+
+
+      <div className="container py-5">
+        <h1 className="services-herotitle">Services We Offer</h1>
+        <div className="row ">
+          {/* Show first 4 images */}
+          {images.slice(0, 6).map((img, index) => (
+            <div key={index} className="col-md-4 position-relative image-container ">
+              <img className="w-100 custom-image" src={img.src} alt={img.alt} />
+              <div className="overlay-text">
+                <h2 className="industries-we-serve-title-text">{img.title}</h2>
+              </div>
+              <div class="gradient-overlay"></div>
+            </div>
+          ))}
+          {/* Show additional images only if `showAllServices` is true */}
+          {showAllServices &&
+            images.slice(6).map((img, index) => (
+              <div key={index} className="col-md-4 position-relative image-container">
+                <img className="w-100 custom-image" src={img.src} alt={img.alt} />
+                <div className="overlay-text">
+                  <h2>{img.title}</h2>
+                </div>
+                <div class="gradient-overlay"></div>
+              </div>
+            ))}
+        </div>
+
+        {/* Toggle Button */}
+        <div className="text-center mt-4">
+          <button className="view-more-btn" onClick={toggleServices}>
+            {showAllServices ? "Show Less" : "View More "}
+          </button>
         </div>
       </div>
 
