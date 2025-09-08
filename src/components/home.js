@@ -7,6 +7,7 @@ import Footer from "./footer.js";
 import Logo from "../assets/lvc-icon.jpg";
 import SpotLogo from "../assets/lvcSpo.jpg";
 import AcaLogo from "../assets/lvcAca.jpg";
+import FairJob from "../assets/jobSearch.jpg";
 
 const Home = () => {
 
@@ -16,12 +17,10 @@ const Home = () => {
         <CarouselComponent />
       </div>
       <div className="section2">
-        <h1>LVC ECOSYSTEM</h1>
+        <h1>Fair Job Portal</h1>
         <div className="partner-logos-container">
           <div className="partner-logos">
-            <img src={SpotLogo} alt="Partner Logo" className="partner-logo" />
-            <img src={Logo} alt="Partner Logo" className="partner-logo" />
-            <img src={AcaLogo} alt="Partner Logo" className="partner-logo" />
+            <img src={FairJob} alt="Fair Job" className="partner-logo" />
           </div>
         </div>
       </div>
@@ -35,17 +34,27 @@ const Home = () => {
       </div> */}
 
       <section style={{ backgroundColor:"white" }} className="py-5">
-          <h1 style={{color:"black",}}>Section</h1>
+          <h1 style={{color:"black",}}>Smart HR Scheduler</h1>
+      </section>  
+
+      <section style={{ backgroundColor:"white" }} className="py-5">
+          <h1 style={{color:"black",}}>Founder's Project</h1>
       </section>
  
       {/* Empty Section */}
       <section className="container py-5 section-4">
-        <h1 style={{color:"white"}}>Section</h1>
+        <h1 style={{color:"white"}}>LVC Academy</h1>
+        <div className="partner-logos">
+            <img src={AcaLogo} alt="Partner Logo" className="partner-logo" />
+          </div>
       </section>
 
       {/* Empty Section */}
       <section style={{ fontSize: "14px", color:"000", fontWeight:"500", background:"white" }} className="py-5">
-        <h1 style={{color:"black"}}>Section</h1>
+        <h1 style={{color:"black"}}>LVC Spotlight Media</h1>
+        <div className="partner-logos">
+            <img src={SpotLogo} alt="Partner Logo" className="partner-logo" />
+          </div>
       </section>
 
       <div className="section-5">
