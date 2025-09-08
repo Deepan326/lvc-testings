@@ -26,6 +26,8 @@ body {
   --bs-navbar-hover-color: #ffffff;
   --bs-navbar-active-color: #ffffff;
   --bs-navbar-brand-color: #ffffff;
+  --bs-navbar-toggler-border-color: transparent;
+  --bs-navbar-toggler-focus-width: 0;
 }
 
 .custom-navbar .dropdown-menu {
@@ -53,20 +55,12 @@ body {
   background: black;
 }
 
-<<<<<<< HEAD
-/*
-.navbar-toggler-icon {
-  background-color: black;
-  filter: invert(100%)
+
+/* .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 } */
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
 
-
-=======
->>>>>>> 351d1d3 (Navbar burger dropdown css changes. White background removed, burger white, and border removed onClick.)
 .navbar-nav .nav-link {
   margin-left: 45px;
   color: #f4f4f4;
