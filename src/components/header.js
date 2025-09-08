@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/lvc-icon.jpg";
+import logo from "../assets/lvc-icon-transparent.png";
 import search from "../assets/white-search-logo.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style.css";
@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <header>
       {/*<nav className="navbar navbar-expand-custom custom-navbar">*/}
-      <nav className="navbar navbar-expand-lg custom-navbar">
+      <nav className="navbar navbar-expand-lg custom-navbar sticky-top">
         <div className="container-fluid">
           {/* Logo aligned to the left */}
 
