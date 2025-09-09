@@ -785,7 +785,11 @@ p {
 }
 
 .footer-section-flex h2 {
-  font-size: 5rem;
+  font-size: 3rem;
+}
+
+.footer-section-flex p {
+  font-size: 20px;
 }
 
 .footer-section-flex-column {
