@@ -7,8 +7,13 @@ import TransformationStartsHere from './transformationStartsHere.js';
 import Footer from "./footer.js";
 const Home = () => {
 
+  // Select section "What We Offer"
   const textRef = useRef(null);
   const imageRef = useRef(null);
+
+  // Select section "Transform your Goals into reality"
+  const textRef2 = useRef(null);
+  const imageRef2 = useRef(null);
 
   useEffect(() => {
       const observer = new IntersectionObserver(
@@ -26,6 +31,9 @@ const Home = () => {
   
       if (textRef.current) observer.observe(textRef.current);
       if (imageRef.current) observer.observe(imageRef.current);
+
+      if (textRef2.current) observer.observe(textRef2.current);
+      if (imageRef2.current) observer.observe(imageRef2.current);
   
       return () => observer.disconnect();
     }, []);
@@ -118,10 +126,10 @@ const Home = () => {
       </div>
 
 
-      <div className="section-5">
+      <div className="section-5 text-section" ref={textRef2}>
         <h1 style={{ textAlign:"center", color:"white" }}>Transform your Goals into reality</h1>
       </div>
-      <div className="container py-5">
+      <div className="container py-5 image-section" ref={imageRef2}>
         <div className="row">
           <div className="col-md-4 position-relative image-container">
             <img
