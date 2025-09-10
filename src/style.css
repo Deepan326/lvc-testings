@@ -15,9 +15,9 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  /* z-index: 1000; */
   /* Ensure it's above other content */
-  background-color: black!important;
+  background-color: black !important;
   /* Optional: set background color */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   /* Optional: add shadow */
@@ -25,7 +25,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1100;
+  /* z-index: 1100; */
   /* --bs-navbar-color: #f4f4f4; */
   --bs-navbar-hover-color: #ffffff;
   --bs-navbar-active-color: #ffffff;
@@ -64,7 +64,8 @@ body {
 .custom-navbar .navbar-toggler-icon {
   background-color: transparent !important;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-  filter: none !important; /* ensure no inversion is applied */
+  filter: none !important;
+  /* ensure no inversion is applied */
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
@@ -2238,6 +2239,7 @@ p {
   min-width: 100% !important;
   height: 200px;
   margin: 0px;
+  z-index: 3000;
 }
 
 #modal-content-holder {
@@ -2411,4 +2413,41 @@ p {
 
 .blogs-page-number {
   font-size: 25px;
+}
+
+
+/* social media footer container */
+
+.social-media-container-footer {
+  height: 100px;
+  width: 80%;
+  border-bottom: solid 1px #ffffff;
+  margin: 80px auto;
+  padding-bottom: 85px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .social-media-imgs {
+  background-color: transparent !important;
+  filter: invert(100%);
+} */
+
+.twitter-media-imgs {
+  width: 9rem;
+  height: 9rem;
+}
+
+.instagram-media-imgs {
+  filter: invert(100%);
+  height: 9rem;
+  width: 9rem;
+}
+
+.linkedIn-media-imgs {
+  filter: invert(100%);
+  height: 6rem;
+  width: 6rem;
 }
