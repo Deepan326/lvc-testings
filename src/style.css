@@ -87,13 +87,11 @@ body {
   z-index: 2;
 }
 
-/* .navbar-brand{
-    color: #f4f4f4;
-    text-decoration: none;
-
-} */
+.navbar-brand{
+    margin-right: 1rem !important
+}
 .logo {
-  width: 4rem;
+  width: 7rem;
   margin-left: 16px;
   height: auto;
   cursor: pointer;
@@ -2387,4 +2385,47 @@ p {
 
 .blogs-page-number {
   font-size: 25px;
+}
+
+/* Fair Job Portal section */
+.fairjob-section {
+  border-top: 2px solid #ffffff;
+  padding-top: 25px;
+  color: #fff;
+}
+
+.fairjob-right { 
+  text-align: center;
+  align-items: center;
+
+}
+
+.fairjob-title {
+  color: #fff; /* override global h1 color on dark bg */
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
+
+.fairjob-list {
+  margin-top: 3rem;
+  padding-left: 1.25rem; /* normal bullets */
+  color: #e8e8e8;
+  line-height: 1.7;
+  font-weight: 400;
+  font-size:larger;
+}
+
+.fairjob-list li + li {
+  margin-top: 0.5rem;
+}
+.fairjob-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fairjob-btn {
+  /* feel free to change to .btn-primary if you prefer a filled button */
+  border-color: #fff;
 }
