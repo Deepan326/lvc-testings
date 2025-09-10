@@ -12,14 +12,15 @@ import Careers from './components/careers';
 import BlogPage from './components/blog';
 
 import ProductsPage from './components/products';
+import BlogArticle from './components/blogPost';
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 function App() {
   return (
     <Router>
-        <Header/>
+      <Header />
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,7 +31,8 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/blog" element={<BlogPage />} />
-          {/* <Route path="/about" element={<About />} />
+          <Route path='/blog/:blogId' element={<BlogArticle />} />
+            {/* <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} /> */}
           <Route path="/products" element={<ProductsPage />} />
         </Routes>

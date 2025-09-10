@@ -1,6 +1,7 @@
 import Footer from './footer'
 import '../style.css'
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 function BlogPage() {
   // example blog posts
@@ -219,10 +220,12 @@ function BlogPage() {
         <div className='blog-posts-container'>
           {posts.slice(offset, offset + 6).map((post) => (
             <article key={post.id} className="blog-posts">
-              <img className='blog-posts-imgs' src={images[post.id - 1].src} alt={images[post.id - 1].alt} />
-              <h2>{post.title}</h2>
-              <small>{post.date}</small>
-              <p>{post.content}</p>
+              <Link style={{textDecoration:'none', color:'black'}} to={'/blog/' + post.id} state={{ post, image: images[post.id - 1] }}>
+                <img className='blog-posts-imgs' src={images[post.id - 1].src} alt={images[post.id - 1].alt} />
+                <h2>{post.title}</h2>
+                <small>{post.date}</small>
+                <p>{post.content}</p>
+              </Link>
             </article>
           ))}
         </div>

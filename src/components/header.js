@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../assets/lvc-icon-transparent.png";
 import search from "../assets/white-search-logo.png";
 import "../style.css";
+import { useState } from "react";
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
@@ -37,15 +38,27 @@ const toggleNav = () => {
 };
 
 
+
+
 const Header = () => {
+  const [res, setRes] = useState('')
+
+  const searchBarVals = (e) => {
+    setRes(e.target.value)
+  }
+
+  console.log(res)
   return (
     <header>
       {/* search bar modal, needs to be up top so it doesn't have any interference when appearing*/}
-      <div className="modal fade" id="search-bar-modal" tabindex="-1" aria-labelledby="searchBarModal" aria-hidden="true">
+      <div className="modal fade" id="search-bar-modal" tabIndex="-1" aria-labelledby="searchBarModal" aria-hidden="true">
         <div className="modal-dialog custom-width">
           <div id='modal-content-holder' className="modal-content bg-dark">
             <div className="modal-body">
-              <input className="search-bar form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"></input>
+              <input className="search-bar form-control mr-sm-2" type="text" value={res} onChange={searchBarVals} placeholder="Search" aria-label="Search"></input>
+            </div>
+            <div className='search-dropdown'>
+              Data
             </div>
           </div>
         </div>

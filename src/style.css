@@ -2335,6 +2335,7 @@ p {
   padding: 0px 5px;
   width: 30%;
   transition: .3s;
+  cursor: pointer;
 }
 
 .blog-posts-imgs {
