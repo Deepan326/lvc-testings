@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/lvc-icon.jpg";
+import logo from "../assets/lvc-icon-transparent.png";
 import search from "../assets/white-search-logo.png";
 import "../style.css";
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -52,7 +52,7 @@ const Header = () => {
       </div>
 
 
-      <nav className="navbar navbar-expand-lg custom-navbar">
+      <nav className="navbar navbar-expand-lg custom-navbar  sticky-top">
         <div className="container-fluid">
 
           <Link to="/" className="navbar-brand" onClick={handleNavAction}>
