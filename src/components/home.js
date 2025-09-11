@@ -37,10 +37,47 @@ const Home = () => {
       <section style={{ backgroundColor:"white" }} className="py-5">
           <h1 style={{color:"black",}}>Section</h1>
       </section>
- 
-      {/* Empty Section */}
+
+      {/* LVC Academy info */}
       <section className="container py-5 section-4">
-        <h1 style={{color:"white"}}>Section</h1>
+        <h1 style={{ color: 'white' }}>
+          LVC Academy - Future-Ready Tech Bootcamps
+        </h1>
+        <h2
+          style={{
+            textAlign: 'center',
+            color: 'white',
+            fontSize: '20px',
+            fontWeight: '400',
+          }}
+        >
+          Master the skills that matter in today&apos;s world -
+          <span style={{ color: 'white', fontWeight: '600' }}>
+            {' '}
+            AI, Machine Learning, Data Science, and Full Stack Development.{' '}
+          </span>
+          Our bootcamps combine{' '}
+          <span style={{ color: 'white', fontWeight: '600' }}>
+            {' '}
+            70% hands-on learning with 30% theory,{' '}
+          </span>
+          designed to make you
+          <span style={{ color: 'white', fontWeight: '600' }}>
+            {' '}
+            career-ready within 6 to 12 months.
+          </span>
+          </h2>
+          <div style={{ textAlign: 'center', marginTop: '20px' }}>
+          👉
+          <span
+            style={{ color: 'white', fontStyle: 'italic', fontWeight: '400' }}
+          >
+            Learn. Shadow. Practice. Get Hired
+          </span>
+          </div>
+        <div className="partner-logos">
+          <img src={AcaLogo} alt="Partner Logo" className="partner-logo" />
+        </div>
       </section>
 
       {/* Empty Section */}
