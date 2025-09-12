@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/lvc-icon-transparent.png";
+import logo from "../assets/lvc-icon-removebg-preview.png";
 import search from "../assets/white-search-logo.png";
 import search2 from "../assets/Search-logo-no-background.png"
 import "../style.css";
