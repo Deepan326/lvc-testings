@@ -100,7 +100,6 @@ const Header = () => {
     setRes(e.target.value)
   }
 
-  console.log(res)
   return (
     <header>
       {/* search bar modal, needs to be up top so it doesn't have any interference when appearing*/}
@@ -131,7 +130,6 @@ const Header = () => {
                             Found in the {data.location}
                           </p>
                         </div>
-
                       </Link>
                     )
                   })}
@@ -170,8 +168,6 @@ const Header = () => {
             aria-label="Toggle navigation"
             onClick={toggleNav}
           >
-            {/* <span className="navbar-dark navbar-toggler-icon"></span> */}
-
             <span className="navbar-toggler-icon"></span>
           </button>
 
