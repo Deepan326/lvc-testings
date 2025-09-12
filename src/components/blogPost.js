@@ -5,8 +5,6 @@ function BlogArticle() {
     const location = useLocation()
     const { post, image } = location.state || {}
 
-    console.log(post, image)
-
     return (
         <div>
             {post ? (

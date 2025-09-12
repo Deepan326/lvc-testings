@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/lvc-icon-transparent.png";
 import search from "../assets/white-search-logo.png";
+import search2 from "../assets/Search-logo-no-background.png"
 import "../style.css";
 import { useState } from "react";
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -37,6 +38,58 @@ const toggleNav = () => {
     .toggle();
 };
 
+const searchData = [
+  {
+    name: 'Who We Are',
+    link: '/about',
+    location: "Who We Are page"
+  },
+  {
+    name: 'Insights',
+    link: '/insights',
+    location: 'Insights page'
+  },
+  {
+    name: 'Blog',
+    link: '/blog',
+    location: 'Blog page'
+  },
+  {
+    name: 'Projects',
+    link: '/projects',
+    location: 'Projects page'
+  },
+  {
+    name: 'Services',
+    link: '/services',
+    location: 'Services page'
+  }, {
+    name: 'Products',
+    link: '/products',
+    location: "Products page"
+  },
+  {
+    name: 'Careers',
+    link: '/careers',
+    location: 'Careers page'
+  },
+  {
+    name: 'Contact Us',
+    link: '/contact',
+    location: 'Contact Us page'
+  },
+  {
+    name: 'Projects',
+    link: '/projects',
+    location: 'Projects page'
+  },
+  {
+    name: 'Services',
+    link: '/services',
+    location: 'Services page'
+  },
+]
+
 
 
 
@@ -55,12 +108,37 @@ const Header = () => {
         <div className="modal-dialog custom-width">
           <div id='modal-content-holder' className="modal-content bg-dark">
             <div className="modal-body">
-              <input className="search-bar form-control mr-sm-2" type="text" value={res} onChange={searchBarVals} placeholder="Search" aria-label="Search"></input>
-            </div>
-            <div className='search-dropdown'>
-              Data
+              <div className="search-bar-container">
+                <img className='img-in-search-bar' alt='interactive search logo' src={search2} />
+                <input className="search-bar form-control mr-sm-2" type="text" value={res} onChange={searchBarVals} placeholder="Search" aria-label="Search" />
+              </div>
+              {/* search bars suggestions when user types, filters for characters used in res useState */}
+              <div className='search-dropdown'>
+                {searchData
+                  .filter(data => {
+                    let searchTerm = res.toLowerCase()
+                    let title = data.name.toLowerCase()
+                    return searchTerm && title.startsWith(searchTerm)
+                  })
+                  .map(data => {
+                    return (
+                      <Link className="suggested-search-link" to={data.link} onClick={() => setRes('')}>
+                        <div data-bs-dismiss='modal' className='suggested-search-dropdown' style={{ paddingLeft: '50px' }}>
+                          {data.name}
+                        </div>
+                        <div data-bs-dismiss='modal' className='suggested-search-dropdown' style={{ textAlign: 'left' }}>
+                          <p style={{ color: 'rgba(74, 74, 74, 1)', margin: '0px' }}>
+                            Found in the {data.location}
+                          </p>
+                        </div>
+
+                      </Link>
+                    )
+                  })}
+              </div>
             </div>
           </div>
+
         </div>
       </div>
 
