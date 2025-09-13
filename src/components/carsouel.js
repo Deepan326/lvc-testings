@@ -1,6 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import "../style.css";
-import softwareSolutions from "../assets/development.mp4";
+// import softwareSolutions from "../assets/development.mp4";
 
 function UncontrolledExample() {
   const styles = {
