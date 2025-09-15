@@ -2571,3 +2571,31 @@ p {
   /* feel free to change to .btn-primary if you prefer a filled button */
   border-color: #fff;
 }
+
+
+
+/* carousel spotlight media home page */
+
+.spotlight-carousel-items-container {
+  position: absolute;
+  width: 80%;
+  height: 90%;
+  left: 10%;
+  top: 35px;
+}
+
+.spotlight-carousel-services{
+  height: auto;
+  margin-top: 50px;
+}
+
+.spotlight-slide2-cards{
+  height: 13rem;
+  color: black
+}
+
+.spotlight-slide2-bulletpoints{
+  font-size: x-large;
+  text-align: start;
+  padding: 8px;
+}

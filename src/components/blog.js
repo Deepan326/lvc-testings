@@ -187,7 +187,7 @@ function BlogPage() {
   let maxPages = Math.ceil(posts.length / 6)
   let offset = (pageNumber - 1) * 6
 
-  // console.log(pageNumber)
+  // console.log(pageNumbernpm )
 
   //load different pages
   function pages(arrow) {
