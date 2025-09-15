@@ -1426,8 +1426,25 @@ p {
 
 /* Responsive Design for Mobile (320px to 425px) */
 @media (min-width: 320px) and (max-width: 426px) {
+  .industries-we-serve-title {
+    padding: 0;
+  }
+
   .industries-item {
     flex: 1 1 calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .industries-item h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .industries-we-serve-icon {
+    margin: 0;
   }
 
   .footer-section {
@@ -1443,8 +1460,12 @@ p {
 
   .footer-section-flex h2 {
     font-size: 2rem;
-    text-align: start;
+    text-align: center;
     margin-bottom: 1rem;
+  }
+
+  .footer-section-flex p {
+    text-align: center;
   }
 
   .footer-section-flex-column {
@@ -1462,7 +1483,9 @@ p {
   }
 
   .divider {
-    display: none;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
   }
 
   .main {
