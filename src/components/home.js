@@ -1,17 +1,16 @@
-import { useState } from "react";
-import CarouselComponent from "./carsouel.js";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../style.css";
-import TransformationStartsHere from "./transformationStartsHere.js";
-import Footer from "./footer.js";
-import Logo from "../assets/lvc-icon.jpg";
-import SpotLogo from "../assets/lvcSpo.jpg";
-import AcaLogo from "../assets/lvcAca.jpg";
+import { useState } from 'react';
+import CarouselComponent from './carsouel.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style.css';
+import TransformationStartsHere from './transformationStartsHere.js';
+import Footer from './footer.js';
+import Logo from '../assets/lvc-icon.jpg';
+import SpotLogo from '../assets/lvcSpo.jpg';
+import AcaLogo from '../assets/lvcAca.jpg';
 
 const Home = () => {
-
   return (
-    <main style={{ padding: "20px",marginTop:"50px" }}>
+    <main style={{ padding: '20px', marginTop: '50px' }}>
       <div className="carsouelheight">
         <CarouselComponent />
       </div>
@@ -34,8 +33,8 @@ const Home = () => {
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" className="company-logo" />
       </div> */}
 
-      <section style={{ backgroundColor:"white" }} className="py-5">
-          <h1 style={{color:"black",}}>Section</h1>
+      <section style={{ backgroundColor: 'white' }} className="py-5">
+        <h1 style={{ color: 'black' }}>Section</h1>
       </section>
 
       {/* LVC Academy info */}
@@ -51,42 +50,131 @@ const Home = () => {
             fontWeight: '400',
           }}
         >
-          Master the skills that matter in today&apos;s world -
-          <span style={{ color: 'white', fontWeight: '600' }}>
-            {' '}
+          Master the skills that matter in today&apos;s world -{' '}
+          <strong>
             AI, Machine Learning, Data Science, and Full Stack Development.{' '}
-          </span>
+          </strong>{' '}
           Our bootcamps combine{' '}
-          <span style={{ color: 'white', fontWeight: '600' }}>
-            {' '}
-            70% hands-on learning with 30% theory,{' '}
-          </span>
-          designed to make you
-          <span style={{ color: 'white', fontWeight: '600' }}>
-            {' '}
-            career-ready within 6 to 12 months.
-          </span>
-          </h2>
-          <div style={{ textAlign: 'center', marginTop: '20px' }}>
+          <strong>70% hands-on learning with 30% theory, </strong>
+          designed to make you{' '}
+          <strong>career-ready within 6 to 12 months.</strong>
+        </h2>
+        <div style={{ textAlign: 'center', marginTop: '20px' }}>
           👉
           <span
             style={{ color: 'white', fontStyle: 'italic', fontWeight: '400' }}
           >
             Learn. Shadow. Practice. Get Hired
           </span>
-          </div>
+        </div>
         <div className="partner-logos">
           <img src={AcaLogo} alt="Partner Logo" className="partner-logo" />
+        </div>
+        <div
+          className="highlight-cards-container"
+          style={{
+            display: 'flex',
+            gap: '2rem',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+          }}
+        >
+          <div
+            className="difference-card"
+            style={{ flex: '1 1 300px', maxWidth: '400px' }}
+          >
+            <div className="card-content">
+              <h3>Fast-Track 6-Month Bootcamps</h3>
+              <ul>
+                <li>
+                  ⚡For students & professionals who want to{' '}
+                  <strong>upskill quickly</strong>
+                </li>
+                <li>Covers all core modules + real projects + shadowing</li>
+                <li>
+                  Get <strong>job-ready in half a year</strong>
+                </li>
+              </ul>
+              <span className="learn-more">Learn More</span>
+            </div>
+          </div>
+          <div
+            className="difference-card"
+            style={{ flex: '1 1 300px', maxWidth: '400px' }}
+          >
+            <div className="card-content">
+              <h3>Comprehensive 12-Month Bootcamps</h3>
+              <ul>
+                <li>🏆 Deeper curriculum with advanced specializations</li>
+                <li>
+                  Extended <strong>shadowing + capstone projects</strong>
+                </li>
+                <li>
+                  Ideal for those seeking{' '}
+                  <strong>global career opportunities</strong>
+                </li>
+              </ul>
+              <span className="learn-more">Learn More</span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="lvc-difference-section"
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: '40px',
+            maxWidth: '600px',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}
+        >
+          <div className="difference-card">
+            <h3
+              style={{ color: 'white', textAlign: 'center', marginTop: '20px' }}
+            >
+              Why Choose LVC Academy?
+            </h3>
+            <div className="card-content">
+              <ul>
+                <li>
+                  ✅ <strong>Shadowing Opportunities →</strong> Learn directly by observing professionals
+                </li>
+                <li>
+                  ✅ <strong>Hands-On First →</strong> 70% real projects, not just lectures
+                </li>
+                <li>
+                  ✅ <strong>Career-Ready Pathways →</strong> Resume prep, mock interviews, recruiter connects
+                </li>
+                <li>
+                  ✅ <strong>Flexible Durations →</strong> 6-month fast-track OR 12-month comprehensive
+                </li>
+                <li>
+                  ✅ <strong>Global Recognition →</strong> Certificates trusted by employers
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Empty Section */}
-      <section style={{ fontSize: "14px", color:"000", fontWeight:"500", background:"white" }} className="py-5">
-        <h1 style={{color:"black"}}>Section</h1>
+      <section
+        style={{
+          fontSize: '14px',
+          color: '000',
+          fontWeight: '500',
+          background: 'white',
+        }}
+        className="py-5"
+      >
+        <h1 style={{ color: 'black' }}>Section</h1>
       </section>
 
       <div className="section-5">
-        <h1 style={{ textAlign:"center", color:"white" }}>Transform your Goals into reality </h1>
+        <h1 style={{ textAlign: 'center', color: 'white' }}>
+          Transform your Goals into reality{' '}
+        </h1>
       </div>
       <div className="container py-5">
         <div className="row">
@@ -122,8 +210,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <TransformationStartsHere/>
-      <Footer/>
+      <TransformationStartsHere />
+      <Footer />
     </main>
   );
 };
