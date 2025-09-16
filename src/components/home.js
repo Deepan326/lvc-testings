@@ -99,7 +99,8 @@ const Home = () => {
       </section>
       <TransformationStartsHere/>
       <Footer/>
-    </main>
+      </main>
+    </>
   );
 };
 
