@@ -1088,7 +1088,7 @@ p {
 
 @media (max-width: 1024px) {
   .tab-paragraph-width {
-    width: 30%;
+    width: 100%;
   }
 }
 
