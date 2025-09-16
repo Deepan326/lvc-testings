@@ -1066,6 +1066,11 @@ p {
   border-bottom: 1 1px solid #007bff;
 }
 
+.tab-content {
+  display: flex;
+  justify-content: center;
+}
+
 .tab-content-wrapper {
   display: flex;
   flex-direction: column;
@@ -1074,7 +1079,7 @@ p {
   margin-top: 20px;
   justify-content: space-evenly;
   padding: 1rem;
-  width: 100%;
+  max-width: 900px;
 }
 
 .tab-paragraph-width {
