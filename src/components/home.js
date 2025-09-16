@@ -148,8 +148,11 @@ const Home = () => {
           className="py-5"
         >
           <h1 style={{ color: "black" }}>LVC Spotlight Media</h1>
-          <div className="partner-logos">
+          <div className="spotlight-carousel-container">
             <SpotLightCarousel />
+          </div>
+          <div style={{textAlign:'center'}}>
+            <p style={{fontSize:'25px', color:'black'}}>As Seen In → Forbes | Entrepreneur | Yahoo | TechCrunch | Medium</p>
           </div>
         </section>
 

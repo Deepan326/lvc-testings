@@ -2576,26 +2576,130 @@ p {
 
 /* carousel spotlight media home page */
 
+.spotlight-carousel-container {
+  width: 85%;
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gradient-background-color {
+  background: radial-gradient(circle at 50% 50%,
+      /* Position the glow at the center */
+      rgba(255, 255, 255, 0.08) 0%,
+      /* The bright, glowing center */
+      rgba(26, 26, 26, 0.9) 75%,
+      /* Gradually transition to a dark grey */
+      #000000 90%
+      /* Fade to a solid black at the edges */
+    );
+  text-align: center;
+  width: 100%;
+  max-height: 40vmax;
+}
+
 .spotlight-carousel-items-container {
-  position: absolute;
+  /* position: absolute; */
+  overflow: auto;
+  padding: 0px 20px;
+  /* margin-bottom: 20px; */
   width: 80%;
-  height: 90%;
+  max-height: 65%;
   left: 10%;
-  top: 35px;
+  top: 2vw;
+  -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
 }
 
-.spotlight-carousel-services{
-  height: auto;
-  margin-top: 50px;
+.spotlight-carousel-services {
+  max-height: 80%;
+  /* padding: 20px 20px; */
+  margin-top: clamp(0rem, 2vw, 4rem);
 }
 
-.spotlight-slide2-cards{
-  height: 13rem;
-  color: black
+.spotlight-slide2-cards {
+  height: 80%;
+  color: black;
+  padding-bottom: 3vmax;
 }
 
-.spotlight-slide2-bulletpoints{
-  font-size: x-large;
+.spotlight-slide2-bulletpoints {
+  font-size: clamp(20px, 1vmax, 40px);
   text-align: start;
   padding: 8px;
+}
+
+.spotlight-slide2-grid {
+  height: auto;
+  width: clamp(20vmax, auto, 2000vmax);
+  border: .3vmax solid black;
+  color: black;
+  background-color: white;
+  margin-bottom: 4.5vmax;
+}
+
+@media (min-width: 870px) {
+  .direction-right {
+    direction: rtl;
+  }
+}
+
+.spotlight-grid-col {
+  border: .3vmax solid black;
+  font-size: 1vmax;
+  padding: 1vmax;
+}
+
+.spotlight-grid-row {
+  border: .3vmax solid black;
+  font-size: 1vmax;
+  font-weight: 400;
+  padding: 1vmax;
+}
+
+.spotlight-graph-cells {
+  border: .15vmax solid black;
+  font-size: 1vmax;
+  font-weight: 400;
+  padding: 1vmax;
+}
+
+.spotlight-slide5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 85%;
+  margin: 30px 0px;
+}
+
+.spotlight-media-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.spotlight-media-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* scrollbar for carousel slides */
+.spotlight-carousel-items-container::-webkit-scrollbar {
+  width: 12px;
+  /* z-index: 1000; */
+}
+
+.spotlight-carousel-items-container::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+.spotlight-carousel-items-container::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #363636;
 }
