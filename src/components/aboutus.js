@@ -175,7 +175,7 @@ const AboutUs = () => {
               aria-controls="pills-contact"
               aria-selected="false"
             >
-              We are
+              Who We Are
             </button>
           </li>
         </ul>
