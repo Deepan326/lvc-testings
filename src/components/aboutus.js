@@ -167,7 +167,7 @@ const AboutUs = () => {
       </div>
 
       <div className="tab-section">
-        <h1 ref={tabRefs.header} className="header-section" style={{ fontSize: '3rem' }}>Why Us</h1>
+        <h1 ref={tabRefs.header} className="header-section">Why Us</h1>
         <ul className="nav nav-pills mb-3 pills-section" id="pills-tab" role="tablist" ref={tabRefs.pills}>
           <li className="nav-item" role="presentation">
             <button
