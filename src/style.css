@@ -321,7 +321,8 @@ p {
   line-height: 1.5;
 }
 
-/* What We Offer Section */
+.header-section,
+.pills-section,
 .text-section,
 .image-section {
   opacity: 0;
@@ -346,6 +347,8 @@ p {
   margin-bottom: 100px;
 }
 
+.fade-out.header-section,
+.fade-out.pills-section,
 .fade-out.text-section,
 .fade-out.image-section {
   opacity: 1;
