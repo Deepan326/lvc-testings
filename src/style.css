@@ -2632,7 +2632,7 @@ p {
 }
 
 .spotlight-slide2-grid {
-  height: auto;
+  height: 1vmax;
   width: clamp(20vmax, auto, 2000vmax);
   border: .3vmax solid black;
   color: black;
@@ -2648,22 +2648,33 @@ p {
 
 .spotlight-grid-col {
   border: .3vmax solid black;
-  font-size: 1vmax;
-  padding: 1vmax;
+  font-size: clamp(5px, 1rem, 1vmax);
+  font-weight: bold;
+  padding: 1px;
 }
 
 .spotlight-grid-row {
   border: .3vmax solid black;
   font-size: 1vmax;
   font-weight: 400;
-  padding: 1vmax;
+  padding: 1px;
 }
 
 .spotlight-graph-cells {
   border: .15vmax solid black;
   font-size: 1vmax;
   font-weight: 400;
-  padding: 1vmax;
+  padding: 1px;
+}
+
+.spotlight-logo-slide {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.spotlight-logo-img {
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .spotlight-slide5 {

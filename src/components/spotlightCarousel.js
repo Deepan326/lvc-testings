@@ -1,12 +1,12 @@
 import Carousel from 'react-bootstrap/Carousel';
 import ExampleCarouselImage from '../assets/vecteezy_black-and-gray-background-vector-illustration-lighting_6417811-1.jpg';
-
+import spotlightLogo from '../assets/lvcSpo.jpg'
 function SpotLightCarousel() {
 
 
     return (
         <Carousel className='gradient-background-color'>
-            <Carousel.Item style={{marginBottom:'30px'}}>
+            <Carousel.Item style={{ marginBottom: '30px' }}>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '100%', opacity: '0' }} src={ExampleCarouselImage} text="First slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
                     <h2 style={{ color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)' }}>LVC Spotlight Media – PR, Branding & Digital Growth</h2>
@@ -18,7 +18,7 @@ function SpotLightCarousel() {
                         We don’t just promote — <b>we spotlight your brand and fuel your growth.</b></p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item style={{overflow:'auto'}} >
+            <Carousel.Item style={{ overflow: 'auto' }} >
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '100%', opacity: '0' }} src={ExampleCarouselImage} text="Second slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
                     <h2 style={{ marginLeft: '35px', color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)' }}>Services</h2>
@@ -27,7 +27,7 @@ function SpotLightCarousel() {
                             <ul>
                                 <h2
                                     style={{
-                                        paddingBottom: '1rem',
+                                        // paddingBottom: '1rem',
                                         fontWeight: 'bold',
                                         textDecoration: 'underline',
                                         textUnderlineOffset: '.3rem',
@@ -49,7 +49,7 @@ function SpotLightCarousel() {
                             <ul className='direction-right'>
                                 <h2
                                     style={{
-                                        paddingBottom: '1rem',
+                                        // paddingBottom: '1rem',
                                         fontWeight: 'bold',
                                         textDecoration: 'underline',
                                         textUnderlineOffset: '.3rem',
@@ -85,7 +85,7 @@ function SpotLightCarousel() {
                             <ul className='direction-right'>
                                 <h2
                                     style={{
-                                        paddingBottom: '1rem',
+                                        // paddingBottom: '1rem',
                                         fontWeight: 'bold',
                                         textDecoration: 'underline',
                                         textUnderlineOffset: '.3rem',
@@ -105,38 +105,38 @@ function SpotLightCarousel() {
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item style={{overflow:'auto'}}>
+            <Carousel.Item style={{ overflow: 'auto' }}>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '100%', opacity: '0' }} src={ExampleCarouselImage} text="Third slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
-                    <h1 style={{ color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)' }}>Why Choose LVC Spotlight Media?</h1>
+                    <h2 style={{ color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)' }}>Why Choose LVC Spotlight Media?</h2>
                     <div className='spotlight-slide2-cards'>
-                        <ul style={{paddingBottom:'2vmax'}}>
-                            <li style={{ margin: '2.3rem 0px', fontSize: '1.5rem' }} className='spotlight-slide2-bulletpoints'>
+                        <ul style={{ paddingBottom: '2vmax', marginTop: '', paddingTop: '5vmax' }}>
+                            <li style={{ fontSize: 'clamp(10px, 1.5vmax, 3rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b> Founder-First Approach</b> → We put leaders in the spotlight, not just products
                             </li>
-                            <li style={{ margin: '2.3rem 0px', fontSize: '1.5rem' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(10px, 1.5vmax, 3rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b> Guaranteed Media Features </b>→ Direct partnerships with global platforms
                             </li>
-                            <li style={{ margin: '2.3rem 0px', fontSize: '1.5rem' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(10px, 1.5vmax, 3rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b> Integrated Growth </b> → PR + Branding + Digital Marketing in one
                             </li>
-                            <li style={{ margin: '2.3rem 0px', fontSize: '1.5rem' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(10px, 1.5vmax, 3rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b> Tech & Startup Focus </b>→ Specialized in SaaS, AI, and innovation-driven businesses
                             </li>
-                            <li style={{ margin: '2.3rem 0px', fontSize: '1.5rem' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(10px, 1.5vmax, 3rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b> Affordable Packages </b>→ Growth plans that scale with your journey
                             </li>
                         </ul>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item style={{overflow:'auto'}}>
+            <Carousel.Item style={{ overflow: 'auto' }}>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '100%', opacity: '0' }} src={ExampleCarouselImage} text="Fourth slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
-                    <h1 style={{ color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)', textAlign:'center'}}>Competitor Comparison Block</h1>
-                    <p style={{ color: 'black', fontSize: '2vmax', textAlign:'center' }}>Why LVC Spotlight Media Beats the Rest</p>
+                    <h2 style={{ color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)', textAlign: 'center' }}>Competitor Comparison Block</h2>
+                    <p style={{ color: 'black', fontSize: 'clamp(10px, 1rem, 1.5vmax)', textAlign: 'center' }}>Why LVC Spotlight Media Beats the Rest</p>
                     <table className='spotlight-slide2-grid'>
-                        <thead style={{ width: '100%', height: '30%', fontSize: '180%', fontWeight: 'bold' }}>
+                        <thead style={{ width: '100%', height: '30%' }}>
                             <tr>
                                 <th className='spotlight-grid-col' scope="col">Feature</th>
                                 <th className='spotlight-grid-col' scope="col">LVC Spotlight Media</th>
@@ -185,9 +185,16 @@ function SpotLightCarousel() {
                     </table>
                 </Carousel.Caption>
             </Carousel.Item>
-
             <Carousel.Item>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '100%', opacity: '0' }} src={ExampleCarouselImage} text="fifth slide" />
+                <Carousel.Caption className='spotlight-carousel-items-container'>
+                    <div className='spotlight-logo-slide'>
+                        <img className='spotlight-logo-img' alt='spotlight media logo' src={spotlightLogo} />
+                    </div>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '100%', opacity: '0' }} src={ExampleCarouselImage} text="sixth slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
                     <div className='spotlight-slide5'>
                         {/* <h1 style={{ color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)' }}>Call-to-Action</h1> */}
@@ -203,6 +210,7 @@ function SpotLightCarousel() {
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
+
 
         </Carousel>
     );
