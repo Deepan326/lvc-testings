@@ -187,7 +187,7 @@ function SpotLightCarousel() {
             </Carousel.Item>
             <Carousel.Item>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '100%', opacity: '0' }} src={ExampleCarouselImage} text="fifth slide" />
-                <Carousel.Caption className='spotlight-carousel-items-container'>
+                <Carousel.Caption className='spotlight-carousel-items-container d-flex justify-content-center align-items-center'>
                     <div className='spotlight-logo-slide'>
                         <img className='spotlight-logo-img' alt='spotlight media logo' src={spotlightLogo} />
                     </div>
