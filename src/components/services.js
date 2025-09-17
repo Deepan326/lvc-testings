@@ -7,8 +7,13 @@ import TransformationStartsHere from './transformationStartsHere.js';
 import Footer from "./footer.js";
 const Home = () => {
 
+  // Select section "What We Offer"
   const textRef = useRef(null);
   const imageRef = useRef(null);
+
+  // Select section "Transform your Goals into reality"
+  const textRef2 = useRef(null);
+  const imageRef2 = useRef(null);
 
   useEffect(() => {
       const observer = new IntersectionObserver(
@@ -26,6 +31,9 @@ const Home = () => {
   
       if (textRef.current) observer.observe(textRef.current);
       if (imageRef.current) observer.observe(imageRef.current);
+
+      if (textRef2.current) observer.observe(textRef2.current);
+      if (imageRef2.current) observer.observe(imageRef2.current);
   
       return () => observer.disconnect();
     }, []);
@@ -66,6 +74,7 @@ const Home = () => {
             </div>
         </div>
       </div>
+
 
       <section className="grid-section-services">
         <div className="grid-container-services">
@@ -116,8 +125,49 @@ const Home = () => {
         </div>
       </div>
 
+
+      <div className="section-5 text-section" ref={textRef2}>
+        <h1 style={{ textAlign:"center", color:"white" }}>Transform your Goals into reality</h1>
+      </div>
+      <div className="container py-5 image-section" ref={imageRef2}>
+        <div className="row">
+          <div className="col-md-4 position-relative image-container">
+            <img
+              className="w-100 custom-image"
+              src="https://images.pexels.com/photos/7947968/pexels-photo-7947968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Reveal Goals"
+            />
+            <div className="overlay-text">
+              <h2>Identify goals</h2>
+            </div>
+          </div>
+          <div className="col-md-4 position-relative image-container">
+            <img
+              className="w-100 custom-image"
+              src="https://images.pexels.com/photos/7414305/pexels-photo-7414305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Reveal Goals"
+            />
+            <div className="overlay-text">
+              <h2>Design & Planning</h2>
+            </div>
+          </div>
+          <div className="col-md-4 position-relative image-container">
+            <img
+              className="w-100 custom-image"
+              src="https://images.pexels.com/photos/4226122/pexels-photo-4226122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="Reveal Goals"
+            />
+            <div className="overlay-text">
+              <h2>Execution & Reveal</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <h1 className="industries-we-serve-title">Industries we serve</h1>
       <Industries />
+
 
       <div className="container py-5">
         <h1 className="services-herotitle">Services We Offer</h1>
@@ -152,6 +202,8 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+
       <TransformationStartsHere/>
       <Footer/>
     </main>

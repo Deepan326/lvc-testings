@@ -93,7 +93,7 @@ body {
 }
 
 .logo {
-  width: 7rem;
+  width: 4rem;
   margin-left: 16px;
   height: auto;
   cursor: pointer;
@@ -350,8 +350,10 @@ p {
   margin-bottom: 100px;
 }
 
-.fade-out.text-section,
-.fade-out.image-section {
+.fade-out.header-section,
+.fade-out.image-section,
+.fade-out.pills-section,
+.fade-out.text-section {
   opacity: 1;
   transform: translateY(25);
 }
@@ -792,9 +794,14 @@ p {
   font-size: 3rem;
 }
 
+.footer-section-flex p {
+  font-size: 20px;
+}
+
 .footer-section-flex-column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -1020,6 +1027,10 @@ p {
   padding-top: 25px;
 }
 
+.tab-section h1 {
+  font-size: 2.5rem;
+}
+
 .nav-btn-tab {
   background: none;
 }
@@ -1041,7 +1052,7 @@ p {
 
 .nav-pills .nav-link {
   color: #555;
-  font-size: 16px;
+  font-size: 20px;
   border: none;
   border-bottom: 2px solid transparent;
   /* Default state with no underline */
@@ -1070,6 +1081,11 @@ p {
   border-bottom: 1 1px solid #007bff;
 }
 
+.tab-content {
+  display: flex;
+  justify-content: center;
+}
+
 .tab-content-wrapper {
   display: flex;
   flex-direction: column;
@@ -1078,7 +1094,7 @@ p {
   margin-top: 20px;
   justify-content: space-evenly;
   padding: 1rem;
-  width: 100%;
+  max-width: 900px;
 }
 
 .tab-paragraph-width {
@@ -1087,7 +1103,7 @@ p {
 
 @media (max-width: 1024px) {
   .tab-paragraph-width {
-    width: 30%;
+    width: 100%;
   }
 }
 
@@ -1104,7 +1120,7 @@ p {
 
 .tab-paragraph {
   flex: 1;
-  font-size: 1rem;
+  font-size: 20px;
   line-height: 1.6;
   color: black;
   font-weight: 500;
@@ -1430,8 +1446,25 @@ p {
 
 /* Responsive Design for Mobile (320px to 425px) */
 @media (min-width: 320px) and (max-width: 426px) {
+  .industries-we-serve-title {
+    padding: 0;
+  }
+
   .industries-item {
     flex: 1 1 calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .industries-item h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .industries-we-serve-icon {
+    margin: 0;
   }
 
   .footer-section {
@@ -1447,8 +1480,12 @@ p {
 
   .footer-section-flex h2 {
     font-size: 2rem;
-    text-align: start;
+    text-align: center;
     margin-bottom: 1rem;
+  }
+
+  .footer-section-flex p {
+    text-align: center;
   }
 
   .footer-section-flex-column {
@@ -1466,7 +1503,9 @@ p {
   }
 
   .divider {
-    display: none;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
   }
 
   .main {
