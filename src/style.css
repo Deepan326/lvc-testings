@@ -2243,9 +2243,9 @@ p {
 }
 
 .modal-dialog {
-  min-width: 100% !important;
+  min-width: 70% !important;
   height: 200px;
-  margin: 0px;
+  margin: auto;
   z-index: 3000;
 }
 
