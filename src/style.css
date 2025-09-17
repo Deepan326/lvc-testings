@@ -322,9 +322,9 @@ p {
 }
 
 .header-section,
+.image-section, 
 .pills-section,
-.text-section,
-.image-section {
+.text-section {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -348,9 +348,9 @@ p {
 }
 
 .fade-out.header-section,
+.fade-out.image-section,
 .fade-out.pills-section,
-.fade-out.text-section,
-.fade-out.image-section {
+.fade-out.text-section {
   opacity: 1;
   transform: translateY(25);
 }

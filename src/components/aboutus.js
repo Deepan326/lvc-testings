@@ -15,16 +15,19 @@ import SalesLogo from "../assets/salesforce.png";
 const AboutUs = () => {
   const [inView, setInView] = useState(false);
 
-  const myRef = useRef();
-  const chipsRef = useRef([]);
-  const tabHeaderRef = useRef(null);
-  const tabPillsRef = useRef(null);
-  const tabImageRef1 = useRef(null);
-  const tabTextRef1 = useRef(null);
-  const tabImageRef2 = useRef(null);
-  const tabTextRef2 = useRef(null);
-  const tabImageRef3 = useRef(null);
-  const tabTextRef3 = useRef(null);
+  const myRef = useRef()
+  const chipsRef = useRef([])
+  const tabRefs = {
+    header : useRef(null),
+    pills : useRef(null),
+    image1 : useRef(null),
+    text1 : useRef(null),
+    image2 : useRef(null),
+    text2 : useRef(null),
+    image3 : useRef(null),
+    text3 : useRef(null),
+  }
+
 
   // Function to generate a random color
   const getRandomColor = () => {
@@ -74,14 +77,9 @@ const AboutUs = () => {
       { threshold: 0.5 }
     );
 
-    if (tabHeaderRef.current) observer2.observe(tabHeaderRef.current);
-    if (tabPillsRef.current) observer2.observe(tabPillsRef.current);
-    if (tabImageRef1.current) observer2.observe(tabImageRef1.current);
-    if (tabTextRef1.current) observer2.observe(tabTextRef1.current);
-    if (tabImageRef1.current) observer2.observe(tabImageRef2.current);
-    if (tabTextRef1.current) observer2.observe(tabTextRef2.current);
-    if (tabImageRef1.current) observer2.observe(tabImageRef3.current);
-    if (tabTextRef1.current) observer2.observe(tabTextRef3.current);
+    for (let tabRef in tabRefs) {
+      if (tabRefs[tabRef].current) observer2.observe(tabRefs[tabRef].current);
+    }
 
     return () => observer2.disconnect();
   }, []);
@@ -169,8 +167,8 @@ const AboutUs = () => {
       </div>
 
       <div className="tab-section">
-        <h1 ref={tabHeaderRef} className="header-section">Why Us</h1>
-        <ul class="nav nav-pills mb-3 pills-section" id="pills-tab" role="tablist" ref={tabPillsRef}>
+        <h1 ref={tabRefs.header} className="header-section">Why Us</h1>
+        <ul class="nav nav-pills mb-3 pills-section" id="pills-tab" role="tablist" ref={tabRefs.pills}>
           <li class="nav-item" role="presentation">
             <button
               class="nav-link active  nav-btn-tab"
@@ -222,14 +220,14 @@ const AboutUs = () => {
             aria-labelledby="pills-home-tab"
           >
             <div className="tab-content-wrapper">
-              <div className="tab-image-container image-section" ref={tabImageRef1}>
+              <div className="tab-image-container image-section" ref={tabRefs.image1}>
                 <img
                   src="https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?q=80&w=1783&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Mission"
                   className="tab-image"
                 />
               </div>
-              <div className="tab-paragraph-width text-section" ref={tabTextRef1}>
+              <div className="tab-paragraph-width text-section" ref={tabRefs.text1}>
                 <h1>Our Mission</h1>
                 <p className="tab-paragraph">
                   At LVC Solutions, our mission is to empower businesses by
@@ -253,14 +251,14 @@ const AboutUs = () => {
             aria-labelledby="pills-profile-tab"
           >
             <div className="tab-content-wrapper">
-              <div className="image-section" ref={tabImageRef2}>
+              <div className="image-section" ref={tabRefs.image2}>
                 <img
                   src="https://images.unsplash.com/photo-1503945438517-f65904a52ce6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Mission"
                   className="tab-image"
                 />
               </div>
-              <div className="tab-paragraph-width text-section" ref={tabTextRef2}>
+              <div className="tab-paragraph-width text-section" ref={tabRefs.text2}>
                 <h1>Our Vision</h1>
                 <p className="tab-paragraph">
                   At LVC Solutions, our vision is to be a trusted partner for
@@ -285,14 +283,14 @@ const AboutUs = () => {
             aria-labelledby="pills-contact-tab"
           >
             <div className="tab-content-wrapper">
-              <div className="image-section" ref={tabImageRef3}>
+              <div className="image-section" ref={tabRefs.image3}>
                 <img
                   src="https://images.unsplash.com/photo-1565665681743-6ff01c5181e3?q=80&w=1995&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Mission"
                   className="tab-image"
                 />
               </div>
-              <div className="tab-paragraph-width text-section" ref={tabTextRef3}>
+              <div className="tab-paragraph-width text-section" ref={tabRefs.text3}>
                 <h1>Innovators at Heart</h1>
                 <p className="tab-paragraph">
                   We are a dynamic team of tech enthusiasts and innovators who
