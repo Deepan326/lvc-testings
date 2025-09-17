@@ -58,10 +58,10 @@ const Careers = () => {
       </div>
       <div className="tab-section">
         <h1>Why Us</h1>
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
+        <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link active  nav-btn-tab"
+              className="nav-link active  nav-btn-tab"
               id="pills-home-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-home"
@@ -73,9 +73,9 @@ const Careers = () => {
               Impact
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link nav-btn-tab"
+              className="nav-link nav-btn-tab"
               id="pills-profile-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-profile"
@@ -87,9 +87,9 @@ const Careers = () => {
               Development
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link nav-btn-tab"
+              className="nav-link nav-btn-tab"
               id="pills-contact-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-contact"
@@ -101,9 +101,9 @@ const Careers = () => {
               Support
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link nav-btn-tab"
+              className="nav-link nav-btn-tab"
               id="pills-progress-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-progress"
@@ -116,9 +116,9 @@ const Careers = () => {
             </button>
           </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
+        <div className="tab-content" id="pills-tabContent">
           <div
-            class="tab-pane fade show active"
+            className="tab-pane fade show active"
             id="pills-home"
             role="tabpanel"
             aria-labelledby="pills-home-tab"
@@ -158,7 +158,7 @@ const Careers = () => {
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="pills-profile"
             role="tabpanel"
             aria-labelledby="pills-profile-tab"
@@ -199,7 +199,7 @@ const Careers = () => {
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="pills-contact"
             role="tabpanel"
             aria-labelledby="pills-contact-tab"
@@ -240,7 +240,7 @@ const Careers = () => {
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="pills-progress"
             role="tabpanel"
             aria-labelledby="pills-progress-tab"
@@ -401,10 +401,10 @@ const Careers = () => {
       </div>
       <div className="tab-section" ref={openRolesRef}>
         <h1>Open Roles</h1>
-        <ul class="nav nav-pills mb-3" id="roles-tab" role="tablist">
-          <li class="nav-item" role="presentation">
+        <ul className="nav nav-pills mb-3" id="roles-tab" role="tablist">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link active nav-btn-tab"
+              className="nav-link active nav-btn-tab"
               id="frontend-tab"
               data-bs-toggle="pill"
               data-bs-target="#frontend"
@@ -416,9 +416,9 @@ const Careers = () => {
               Frontend Developer
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link nav-btn-tab"
+              className="nav-link nav-btn-tab"
               id="backend-tab"
               data-bs-toggle="pill"
               data-bs-target="#backend"
@@ -430,9 +430,9 @@ const Careers = () => {
               Backend Developer
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link nav-btn-tab"
+              className="nav-link nav-btn-tab"
               id="fullstack-tab"
               data-bs-toggle="pill"
               data-bs-target="#fullstack"
@@ -444,9 +444,9 @@ const Careers = () => {
               Full Stack Developer
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link nav-btn-tab"
+              className="nav-link nav-btn-tab"
               id="ai-ml-tab"
               data-bs-toggle="pill"
               data-bs-target="#ai-ml"
@@ -458,9 +458,9 @@ const Careers = () => {
               AI & ML Engineer
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link nav-btn-tab"
+              className="nav-link nav-btn-tab"
               id="llm-tab"
               data-bs-toggle="pill"
               data-bs-target="#llm"
@@ -472,9 +472,9 @@ const Careers = () => {
               Generative AI Engineer
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link nav-btn-tab"
+              className="nav-link nav-btn-tab"
               id="ai-agents-tab"
               data-bs-toggle="pill"
               data-bs-target="#ai-agents"
@@ -488,9 +488,9 @@ const Careers = () => {
           </li>
         </ul>
 
-        <div class="tab-content" id="roles-tabContent">
+        <div className="tab-content" id="roles-tabContent">
           <div
-            class="tab-pane fade show active"
+            className="tab-pane fade show active"
             id="frontend"
             role="tabpanel"
             aria-labelledby="frontend-tab"
@@ -573,7 +573,7 @@ const Careers = () => {
 
           {/* Backend Developer */}
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="backend"
             role="tabpanel"
             aria-labelledby="backend-tab"
@@ -650,7 +650,7 @@ const Careers = () => {
 
           {/* Full Stack Developer */}
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="fullstack"
             role="tabpanel"
             aria-labelledby="fullstack-tab"
@@ -689,7 +689,7 @@ const Careers = () => {
 
           {/* AI & ML Engineer */}
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="ai-ml"
             role="tabpanel"
             aria-labelledby="ai-ml-tab"
@@ -728,7 +728,7 @@ const Careers = () => {
 
           {/* Generative AI Engineer */}
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="llm"
             role="tabpanel"
             aria-labelledby="llm-tab"
@@ -767,7 +767,7 @@ const Careers = () => {
 
           {/* AI Agents Developer */}
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="ai-agents"
             role="tabpanel"
             aria-labelledby="ai-agents-tab"

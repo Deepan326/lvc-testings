@@ -167,11 +167,11 @@ const AboutUs = () => {
       </div>
 
       <div className="tab-section">
-        <h1 ref={tabRefs.header} className="header-section">Why Us</h1>
-        <ul class="nav nav-pills mb-3 pills-section" id="pills-tab" role="tablist" ref={tabRefs.pills}>
-          <li class="nav-item" role="presentation">
+        <h1 ref={tabRefs.header} className="header-section" style={{ fontSize: '3rem' }}>Why Us</h1>
+        <ul className="nav nav-pills mb-3 pills-section" id="pills-tab" role="tablist" ref={tabRefs.pills}>
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link active  nav-btn-tab"
+              className="nav-link active  nav-btn-tab"
               id="pills-home-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-home"
@@ -183,9 +183,9 @@ const AboutUs = () => {
               Our Mission
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link nav-btn-tab"
+              className="nav-link nav-btn-tab"
               id="pills-profile-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-profile"
@@ -197,9 +197,9 @@ const AboutUs = () => {
               Our Vision
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link nav-btn-tab"
+              className="nav-link nav-btn-tab"
               id="pills-contact-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-contact"
@@ -212,9 +212,9 @@ const AboutUs = () => {
             </button>
           </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
+        <div className="tab-content" id="pills-tabContent">
           <div
-            class="tab-pane fade show active"
+            className="tab-pane fade show active"
             id="pills-home"
             role="tabpanel"
             aria-labelledby="pills-home-tab"
@@ -245,7 +245,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="pills-profile"
             role="tabpanel"
             aria-labelledby="pills-profile-tab"
@@ -277,7 +277,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="pills-contact"
             role="tabpanel"
             aria-labelledby="pills-contact-tab"
