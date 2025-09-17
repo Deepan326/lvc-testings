@@ -9,7 +9,7 @@ function SpotLightCarousel() {
             <Carousel.Item style={{marginBottom:'30px'}}>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '100%', opacity: '0' }} src={ExampleCarouselImage} text="First slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
-                    <h1 style={{ color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)' }}>LVC Spotlight Media – PR, Branding & Digital Growth</h1>
+                    <h2 style={{ color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)' }}>LVC Spotlight Media – PR, Branding & Digital Growth</h2>
                     <p style={{ color: 'black', paddingTop: '2vw', marginTop: '2vw', textAlign: 'center', fontSize: '2vw', fontWeight: 'normal' }}>
                         From <b>Forbes features to viral digital campaigns</b>, we help founders, CEOs, and startups <b>get seen,</b>
                         <br />
@@ -21,7 +21,7 @@ function SpotLightCarousel() {
             <Carousel.Item style={{overflow:'auto'}} >
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '100%', opacity: '0' }} src={ExampleCarouselImage} text="Second slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
-                    <h1 style={{ color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)' }}>Services</h1>
+                    <h2 style={{ marginLeft: '35px', color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)' }}>Services</h2>
                     <div className='spotlight-carousel-services'>
                         <div className='spotlight-slide2-cards'>
                             <ul>
@@ -31,7 +31,7 @@ function SpotLightCarousel() {
                                         fontWeight: 'bold',
                                         textDecoration: 'underline',
                                         textUnderlineOffset: '.3rem',
-                                        fontSize: '1.3rem'
+                                        fontSize: '1rem'
                                     }}>PR & Media Features</h2>
                                 <li className='spotlight-slide2-bulletpoints'>
                                     📰Guaranteed placements in <b>
@@ -53,7 +53,7 @@ function SpotLightCarousel() {
                                         fontWeight: 'bold',
                                         textDecoration: 'underline',
                                         textUnderlineOffset: '.3rem',
-                                        fontSize: '1.3rem'
+                                        fontSize: '1rem'
                                     }}>Personal Branding for Founders & CEOs</h2>
                                 <li className='spotlight-slide2-bulletpoints'>
                                     🌟Founder interviews, storytelling, podcasts
@@ -67,11 +67,11 @@ function SpotLightCarousel() {
                             <ul>
                                 <h2
                                     style={{
-                                        paddingBottom: '1rem',
+                                        // paddingBottom: '1rem',
                                         fontWeight: 'bold',
                                         textDecoration: 'underline',
                                         textUnderlineOffset: '.3rem',
-                                        fontSize: '1.3rem'
+                                        fontSize: '1rem'
                                     }}>Startup & Product Visibility</h2>
                                 <li className='spotlight-slide2-bulletpoints'>
                                     🚀Launch campaigns for SaaS & AI startups
@@ -81,7 +81,7 @@ function SpotLightCarousel() {
                                 </li>
                             </ul>
                         </div>
-                        <div className='spotlight-slide2-cards'>
+                        <div className='spotlight-slide2-cards pb-1'>
                             <ul className='direction-right'>
                                 <h2
                                     style={{
@@ -89,7 +89,7 @@ function SpotLightCarousel() {
                                         fontWeight: 'bold',
                                         textDecoration: 'underline',
                                         textUnderlineOffset: '.3rem',
-                                        fontSize: '1.3rem'
+                                        fontSize: '1rem'
                                     }}>Digital Marketing Excellence</h2>
                                 <li className='spotlight-slide2-bulletpoints'>
                                     📱<b>Social Media Growth</b> (LinkedIn, X, Insta)
@@ -112,19 +112,19 @@ function SpotLightCarousel() {
                     <div className='spotlight-slide2-cards'>
                         <ul style={{paddingBottom:'2vmax'}}>
                             <li style={{ margin: '2.3rem 0px', fontSize: '1.5rem' }} className='spotlight-slide2-bulletpoints'>
-                                ✅<b> Founder-First Approach</b> → We put leaders in the spotlight, not just products
+                                <b> Founder-First Approach</b> → We put leaders in the spotlight, not just products
                             </li>
                             <li style={{ margin: '2.3rem 0px', fontSize: '1.5rem' }} className='spotlight-slide2-bulletpoints'>
-                                ✅<b> Guaranteed Media Features </b>→ Direct partnerships with global platforms
+                                <b> Guaranteed Media Features </b>→ Direct partnerships with global platforms
                             </li>
                             <li style={{ margin: '2.3rem 0px', fontSize: '1.5rem' }} className='spotlight-slide2-bulletpoints'>
-                                ✅<b> Integrated Growth </b> → PR + Branding + Digital Marketing in one
+                                <b> Integrated Growth </b> → PR + Branding + Digital Marketing in one
                             </li>
                             <li style={{ margin: '2.3rem 0px', fontSize: '1.5rem' }} className='spotlight-slide2-bulletpoints'>
-                                ✅<b> Tech & Startup Focus </b>→ Specialized in SaaS, AI, and innovation-driven businesses
+                                <b> Tech & Startup Focus </b>→ Specialized in SaaS, AI, and innovation-driven businesses
                             </li>
                             <li style={{ margin: '2.3rem 0px', fontSize: '1.5rem' }} className='spotlight-slide2-bulletpoints'>
-                                ✅<b> Affordable Packages </b>→ Growth plans that scale with your journey
+                                <b> Affordable Packages </b>→ Growth plans that scale with your journey
                             </li>
                         </ul>
                     </div>

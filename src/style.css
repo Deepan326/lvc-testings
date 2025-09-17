@@ -2607,26 +2607,28 @@ p {
   max-height: 65%;
   left: 10%;
   top: 2vw;
-  -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 95%, transparent 100%);
 }
+
+/* .spotlight-carousel-items */
 
 .spotlight-carousel-services {
   max-height: 80%;
-  /* padding: 20px 20px; */
-  margin-top: clamp(0rem, 2vw, 4rem);
+  /* margin-bottom: 20px; */
+  margin-top: clamp(0rem, 1vmax, 2rem);
 }
 
 .spotlight-slide2-cards {
   height: 80%;
   color: black;
-  padding-bottom: 3vmax;
+  /* padding-bottom: 3vmax; */
 }
 
 .spotlight-slide2-bulletpoints {
-  font-size: clamp(20px, 1vmax, 40px);
+  font-size: clamp(10px, 1rem, 15px);
   text-align: start;
-  padding: 8px;
+  /* padding: 8px; */
 }
 
 .spotlight-slide2-grid {
@@ -2638,11 +2640,11 @@ p {
   margin-bottom: 4.5vmax;
 }
 
-@media (min-width: 870px) {
+/* @media (min-width: 870px) {
   .direction-right {
     direction: rtl;
   }
-}
+} */
 
 .spotlight-grid-col {
   border: .3vmax solid black;
