@@ -133,7 +133,7 @@ function SpotLightCarousel() {
             <Carousel.Item style={{ overflow: 'auto' }}>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '100%', opacity: '0' }} src={ExampleCarouselImage} text="Fourth slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
-                    <h2 style={{ color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)', textAlign: 'center' }}>Competitor Comparison Block</h2>
+                    <h2 style={{ color: 'black', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 5vmax)', textAlign: 'center' }}>Competitor Comparison</h2>
                     <p style={{ color: 'black', fontSize: 'clamp(10px, 1rem, 1.5vmax)', textAlign: 'center' }}>Why LVC Spotlight Media Beats the Rest</p>
                     <table className='spotlight-slide2-grid'>
                         <thead style={{ width: '100%', height: '30%' }}>
