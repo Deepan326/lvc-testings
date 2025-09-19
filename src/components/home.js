@@ -76,15 +76,6 @@ const Home = () => {
         </section>
       </main>
 
-      {/* FULL-BLEED: LVC Academy (same treatment as Smart HR) */}
-      {/* <section className="bg-white">
-        <div className="container-fluid px-0 py-5">
-          <h1 className="text-dark">LVC Academy</h1>
-          <div className="partner-logos">
-            <img src={AcaLogo} alt="Partner Logo" className="partner-logo" />
-          </div>
-        </div>
-      </section> */}
 
       {/* Material Icons Section */}
       {/* <div className="logos-section">
@@ -220,7 +211,7 @@ const Home = () => {
           </div>
         </div>
         <div className= 'table-responsive my-5'>
-          <h2 class="mb-4">Feature Comparison</h2>
+          <h2 class="mb-4 text-center">Feature Comparison</h2>
           <table class="table table-dark table-bordered text-center align-middle">
             <thead class="table-dark">
               <tr>

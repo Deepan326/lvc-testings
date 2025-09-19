@@ -5,17 +5,17 @@ import { useLocation, useNavigate } from "react-router-dom";
 function BlogArticle() {
     const location = useLocation()
     const { post, image } = location.state || {}
-    const [sec, setSec] = useState(5)
+    const [sec, setSec] = useState(8)
     let navigate = useNavigate()
 
     let redirect = useCallback(() => {
-        navigate('/blog')
-    })
+        navigate('/blog', { replace: true })
+    }, [navigate])
 
     useEffect(() => {
         let timer
         if (!post) {
-            setTimeout(redirect, 5000)
+            setTimeout(redirect, 8000)
             timer = setInterval(() => {
                 setSec(prevSec => prevSec - 1);
             }, 1000)
