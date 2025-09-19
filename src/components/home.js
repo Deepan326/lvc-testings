@@ -77,14 +77,14 @@ const Home = () => {
       </main>
 
       {/* FULL-BLEED: LVC Academy (same treatment as Smart HR) */}
-      <section className="bg-white">
+      {/* <section className="bg-white">
         <div className="container-fluid px-0 py-5">
           <h1 className="text-dark">LVC Academy</h1>
           <div className="partner-logos">
             <img src={AcaLogo} alt="Partner Logo" className="partner-logo" />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Material Icons Section */}
       {/* <div className="logos-section">
@@ -94,9 +94,9 @@ const Home = () => {
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" className="company-logo" />
       </div> */}
 
-      <section style={{ backgroundColor: "white" }} className="py-5">
+      {/* <section style={{ backgroundColor: "white" }} className="py-5">
         <h1 style={{ color: "black", }}>Section</h1>
-      </section>
+      </section> */}
 
       {/* LVC Academy info */}
       <section className="container py-5 section-4">
@@ -293,27 +293,27 @@ const Home = () => {
       <main style={{ padding: "20px" }}>
         {/* Spotlight Media */}
         <section
-          style={{ fontSize: "14px", color: "000", fontWeight: "500", background: "white" }}
+          style={{ fontSize: "14px", color: "000", fontWeight: "500", background: "black" }}
           className="py-5"
         >
-          <h1 style={{ color: "black" }}>LVC Spotlight Media</h1>
+          <h1 style={{ color: "white" }}>LVC Spotlight Media</h1>
           <div className="spotlight-carousel-container">
             <SpotLightCarousel />
           </div>
           <div style={{textAlign:'center'}}>
-            <p style={{fontSize:'25px', color:'black'}}>As Seen In → Forbes | Entrepreneur | Yahoo | TechCrunch | Medium</p>
+            <p style={{fontSize:'25px', color:'white'}}>As Seen In → Forbes | Entrepreneur | Yahoo | TechCrunch | Medium</p>
           </div>
         </section>
 
 
         {/* section 5 transform your goals */}
-        <div className="section-5">
+        {/* <div className="section-5">
           <h1 style={{ textAlign: "center", color: "white" }}>
             Transform your Goals into reality
           </h1>
-        </div>
+        </div> */}
 
-        <div className="container py-5">
+        {/* <div className="container py-5">
           <div className="row">
             <div className="col-md-4 position-relative image-container">
               <img
@@ -346,7 +346,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <TransformationStartsHere />
         <Footer />

@@ -2529,6 +2529,52 @@ p {
   font-size: 25px;
 }
 
+/* a blog post page */
+.blog-post-container {
+  margin-top: 13vh;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-post-img-container {
+  min-height: 350px;
+  height: 35vw;
+  width: 75%;
+  margin: 5px auto;
+  padding-top: 3vh;
+}
+
+.blog-post-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-post-headings {
+  width: 75%;
+  margin: 5px auto;
+  padding: 10px 0px
+}
+
+.blog-post-content {
+  width: 75%;
+  margin: 5px auto;
+  padding: 20px 0px
+}
+
+.blog-post-error {
+  background-color: black;
+  text-align: center
+}
+
+.blog-post-error-content {
+  border: 1px solid grey(112, 112, 112);
+  border-radius: 10px;
+  width: clamp(80px, 30%, 400px);
+  margin: 25vh auto;
+  padding: 20px;
+  background-color: grey;
+}
 
 /* social media footer container */
 
@@ -2626,10 +2672,8 @@ p {
 
 .gradient-background-color {
   background: radial-gradient(circle at 50% 50%,
-      /* Position the glow at the center */
-      rgba(255, 255, 255, 0.08) 0%,
-      /* The bright, glowing center */
-      rgba(26, 26, 26, 0.9) 75%,
+      Position the glow at the center rgba(0, 0, 0, 0.08) 0%,
+      The bright, glowing center rgba(26, 26, 26, 0.9) 75%,
       /* Gradually transition to a dark grey */
       #000000 90%
       /* Fade to a solid black at the edges */
@@ -2694,7 +2738,7 @@ p {
 
 .spotlight-slide2-cards {
   height: 80%;
-  color: black;
+  color: white;
   /* padding-bottom: 3vmax; */
 }
 

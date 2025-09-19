@@ -12,7 +12,7 @@ function BlogPage() {
       title: "Welcome to LVC Solutions Blog",
       date: "August 27, 2025",
       content:
-        "At LVC Solutions, we provide innovative technology and business solutions. This blog is where we share updates, tips, and insights."
+        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,'
     },
     {
       id: 2,
@@ -220,11 +220,15 @@ function BlogPage() {
         <div className='blog-posts-container'>
           {posts.slice(offset, offset + 6).map((post) => (
             <article key={post.id} className="blog-posts">
-              <Link style={{textDecoration:'none', color:'black'}} to={'/blog/' + post.id} state={{ post, image: images[post.id - 1] }}>
+              <Link style={{ textDecoration: 'none', color: 'black' }} to={'/blog/' + post.id} state={{ post, image: images[post.id - 1] }}>
                 <img className='blog-posts-imgs' src={images[post.id - 1].src} alt={images[post.id - 1].alt} />
                 <h2>{post.title}</h2>
                 <small>{post.date}</small>
-                <p>{post.content}</p>
+                {post.content.length > 110 ? (
+                  <p>{post.content.slice(0,110)}... <br/><b style={{color:'light black'}}>Read more</b></p>
+                ) : (
+                  <p>{post.content}</p>
+                )}
               </Link>
             </article>
           ))}
@@ -255,7 +259,7 @@ function BlogPage() {
         </div>
       </div>
       <Footer />
-    </main>
+    </main >
   );
 }
 
