@@ -18,7 +18,7 @@ const Home = () => {
 
         {/* Fair Job Portal */}
         <section className="container py-5" id="fairjob-section">
-          <div className="row g-4 align-items-stretch">
+          <div className="row g-4 align-items-center">
             {/* Left: image + button */}
             <div className="col-12 col-md-5">
               <img
