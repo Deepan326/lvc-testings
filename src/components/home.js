@@ -5,7 +5,7 @@ import TransformationStartsHere from "./transformationStartsHere.js";
 import Footer from "./footer.js";
 // import SpotLogo from "../assets/lvcSpo.jpg";
 import AcaLogo from "../assets/lvcAca.jpg";
-import FairJob from "../assets/jobSearch.jpg";
+import FairJob from "../assets/fairJob-icon.png";
 import SpotLightCarousel from "./spotlightCarousel.js"
 
 const Home = () => {
@@ -17,21 +17,23 @@ const Home = () => {
         </div>
 
         {/* Fair Job Portal */}
-        <section className="fairjob-section container py-5">
+        <section className="container py-5" id="fairjob-section">
           <div className="row g-4 align-items-stretch">
             {/* Left: image + button */}
             <div className="col-12 col-md-5">
               <img
                 src={FairJob}
                 alt="Fair Job Portal preview"
-                className="img-fluid rounded shadow-sm fairjob-img"
+                className="img-fluid rounded shadow-sm"
+                id="fairjob-img"
               />
 
               <a
                 href="https://www.lvcfairjob.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-outline-light mt-3 w-100 fairjob-btn"
+                className="btn btn-outline-light mt-3 w-100"
+                id="fairjob-btn"
                 aria-label="Open the Fair Job Portal website"
               >
                 Visit Fair Job Portal
@@ -39,13 +41,30 @@ const Home = () => {
             </div>
 
             {/* Right: title + bullets */}
-            <div className="col-12 col-md-7 d-flex flex-column justify-content-center h-100 fairjob-right">
-              <h2 className="fairjob-title">Fair Job Portal</h2>
-              <ul className="fairjob-list">
-                <li>Modern job portal for equitable hiring</li>
-                <li>Smart filters, clean UX, and fast search</li>
-                <li>Recruiter tools for posting and tracking roles</li>
-              </ul>
+            <div className="col-12 col-md-7 d-flex flex-column justify-content-center h-100" id="fairjob-right">
+              <div id="fairjob-title">
+                <h2>
+                  <strong>
+                    LVC Fair Job <br />
+                    The World's First Scam-Free Job Portal
+                  </strong>
+                </h2>
+                <h3>
+                  <em>
+                    Built for Trust, Transparency & Real Results
+                  </em>
+                </h3>
+              </div>
+              <p id="fairjob-subtext">
+                Unlike LinkedIn, Indeed, ZipRecruiter, Monster, or Naukri — we eliminate fake profiles, spam jobs, and scam recruiters. 
+                <br /> <br />
+
+                At LVC Fair Job, we’re building the most trusted hiring ecosystem — where genuine job seekers meet verified recruiters with complete transparency.
+                <br /><br />
+                <em>
+                  👉 “No scams. No spam. Just real opportunities.”
+                </em>
+              </p>
             </div>
           </div>
         </section>
