@@ -1,17 +1,18 @@
-import CarouselComponent from "./carsouel.js";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../style.css";
-import TransformationStartsHere from "./transformationStartsHere.js";
-import Footer from "./footer.js";
+import CarouselComponent from './carsouel.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style.css';
+import TransformationStartsHere from './transformationStartsHere.js';
+import Footer from './footer.js';
 // import SpotLogo from "../assets/lvcSpo.jpg";
-import AcaLogo from "../assets/lvcAca.jpg";
-import FairJob from "../assets/jobSearch.jpg";
-import SpotLightCarousel from "./spotlightCarousel.js"
+import AcaLogo from '../assets/lvcAca.jpg';
+import FairJob from '../assets/jobSearch.jpg';
+import SpotLightCarousel from './spotlightCarousel.js';
+import AcademyCarousel from './academyCarousel.js';
 
 const Home = () => {
   return (
     <>
-      <main style={{ padding: "20px", marginTop: "50px" }}>
+      <main style={{ padding: '20px', marginTop: '50px' }}>
         <div className="carsouelheight">
           <CarouselComponent />
         </div>
@@ -57,25 +58,24 @@ const Home = () => {
           <h1 className="text-dark">Smart HR Scheduler</h1>
           <p
             className="text-center mt-2 mb-0 fw-bold fst-italic fs-4"
-            style={{ color: "#4f0694" }}
+            style={{ color: '#4f0694' }}
           >
             Launching soon
           </p>
         </div>
       </section>
 
-      <main style={{ padding: "20px" }}>
-        <section style={{ backgroundColor: "black" }} className="py-5">
-          <h1 style={{ color: "white" }}>Founder's Project</h1>
+      <main style={{ padding: '20px' }}>
+        <section style={{ backgroundColor: 'black' }} className="py-5">
+          <h1 style={{ color: 'white' }}>Founder's Project</h1>
           <p
             className="text-center mt-2 mb-0 fw-bold fst-italic fs-4"
-            style={{ color: "#4f0694" }}
+            style={{ color: '#4f0694' }}
           >
             Launching soon
           </p>
         </section>
       </main>
-
 
       {/* Material Icons Section */}
       {/* <div className="logos-section">
@@ -94,28 +94,10 @@ const Home = () => {
         <h1 style={{ color: 'white' }}>
           LVC Academy - Future-Ready Tech Bootcamps
         </h1>
-        <h2
-          style={{
-            textAlign: 'center',
-            color: 'white',
-            fontSize: '20px',
-            fontWeight: '400',
-          }}
-        >
-          Master the skills that matter in today&apos;s world -{' '}
-          <strong>
-            AI, Machine Learning, Data Science, and Full Stack Development.{' '}
-          </strong>{' '}
-          Our bootcamps combine{' '}
-          <strong>70% hands-on learning with 30% theory, </strong>
-          designed to make you{' '}
-          <strong>career-ready within 6 to 12 months.</strong>
-        </h2>
-        <div style={{ textAlign: 'center', marginTop: '20px' }}>
-          <em style={{ color: 'white', fontWeight: '400' }}>
-            Learn. Shadow. Practice. Get Hired
-          </em>
+        <div className="spotlight-carousel-container">
+          <AcademyCarousel />
         </div>
+        
         <div className="partner-logos">
           <img src={AcaLogo} alt="Partner Logo" className="partner-logo" />
         </div>
@@ -210,7 +192,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className= 'table-responsive my-5'>
+        <div className="table-responsive my-5">
           <h2 class="mb-4 text-center">Feature Comparison</h2>
           <table class="table table-dark table-bordered text-center align-middle">
             <thead class="table-dark">
@@ -281,21 +263,27 @@ const Home = () => {
       </section>
 
       {/* Resume normal page padding/content */}
-      <main style={{ padding: "20px" }}>
+      <main style={{ padding: '20px' }}>
         {/* Spotlight Media */}
         <section
-          style={{ fontSize: "14px", color: "000", fontWeight: "500", background: "black" }}
+          style={{
+            fontSize: '14px',
+            color: '000',
+            fontWeight: '500',
+            background: 'black',
+          }}
           className="py-5"
         >
-          <h1 style={{ color: "white" }}>LVC Spotlight Media</h1>
+          <h1 style={{ color: 'white' }}>LVC Spotlight Media</h1>
           <div className="spotlight-carousel-container">
             <SpotLightCarousel />
           </div>
-          <div style={{textAlign:'center'}}>
-            <p style={{fontSize:'25px', color:'white'}}>As Seen In → Forbes | Entrepreneur | Yahoo | TechCrunch | Medium</p>
+          <div style={{ textAlign: 'center' }}>
+            <p style={{ fontSize: '25px', color: 'white' }}>
+              As Seen In → Forbes | Entrepreneur | Yahoo | TechCrunch | Medium
+            </p>
           </div>
         </section>
-
 
         {/* section 5 transform your goals */}
         {/* <div className="section-5">
