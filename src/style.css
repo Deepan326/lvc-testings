@@ -100,7 +100,7 @@ body {
 }
 
 .logo:hover {
-  border-bottom: 2.4px solid #68457c;
+  border-bottom: 2.4px solid #d6b709e8;
 }
 
 .navbar {
@@ -122,6 +122,36 @@ body {
 .navbar-nav .nav-link:not(.dropdown-toggle):hover::after {
   left: 0;
   animation: slide-in 0.3s forwards;
+}
+
+/* Make the navbar respect a larger logo */
+.custom-navbar {
+  --nav-logo-size: clamp(40px, 6vw, 96px); /* mobile → desktop */
+}
+
+/* Scale the logo cleanly and keep aspect ratio */
+.custom-navbar .logo {
+  height: var(--nav-logo-size);
+  width: auto;
+  display: block;
+}
+
+/* Remove extra vertical padding so the bigger logo fits nicely */
+.custom-navbar .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Optional: keep the navbar tall enough for the logo */
+.custom-navbar.navbar {
+  min-height: calc(var(--nav-logo-size) + 12px);
+}
+
+/* Optional: on very small screens, slightly reduce logo so toggler fits */
+@media (max-width: 575.98px) {
+  .custom-navbar { --nav-logo-size: 40px; }
 }
 
 .custom-navbar .navbar-toggler {
@@ -2852,4 +2882,15 @@ p {
 
 .spotlight-carousel-scroll::-webkit-scrollbar {
   width: 0px;
+}
+
+/* LVC Academy carousel tweaks */
+
+#LVCAcademyCarousel .carousel-indicators [data-bs-target] {
+  background-color: black;
+}
+
+#LVCAcademyCarousel .carousel-control-prev-icon,
+#LVCAcademyCarousel .carousel-control-next-icon {
+  filter: invert(1);
 }

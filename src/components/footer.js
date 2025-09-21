@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"; //added link import for the useful links
-import logo from "../assets/lvc-icon.jpg"; // Importing the logo
+import logo from "../assets/lvc-icon-removebg-preview.png"; // Importing the logo
 import twitter from '../assets/vecteezy_twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x_31737215.png'
 import ig from '../assets/vecteezy_instagram-logo-png-instagram-icon-transparent_18930460.png'
 import linkedIn from '../assets/vecteezy_linkedin-logo-png-linkedin-logo-transparent-png-linkedin_23986569.png'
