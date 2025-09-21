@@ -2698,38 +2698,10 @@ p {
   mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
 }
 
-/* @media (max-width: 425px) {
-  .spotlight-carousel-container {
-    width: 100%;
-    min-height: 300px;
-  }
-
-  .gradient-background-color {
-    background: radial-gradient(circle at 50% 50%,
-        rgba(255, 255, 255, 0.08) 0%,
-        rgba(26, 26, 26, 0.9) 75%,
-        #000000 90%
-      );
-    text-align: center;
-    width: 100%;
-    min-height: 270px;
-    height: 100%
-  }
-
-  .spotlight-carousel-items-container {
-    overflow: auto;
-    padding: 0px 20px;
-    width: 90%;
-    height: 300px;
-    left: 10%;
-    -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 99%);
-    mask-image: linear-gradient(to bottom, black 90%, transparent 99%);
-  }
-} */
-
 /* .spotlight-carousel-items */
 
 .spotlight-carousel-services {
+  display: flex;
   max-height: 80%;
   margin-bottom: 20px;
   padding-top: clamp(0rem, 1vmax, 2rem);
@@ -2737,24 +2709,48 @@ p {
 
 
 .spotlight-slide2-cards {
-  height: 80%;
+  height: 40%;
   color: white;
-  /* padding-bottom: 3vmax; */
+  margin-bottom: 1.7vmax;
+}
+
+.spotlight-slide2-container {
+  width: 50%;
+  height: 65%;
 }
 
 .spotlight-slide2-bulletpoints {
-  font-size: clamp(10px, 2vmax, 15px);
+  font-size: clamp(10px, 2vmax, 20px);
   text-align: start;
   padding-bottom: clamp(.5px, 1vmax, 4px);
   /* padding-bottom: 1px; */
 }
 
-.spotlight-slide2-grid {
+.spotlight-media-logo-slide1 {
+  width: 5vmax !important;
+  /* height: 80% !important; */
+  /* margin-right: 70px; */
+  /* margin-bottom:20px; */
+}
+
+@media (max-width: 830px) {
+  .spotlight-carousel-services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .spotlight-slide2-container {
+    width: 100%;
+    height: 65%;
+  }
+}
+
+.spotlight-slide4-grid {
   height: 1vmax;
   width: clamp(20vmax, auto, 2000vmax);
-  border: .3vmax solid black;
-  color: black;
-  background-color: white;
+  border: .15vmax solid white;
+  color: white;
+  background-color: black;
   margin-bottom: 4.5vmax;
 }
 
@@ -2779,21 +2775,21 @@ p {
 
 
 .spotlight-grid-col {
-  border: .3vmax solid black;
+  border: .15vmax solid white;
   font-size: clamp(12px, 1vmax, 20px);
   font-weight: bold;
   padding: 1px;
 }
 
 .spotlight-grid-row {
-  border: .3vmax solid black;
+  border: .15vmax solid white;
   font-size: clamp(10px, 1vmax, 20px);
   font-weight: 400;
   padding: 1px;
 }
 
 .spotlight-graph-cells {
-  border: .15vmax solid black;
+  border: .15vmax solid white;
   font-size: clamp(8px, 1vmax, 20px);
   font-weight: 400;
   padding: 1px;
@@ -2807,8 +2803,8 @@ p {
 
 .spotlight-logo-img {
   min-width: 150px;
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 70%;
+  max-height: 70%;
   padding-bottom: 1rem;
   /* margin-top: auto;
   margin-bottom: auto; */
