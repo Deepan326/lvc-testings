@@ -2887,3 +2887,14 @@ p {
 .spotlight-carousel-scroll::-webkit-scrollbar {
   width: 0px;
 }
+
+/* LVC Academy carousel tweaks */
+
+#LVCAcademyCarousel .carousel-indicators [data-bs-target] {
+  background-color: black;
+}
+
+#LVCAcademyCarousel .carousel-control-prev-icon,
+#LVCAcademyCarousel .carousel-control-next-icon {
+  filter: invert(1);
+}
