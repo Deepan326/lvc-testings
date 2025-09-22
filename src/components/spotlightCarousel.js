@@ -28,7 +28,7 @@ function SpotLightCarousel() {
             <Carousel.Item className='spotlight-carousel-scroll' style={{ overflow: 'auto' }} >
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', minHeight: '275px', opacity: '0' }} src={ExampleCarouselImage} text="Second slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
-                    <h2 style={{ marginLeft: '35px', color: 'white', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 80px)', paddingBottom: '1vmax' }}>Services</h2>
+                    <h2 style={{ marginLeft: '35px', color: 'white', fontWeight: 'bolder', fontSize: 'clamp(10px, 2.4vmax, 80px)', paddingBottom: '1vmax' }}>Services</h2>
                     <div className='spotlight-carousel-services'>
                         <div className='spotlight-slide2-container'>
                             <div className='spotlight-slide2-cards'>
@@ -39,7 +39,7 @@ function SpotLightCarousel() {
                                             fontWeight: 'bold',
                                             textDecoration: 'underline',
                                             textUnderlineOffset: '.3rem',
-                                            fontSize: 'clamp(15px, 2vmax, 25px)'
+                                            fontSize: 'clamp(15px, 1.5vmax, 25px)'
                                         }}>PR & Media Features</h2>
                                     <li className='spotlight-slide2-bulletpoints'>
                                         Guaranteed placements in <b style={{ color: 'white' }}>
@@ -200,7 +200,7 @@ function SpotLightCarousel() {
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', minHeight: '275px', opacity: '0' }} src={ExampleCarouselImage} text="fifth slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container d-flex justify-content-center align-items-center'>
                     <div className='spotlight-logo-slide'>
-                        <img className='spotlight-logo-img' alt='spotlight media logo' src={spotlightLogo} />
+                        <img className='img-fluid d-block mx-auto' alt='spotlight media logo' style={{ maxWidth: '520px', height: 'auto' }} src={spotlightLogo} />
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>

@@ -2826,7 +2826,7 @@ p {
 }
 
 .spotlight-carousel-items-container {
-  /* position: absolute; */
+  position: absolute;
   overflow: auto;
   padding: 0px 20px;
   /* margin-bottom: 20px; */
