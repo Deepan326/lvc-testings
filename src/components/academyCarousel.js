@@ -5,7 +5,7 @@ function AcademyCarousel() {
   return (
     <Carousel>
       <Carousel.Item>
-        <img alt="" class="img-fluid d-block ms-auto" src={LVCAcaLogo} />
+        <img alt="" class="img-fluid d-block mx-auto" src={LVCAcaLogo} />
         <Carousel.Caption style={{ bottom: '18%'}}>
           <div class="p-5 bg-dark bg-opacity-75 text-center rounded shadow">
             <h1
@@ -34,7 +34,7 @@ function AcademyCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img alt="" src={LVCAcaLogo} />
+        <img alt="" class="img-fluid d-block mx-auto" src={LVCAcaLogo} />
         <Carousel.Caption>
           <div
             className="highlight-cards-container"
@@ -91,7 +91,7 @@ function AcademyCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img alt="" src={LVCAcaLogo} text="Third slide" />
+        <img alt="" class="img-fluid d-block mx-auto" src={LVCAcaLogo} text="Third slide" />
         <Carousel.Caption>
           <div className="difference-card opacity-75">
             <h3
@@ -134,7 +134,7 @@ function AcademyCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img alt="" src={LVCAcaLogo} text="Fourth slide" />
+        <img alt="" class="img-fluid d-block mx-auto" src={LVCAcaLogo} text="Fourth slide" />
         <Carousel.Caption style={{ bottom: '13%'}}>
           <div className="table-responsive my-5">
           <h2 class="mb-4 text-center" style={{
