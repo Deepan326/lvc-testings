@@ -2614,14 +2614,26 @@ p {
 
 /* Fair Job Portal section */
 #fairjob-section {
-  border-top: 2px solid #ffffff;
-  padding-top: 25px;
   color: #fff;
 }
 
 #fairjob-right {
   text-align: center;
-  align-items: center;
+}
+
+.fairjob-carousel {
+  height: 800px;
+  overflow: auto;
+}
+
+.fairjob-carousel-items {
+  padding-top: 5rem;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.fairjob-carousel-scroll::-webkit-scrollbar {
+  width: 0px;
 }
 
 #fairjob-title {
@@ -2661,7 +2673,22 @@ p {
   border-color: #fff;
 }
 
+.fairjob-cards {
+  background: #1e2222;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
 
+.fairjob-cards .card-titles {
+  color: #ffff;
+}
+
+.fairjob-cards:hover {
+  transform: translateY(-10px);
+}
 
 /* carousel spotlight media home page */
 
