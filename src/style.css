@@ -2643,17 +2643,68 @@ p {
 }
 
 .fairjob-carousel-items-container {
-  /* position: absolute; */
+  position: absolute;
   overflow: auto;
   padding: 0px 20px;
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
   width: 80%;
-  min-height: 275px;
+  min-height: 700px;
   height: 67%;
   left: 10%;
-  top: 2vw;
+  top: 4vw;
   -webkit-mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
   mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
+
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  #fairjob-card-1 {
+    margin-top: calc(1070px - 700px);
+  }
+}
+
+@media (max-width: 1000px) {
+  #fairjob-card-1 {
+    margin-top: calc(1330px - 700px);
+  }
+}
+
+@media (max-width: 800px) {
+  #fairjob-card-1 {
+    margin-top: calc(1680px - 700px);
+  }
+  #fairjob-item-1-div-1 {
+    margin-bottom: 50px;
+  }
+  #fairjob-right {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #fairjob-item-1-div-1 {
+    margin-top: calc(1080px - 700px);
+  }
+}
+
+@media (max-width: 680px) {
+  #fairjob-card-1 {
+    margin-top: calc(2070px - 700px);
+  }
+}
+
+@media (max-width: 522px) {
+  #fairjob-item-3-h3 {
+    margin-top: 800px;
+  }
+}
+
+@media (max-width: 390px) {
+  #fairjob-item-1-div-1 {
+    margin-top: calc(1350px - 700px);
+  }
 }
 
 .fairjob-carousel-scroll::-webkit-scrollbar {
