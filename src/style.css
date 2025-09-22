@@ -2624,6 +2624,8 @@ p {
 .fairjob-carousel {
   height: 800px;
   overflow: auto;
+  -webkit-mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
+  mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
 }
 
 .fairjob-carousel-items {
