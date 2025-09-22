@@ -5,7 +5,7 @@ function AcademyCarousel() {
   return (
     <Carousel>
       <Carousel.Item>
-        <img alt="" class="img-fluid" src={LVCAcaLogo} />
+        <img alt="" class="img-fluid d-block ms-auto" src={LVCAcaLogo} />
         <Carousel.Caption style={{ bottom: '18%'}}>
           <div class="p-5 bg-dark bg-opacity-75 text-center rounded shadow">
             <h1
