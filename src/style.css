@@ -2643,19 +2643,105 @@ p {
 }
 
 /* Fair Job Portal section */
-.fairjob-section {
-  border-top: 2px solid #ffffff;
-  padding-top: 25px;
+#fairjob-section {
   color: #fff;
 }
 
-.fairjob-right {
+#fairjob-right {
   text-align: center;
-  align-items: center;
-
 }
 
-.fairjob-title {
+.fairjob-carousel {
+  height: 800px;
+  overflow: auto;
+  -webkit-mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
+  mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
+}
+
+.fairjob-carousel-items {
+  padding-top: 5rem;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.fairjob-carousel-container {
+  width: 85%;
+  min-height: 300px;
+  height: clamp(300px, 40vmax, 800px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fairjob-carousel-items-container {
+  position: absolute;
+  overflow: auto;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  min-height: 700px;
+  height: 67%;
+  left: 10%;
+  top: 4vw;
+  -webkit-mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
+  mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
+
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  #fairjob-card-1 {
+    margin-top: calc(1070px - 700px);
+  }
+}
+
+@media (max-width: 1000px) {
+  #fairjob-card-1 {
+    margin-top: calc(1330px - 700px);
+  }
+}
+
+@media (max-width: 800px) {
+  #fairjob-card-1 {
+    margin-top: calc(1680px - 700px);
+  }
+  #fairjob-item-1-div-1 {
+    margin-bottom: 50px;
+  }
+  #fairjob-right {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #fairjob-item-1-div-1 {
+    margin-top: calc(1080px - 700px);
+  }
+}
+
+@media (max-width: 680px) {
+  #fairjob-card-1 {
+    margin-top: calc(2070px - 700px);
+  }
+}
+
+@media (max-width: 522px) {
+  #fairjob-item-3-h3 {
+    margin-top: 800px;
+  }
+}
+
+@media (max-width: 390px) {
+  #fairjob-item-1-div-1 {
+    margin-top: calc(1350px - 700px);
+  }
+}
+
+.fairjob-carousel-scroll::-webkit-scrollbar {
+  width: 0px;
+}
+
+#fairjob-title {
   color: #fff;
   /* override global h1 color on dark bg */
   margin-bottom: 0.75rem;
@@ -2663,7 +2749,11 @@ p {
   margin-bottom: 1.75rem;
 }
 
-.fairjob-list {
+#fairjob-subtext {
+  font-size: large;
+}
+
+#fairjob-list {
   margin-top: 3rem;
   padding-left: 1.25rem;
   /* normal bullets */
@@ -2673,22 +2763,37 @@ p {
   font-size: larger;
 }
 
-.fairjob-list li+li {
+#fairjob-list li+li {
   margin-top: 0.5rem;
 }
 
-.fairjob-img {
+#fairjob-img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.fairjob-btn {
+#fairjob-btn {
   /* feel free to change to .btn-primary if you prefer a filled button */
   border-color: #fff;
 }
 
+.fairjob-cards {
+  background: #1e2222;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
 
+.fairjob-cards .card-titles {
+  color: #ffff;
+}
+
+.fairjob-cards:hover {
+  transform: translateY(-10px);
+}
 
 /* carousel spotlight media home page */
 

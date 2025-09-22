@@ -5,7 +5,7 @@ import TransformationStartsHere from './transformationStartsHere.js';
 import Footer from './footer.js';
 // import SpotLogo from "../assets/lvcSpo.jpg";
 import AcaLogo from '../assets/lvcAca.jpg';
-import FairJob from '../assets/jobSearch.jpg';
+import FairJobCarousel from './fairJobCarousel.js';
 import SpotLightCarousel from './spotlightCarousel.js';
 import AcademyCarousel from './academyCarousel.js';
 
@@ -16,40 +16,7 @@ const Home = () => {
         <div className="carsouelheight">
           <CarouselComponent />
         </div>
-
-        {/* Fair Job Portal */}
-        <section className="fairjob-section container py-5">
-          <div className="row g-4 align-items-stretch">
-            {/* Left: image + button */}
-            <div className="col-12 col-md-5">
-              <img
-                src={FairJob}
-                alt="Fair Job Portal preview"
-                className="img-fluid rounded shadow-sm fairjob-img"
-              />
-
-              <a
-                href="https://www.lvcfairjob.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-outline-light mt-3 w-100 fairjob-btn"
-                aria-label="Open the Fair Job Portal website"
-              >
-                Visit Fair Job Portal
-              </a>
-            </div>
-
-            {/* Right: title + bullets */}
-            <div className="col-12 col-md-7 d-flex flex-column justify-content-center h-100 fairjob-right">
-              <h2 className="fairjob-title">Fair Job Portal</h2>
-              <ul className="fairjob-list">
-                <li>Modern job portal for equitable hiring</li>
-                <li>Smart filters, clean UX, and fast search</li>
-                <li>Recruiter tools for posting and tracking roles</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+        <FairJobCarousel/>
       </main>
 
       {/* FULL-BLEED: Smart HR Scheduler */}
