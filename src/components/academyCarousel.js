@@ -6,7 +6,7 @@ function AcademyCarousel() {
     <Carousel>
       <Carousel.Item>
         <img alt="" class="img-fluid" src={LVCAcaLogo} />
-        <Carousel.Caption>
+        <Carousel.Caption style={{ bottom: '18%'}}>
           <div class="p-5 bg-dark bg-opacity-75 text-center rounded shadow">
             <h1
               style={{
@@ -135,7 +135,7 @@ function AcademyCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <img alt="" src={LVCAcaLogo} text="Fourth slide" />
-        <Carousel.Caption>
+        <Carousel.Caption style={{ bottom: '13%'}}>
           <div className="table-responsive my-5">
           <h2 class="mb-4 text-center" style={{
             color: 'black',
