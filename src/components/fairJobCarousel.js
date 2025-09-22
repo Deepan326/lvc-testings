@@ -140,6 +140,83 @@ function FairJobCarousel() {
 
             <Carousel.Item className="fairjob-carousel-scroll">
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '800px', opacity: '0' }} src={ExampleCarouselImage} text="Fourth slide" />
+                <Carousel.Caption className='spotlight-carousel-items-container align-content-center' style={{ marginTop: "100px" }}>
+                    <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 80px)', textAlign: 'center' }}>Competitor Comparison Block</h2>
+                    <p style={{ color: 'white', fontSize: 'clamp(13px, 1vmax, 26px)', textAlign: 'center' }}>Why LVC Fair Job Portal Beats the Rest</p>
+                    <table className='spotlight-slide2-grid'>
+                        <thead style={{ width: '100%', height: '30%' }}>
+                            <tr>
+                                <th className='spotlight-grid-col' scope="col">Feature</th>
+                                <th className='spotlight-grid-col' scope="col">LVC Fair Job Portal</th>
+                                <th className='spotlight-grid-col' scope="col">LinkedIn</th>
+                                <th className='spotlight-grid-col' scope="col">Indeed</th>
+                                <th className='spotlight-grid-col' scope="col">ZipRecruiter</th>
+                                <th className='spotlight-grid-col' scope="col">Monster</th>
+                                <th className='spotlight-grid-col' scope="col">Naukri</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th className='spotlight-grid-row' scope='row'><b style={{color:'black'}}>Profile Authenticity</b></th>
+                                <td className='spotlight-graph-cells'>✅ Verified job seekers & recruiters</td>
+                                <td className='spotlight-graph-cells'>❌ Anyone can join</td>
+                                <td className='spotlight-graph-cells'>❌ Limited checks</td>
+                                <td className='spotlight-graph-cells'>❌ Basic checks</td>
+                                <td className='spotlight-graph-cells'>❌ Weak verification</td>
+                                <td className='spotlight-graph-cells'>❌ Many fake profiles</td>
+                            </tr>
+                            <tr>
+                                <th className='spotlight-grid-row' scope='row'><b style={{color:'black'}}>Job Post Quality</b></th>
+                                <td className='spotlight-graph-cells'>✅ AI-verified & scam-free</td>
+                                <td className='spotlight-graph-cells'>❌ Fake & expired posts</td>
+                                <td className='spotlight-graph-cells'>❌ Mix of genuine + scam</td>
+                                <td className='spotlight-graph-cells'>❌ Sponsored-heavy</td>
+                                <td className='spotlight-graph-cells'>❌ Spammy, duplicates</td>
+                                <td className='spotlight-graph-cells'>❌ Expired jobs remain</td>
+                            </tr>
+                            <tr>
+                                <th className='spotlight-grid-row' scope='row'><b style={{color:'black'}}>AI Screening</b></th>
+                                <td className='spotlight-graph-cells'>✅ Virtual interview bots + JD matching</td>
+                                <td className='spotlight-graph-cells'>❌ Manual filtering</td>
+                                <td className='spotlight-graph-cells'>❌ Keyword-based</td>
+                                <td className='spotlight-graph-cells'>❌ Resume keyword match</td>
+                                <td className='spotlight-graph-cells'>❌ Generic</td>
+                                <td className='spotlight-graph-cells'>❌ Manual</td>
+                            </tr>
+                            <tr>
+                                <th className='spotlight-grid-row' scope='row'><b style={{color:'black'}}>Application Tracking</b></th>
+                                <td className='spotlight-graph-cells'>✅ Real-time updates & closure tracking</td>
+                                <td className='spotlight-graph-cells'>❌ None</td>
+                                <td className='spotlight-graph-cells'>❌ Very limited</td>
+                                <td className='spotlight-graph-cells'>❌ Recruiter-driven only</td>
+                                <td className='spotlight-graph-cells'>❌ No clarity</td>
+                                <td className='spotlight-graph-cells'>❌ Rare updates</td>
+                            </tr>
+                            <tr>
+                                <th className='spotlight-grid-row' scope='row'><b style={{color:'black'}}>Data Privacy</b></th>
+                                <td className='spotlight-graph-cells'>✅ No resale, zero spam</td>
+                                <td className='spotlight-graph-cells'>❌ Data for ads</td>
+                                <td className='spotlight-graph-cells'>❌ Candidate data resold</td>
+                                <td className='spotlight-graph-cells'>❌ Outreach-heavy</td>
+                                <td className='spotlight-graph-cells'>❌ Shared widely</td>
+                                <td className='spotlight-graph-cells'>❌ Recruiter misuse</td>
+                            </tr>
+                            <tr>
+                                <th className='spotlight-grid-row' scope='row'><b style={{color:'black'}}>Networking & Growth</b></th>
+                                <td className='spotlight-graph-cells'>✅ Messaging + intent tags + career prep</td>
+                                <td className='spotlight-graph-cells'>❌ Vanity networking</td>
+                                <td className='spotlight-graph-cells'>❌ Job-only</td>
+                                <td className='spotlight-graph-cells'>❌ Job alerts only</td>
+                                <td className='spotlight-graph-cells'>❌ Outdated</td>
+                                <td className='spotlight-graph-cells'>❌ Jobs only</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item className="fairjob-carousel-scroll">
+                <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '800px', opacity: '0' }} src={ExampleCarouselImage} text="Fourth slide" />
                 <Carousel.Caption className="fairjob-carousel-items-container" style={{ flexDirection: "column", justifyContent: "center", margin: 0 }}>
                     <h3 style={{ color: 'white', fontSize: '50px', "marginBottom": "25px" }}>Join the World's First Scam-Free Job Portal!</h3>
                     <Button href="https://www.lvcfairjob.com/" style={{ fontSize: "30px" }}>👉 Explore Fair Job Portal</Button>
