@@ -55,7 +55,7 @@ function FairJobCarousel() {
                             At LVC Fair Job, we’re building the most trusted hiring ecosystem — where genuine job seekers meet verified recruiters with complete transparency.
                             <br /><br />
                             <em>
-                                👉 “No scams. No spam. Just real opportunities.”
+                                 “No scams. No spam. Just real opportunities.”
                             </em>
                             </p>
                         </div>
@@ -73,8 +73,8 @@ function FairJobCarousel() {
                                     <Card.Title className="card-titles">Verified Profiles</Card.Title>
                                     <Card.Text>
                                         <ul id="fairjob-list">
-                                            <li>✅ No fake job seekers → Strict ID & education verification</li>
-                                            <li>✅ No fake recruiters → Company & individual checks</li>
+                                            <li> No fake job seekers → Strict ID & education verification</li>
+                                            <li> No fake recruiters → Company & individual checks</li>
                                         </ul>
                                     </Card.Text>
                                 </Card.Body>
@@ -86,8 +86,8 @@ function FairJobCarousel() {
                                     <Card.Title className="card-titles">AI-Powered Screening</Card.Title>
                                     <Card.Text>
                                         <ul id="fairjob-list">
-                                            <li>🤖 Virtual AI interview calls & chatbot assessments</li>
-                                            <li>🎯 Shortlist only authentic, skilled candidates</li>
+                                            <li> Virtual AI interview calls & chatbot assessments</li>
+                                            <li> Shortlist only authentic, skilled candidates</li>
                                         </ul>
                                     </Card.Text>
                                 </Card.Body>
@@ -99,8 +99,8 @@ function FairJobCarousel() {
                                     <Card.Title className="card-titles">Smart Matching Engine</Card.Title>
                                     <Card.Text>
                                         <ul id="fairjob-list">
-                                            <li>🔍 ATS + Generative AI → Job–Resume precision matching</li>
-                                            <li>🚀 Saves time for both recruiters & job seekers</li>
+                                            <li> ATS + Generative AI → Job–Resume precision matching</li>
+                                            <li> Saves time for both recruiters & job seekers</li>
                                         </ul>
                                     </Card.Text>
                                 </Card.Body>
@@ -112,9 +112,9 @@ function FairJobCarousel() {
                                     <Card.Title className="card-titles">Transparent Hiring</Card.Title>
                                     <Card.Text>
                                         <ul id="fairjob-list">
-                                            <li>📊 Real-time application tracking</li>
-                                            <li>❌ No “black hole” after applying</li>
-                                            <li>🔒 Zero misuse of personal data</li>
+                                            <li> Real-time application tracking</li>
+                                            <li> No “black hole” after applying</li>
+                                            <li> Zero misuse of personal data</li>
                                         </ul>
                                     </Card.Text>
                                 </Card.Body>
@@ -129,11 +129,11 @@ function FairJobCarousel() {
                 <Carousel.Caption className="fairjob-carousel-items-container" style={{ flexDirection: "column", justifyContent: "center", margin: 0 }}>
                     <h3 id="fairjob-item-3-h3" style={{ color: 'white', fontSize: "50px", marginBottom: "25px" }}>Why Choose LVC Fair Job?</h3>
                     <ul style={{ textAlign: 'start', fontSize: "20px" }}>
-                        <li>✅ Scam-Free Ecosystem → 100% verified recruiters, job seekers, and postings</li>
-                        <li>✅ AI Recruiting Tools → Smart resume-job matching + AI interview chatbots</li>
-                        <li>✅ Transparency First → Application status updates & real-time job closure</li>
-                        <li>✅ Data Privacy Guaranteed → No data resale, no spam calls/emails</li>
-                        <li>✅ Career Hub → Networking, messaging, interview prep & daily tech updates</li>
+                        <li> Scam-Free Ecosystem → 100% verified recruiters, job seekers, and postings</li>
+                        <li> AI Recruiting Tools → Smart resume-job matching + AI interview chatbots</li>
+                        <li> Transparency First → Application status updates & real-time job closure</li>
+                        <li> Data Privacy Guaranteed → No data resale, no spam calls/emails</li>
+                        <li> Career Hub → Networking, messaging, interview prep & daily tech updates</li>
                     </ul>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -219,7 +219,7 @@ function FairJobCarousel() {
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '800px', opacity: '0' }} src={ExampleCarouselImage} text="Fourth slide" />
                 <Carousel.Caption className="fairjob-carousel-items-container" style={{ flexDirection: "column", justifyContent: "center", margin: 0 }}>
                     <h3 style={{ color: 'white', fontSize: '50px', "marginBottom": "25px" }}>Join the World's First Scam-Free Job Portal!</h3>
-                    <Button href="https://www.lvcfairjob.com/" style={{ fontSize: "30px" }}>👉 Explore Fair Job Portal</Button>
+                    <Button href="https://www.lvcfairjob.com/" style={{ fontSize: "30px" }}> Explore Fair Job Portal</Button>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
