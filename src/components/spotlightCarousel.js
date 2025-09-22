@@ -119,7 +119,7 @@ function SpotLightCarousel() {
             <Carousel.Item className='spotlight-carousel-scroll' style={{ overflow: 'auto' }}>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', minHeight: '260px', opacity: '0' }} src={ExampleCarouselImage} text="Third slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
-                    <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 80px)' }}>Why Choose LVC Spotlight Media?</h2>
+                    <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 80px)'}}>Why Choose LVC Spotlight Media?</h2>
                     <div className='spotlight-slide2-cards'>
                         <ul className='ul-list-padding-carousel' style={{ paddingBottom: '', marginTop: '' }}>
                             <li style={{ fontSize: 'clamp(1rem, 1.5vmax, 3rem)' }} className='spotlight-slide2-bulletpoints'>

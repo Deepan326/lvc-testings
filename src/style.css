@@ -92,6 +92,12 @@ body {
   margin-right: 1rem !important
 }
 
+footer .logo {
+  width: clamp(100px, 22vw, 225px); /* grow on larger screens, shrink on mobile */
+  height: auto;                     /* keep aspect ratio */
+  display: block;
+}
+
 .logo {
   width: 4rem;
   margin-left: 16px;
