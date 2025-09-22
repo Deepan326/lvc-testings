@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/lvc-icon-removebg-preview.png";
 import search from "../assets/white-search-logo.png";
 import search2 from "../assets/Search-logo-no-background.png"
 import "../style.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
@@ -95,10 +95,19 @@ const searchData = [
 
 const Header = () => {
   const [res, setRes] = useState('')
+  const location = useLocation()
 
   const searchBarVals = (e) => {
     setRes(e.target.value)
   }
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }, [location])
 
   return (
     <header>

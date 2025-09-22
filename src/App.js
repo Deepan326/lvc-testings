@@ -18,6 +18,8 @@ import BlogArticle from './components/blogPost';
 
 
 function App() {
+
+
   return (
     <Router>
       <Header />
@@ -32,7 +34,7 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path='/blog/:blogId' element={<BlogArticle />} />
-            {/* <Route path="/about" element={<About />} />
+          {/* <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} /> */}
           <Route path="/products" element={<ProductsPage />} />
         </Routes>
