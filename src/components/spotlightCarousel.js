@@ -198,9 +198,9 @@ function SpotLightCarousel() {
             </Carousel.Item>
             <Carousel.Item className='spotlight-carousel-scroll'>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', minHeight: '275px', opacity: '0' }} src={ExampleCarouselImage} text="fifth slide" />
-                <Carousel.Caption className='spotlight-carousel-items-container d-flex justify-content-center align-items-center'>
+                <Carousel.Caption className='spotlight-carousel-items-container d-flex justify-content-center align-items-center' style={{overflow:'hidden'}}>
                     <div className='spotlight-logo-slide'>
-                        <img className='img-fluid d-block mx-auto' alt='spotlight media logo' style={{ maxWidth: '520px', height: 'auto' }} src={spotlightLogo} />
+                        <img className='img-fluid d-block mx-auto' alt='spotlight media logo' style={{ maxWidth: '100%', maxHeight: '400px', minHeight:'100px', minWidth:'100px'}} src={spotlightLogo} />
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>

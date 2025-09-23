@@ -93,8 +93,10 @@ body {
 }
 
 footer .logo {
-  width: clamp(100px, 22vw, 225px); /* grow on larger screens, shrink on mobile */
-  height: auto;                     /* keep aspect ratio */
+  width: clamp(100px, 22vw, 225px);
+  /* grow on larger screens, shrink on mobile */
+  height: auto;
+  /* keep aspect ratio */
   display: block;
 }
 
@@ -132,7 +134,8 @@ footer .logo {
 
 /* Make the navbar respect a larger logo */
 .custom-navbar {
-  --nav-logo-size: clamp(40px, 6vw, 96px); /* mobile → desktop */
+  --nav-logo-size: clamp(40px, 6vw, 96px);
+  /* mobile → desktop */
 }
 
 /* Scale the logo cleanly and keep aspect ratio */
@@ -157,7 +160,9 @@ footer .logo {
 
 /* Optional: on very small screens, slightly reduce logo so toggler fits */
 @media (max-width: 575.98px) {
-  .custom-navbar { --nav-logo-size: 40px; }
+  .custom-navbar {
+    --nav-logo-size: 40px;
+  }
 }
 
 .custom-navbar .navbar-toggler {
@@ -2711,9 +2716,11 @@ p {
   #fairjob-card-1 {
     margin-top: calc(1680px - 700px);
   }
+
   #fairjob-item-1-div-1 {
     margin-bottom: 50px;
   }
+
   #fairjob-right {
     margin-bottom: 20px;
   }
@@ -2937,18 +2944,16 @@ p {
 }
 
 .spotlight-logo-slide {
-  max-width: 100%;
-  max-height: 100%;
-  /* align-content: center; */
-}
+  max-width: 40vmax;
+  max-height: 40vmax;
+  padding-bottom: clamp(0px, 5vmax, 400px);
 
+}
 .spotlight-logo-img {
   min-width: 150px;
   max-width: 70%;
   max-height: 70%;
   padding-bottom: 1rem;
-  /* margin-top: auto;
-  margin-bottom: auto; */
 }
 
 .spotlight-slide5 {
