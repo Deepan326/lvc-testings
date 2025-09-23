@@ -16,7 +16,7 @@ const Home = () => {
         <div className="carsouelheight">
           <CarouselComponent />
         </div>
-        <FairJobCarousel/>
+        <FairJobCarousel />
       </main>
 
       {/* FULL-BLEED: Smart HR Scheduler */}
@@ -67,12 +67,23 @@ const Home = () => {
         }}
       >
         <section className="container py-5 section-4">
-          <h1 style={{ color: 'white' }}>
-            LVC Academy - Future-Ready Tech Bootcamps
-          </h1>
+          <div style={{
+            textAlign: 'center',
+            display: 'grid'
+            }}>
+            <img
+              src={AcaLogo}
+              alt="LVC Academy Logo"
+              style={{ maxWidth: '300px', height: 'auto' }}
+            />
+          </div>
+          <div style={{ textAlign: 'center', marginBottom: '20px', color: 'white' }}>
+            <h2 class="fontSize: clamp(30px, 2.5vmax, 60px)">
+              LVC Academy - Future-Ready Tech Bootcamps
+            </h2>
+          </div>
           <div
-            id="LVCAcademyCarousel"
-            className="academy-carousel-container bg-white"
+            className="academy-carousel-container bg-black"
           >
             <AcademyCarousel />
           </div>
@@ -105,7 +116,9 @@ const Home = () => {
           }}
           className="py-5"
         >
-          <h1 style={{ color: 'white', fontSize:'clamp(30px, 4vmax, 60px)' }}>LVC Spotlight Media</h1>
+          <h1 style={{ color: 'white', fontSize: 'clamp(30px, 4vmax, 60px)' }}>
+            LVC Spotlight Media
+          </h1>
           <div className="spotlight-carousel-container">
             <SpotLightCarousel />
           </div>
