@@ -4,7 +4,7 @@ import '../style.css';
 import TransformationStartsHere from './transformationStartsHere.js';
 import Footer from './footer.js';
 // import SpotLogo from "../assets/lvcSpo.jpg";
-// import AcaLogo from '../assets/lvcAca.jpg';
+import AcaLogo from '../assets/lvcAcaTransparent.png';
 import FairJobCarousel from './fairJobCarousel.js';
 import SpotLightCarousel from './spotlightCarousel.js';
 import AcademyCarousel from './academyCarousel.js';
@@ -16,6 +16,7 @@ const Home = () => {
         <div className="carsouelheight">
           <CarouselComponent />
         </div>
+        <FairJobCarousel />
         <FairJobCarousel />
       </main>
 
@@ -59,6 +60,7 @@ const Home = () => {
       {/* LVC Academy info */}
       <div
         className="bg-black"
+        className="bg-black"
         style={{
           display: 'flex',
           justifyContent: 'center',
@@ -82,7 +84,23 @@ const Home = () => {
               LVC Academy - Future-Ready Tech Bootcamps
             </h2>
           </div>
+          <div style={{
+            textAlign: 'center',
+            display: 'grid'
+            }}>
+            <img
+              src={AcaLogo}
+              alt="LVC Academy Logo"
+              style={{ maxWidth: '300px', height: 'auto' }}
+            />
+          </div>
+          <div style={{ textAlign: 'center', marginBottom: '20px', color: 'white' }}>
+            <h2 class="fontSize: clamp(30px, 2.5vmax, 60px)">
+              LVC Academy - Future-Ready Tech Bootcamps
+            </h2>
+          </div>
           <div
+            className="academy-carousel-container bg-black"
             className="academy-carousel-container bg-black"
           >
             <AcademyCarousel />
@@ -116,6 +134,9 @@ const Home = () => {
           }}
           className="py-5"
         >
+          <h1 style={{ color: 'white', fontSize: 'clamp(30px, 4vmax, 60px)' }}>
+            LVC Spotlight Media
+          </h1>
           <h1 style={{ color: 'white', fontSize: 'clamp(30px, 4vmax, 60px)' }}>
             LVC Spotlight Media
           </h1>

@@ -3039,67 +3039,18 @@ p {
   padding: 1px;
 }
 
-
-.academy-carousel .slide-surface {
-  background: #000;     /* black */
-  min-height: 60vh;     /* gives slides height without an image */
-  width: 100%;
-  position: relative;
+.academy-grid-row {
+  border: .15vmax solid white;
+  font-size: clamp(13px, 1vmax, 20px);
+  font-weight: 400;
+  padding: 1px;
 }
 
-
-
-
-
-/* Make all text inside this carousel white by default */
-.academy-carousel,
-.academy-carousel .carousel-caption,
-.academy-carousel h1,
-.academy-carousel h2,
-.academy-carousel h3,
-.academy-carousel p,
-.academy-carousel li,
-.academy-carousel a,
-.academy-carousel strong,
-.academy-carousel em {
-  color: #fff;
-}
-
-.academy-carousel .carousel-control-prev-icon,
-.academy-carousel .carousel-control-next-icon {
-  filter: none !important;
-}
-
-.academy-carousel .carousel-indicators [data-bs-target] {
-  filter: none !important;
-  background-color: #fff !important;
-  opacity: .7;
-  width: 28px;   /* optional: match the look above */
-  height: 4px;
-}
-
-.academy-carousel .carousel-indicators .active {
-  background-color: #fff !important;
-  opacity: 1;
-}
-
-.academy-carousel .no-card,
-.academy-carousel .no-card .card-content {
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* Black table with white text + borders */
-.academy-carousel .table-blackwhite {
-  --bs-table-bg: #000;
-  --bs-table-color: #fff;
-  --bs-table-border-color: #fff;
-  --bs-table-striped-bg: #0b0b0b;   /* optional */
-  --bs-table-striped-color: #fff;   /* optional */
-  --bs-table-hover-bg: #0d0d0d;     /* optional */
-  --bs-table-hover-color: #fff;     /* optional */
-  background-color: var(--bs-table-bg) !important;
-  color: var(--bs-table-color) !important;
+.academy-grid-cells {
+  border: .15vmax solid white;
+  font-size: clamp(10px, 1vmax, 20px);
+  font-weight: 400;
+  padding: 1px;
 }
 
 /* Make sure the header row also stays black */
