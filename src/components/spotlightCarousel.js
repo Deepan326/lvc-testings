@@ -122,19 +122,19 @@ function SpotLightCarousel() {
                     <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(32px, 2.5vmax, 60px)'}}>Why Choose LVC Spotlight Media?</h2>
                     <div className='spotlight-slide2-cards'>
                         <ul className='ul-list-padding-carousel' style={{ paddingBottom: '', marginTop: '' }}>
-                            <li style={{ fontSize: 'clamp(17, 1.5vmax, 3rem)' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(17px, 1.vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b style={{ color: 'white' }}> Founder-First Approach</b> → We put leaders in the spotlight, not just products
                             </li>
-                            <li style={{ fontSize: 'clamp(17, 1.5vmax, 3rem)' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(17px, 1.vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b style={{ color: 'white' }}> Guaranteed Media Features </b>→ Direct partnerships with global platforms
                             </li>
-                            <li style={{ fontSize: 'clamp(17, 1.5vmax, 3rem)' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(17px, 1.vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b style={{ color: 'white' }}> Integrated Growth </b> → PR + Branding + Digital Marketing in one
                             </li>
-                            <li style={{ fontSize: 'clamp(17, 1.5vmax, 3rem)' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(17px, 1.vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b style={{ color: 'white' }}> Tech & Startup Focus </b>→ Specialized in SaaS, AI, and innovation-driven businesses
                             </li>
-                            <li style={{ fontSize: 'clamp(17, 1.5vmax, 3rem)' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(17px, 1.vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b style={{ color: 'white' }}> Affordable Packages </b>→ Growth plans that scale with your journey
                             </li>
                         </ul>

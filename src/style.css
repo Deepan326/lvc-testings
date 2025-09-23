@@ -2895,7 +2895,7 @@ p {
 }
 
 .spotlight-slide2-bulletpoints {
-  font-size: clamp(17px, 1.5vmax, 20px);
+  font-size: clamp(15px, 1.4vmax, 20px);
   text-align: start;
   padding-bottom: clamp(.5px, 1vmax, 4px);
   /* padding-bottom: 1px; */
