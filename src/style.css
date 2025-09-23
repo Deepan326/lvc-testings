@@ -87,6 +87,33 @@ body {
   position: relative;
   z-index: 2;
 }
+/*
+.navbar-nav button.nav-link {
+  margin-left: 45px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.navbar-nav button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 1px;
+  background-color: #d6b709e8;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar-nav button:hover::after {
+  left: 0;
+  animation: slide-in 0.3s forwards;
+} */
 
 .navbar-brand {
   margin-right: 1rem !important
@@ -2868,14 +2895,14 @@ p {
 }
 
 .spotlight-slide2-bulletpoints {
-  font-size: clamp(10px, 2vmax, 20px);
+  font-size: clamp(17px, 1.5vmax, 20px);
   text-align: start;
   padding-bottom: clamp(.5px, 1vmax, 4px);
   /* padding-bottom: 1px; */
 }
 
 .spotlight-media-logo-slide1 {
-  width: 5vmax !important;
+  width: 100% !important;
   /* height: 80% !important; */
   /* margin-right: 70px; */
   /* margin-bottom:20px; */
@@ -2894,8 +2921,8 @@ p {
 }
 
 .spotlight-slide4-grid {
-  height: 1vmax;
-  width: clamp(20vmax, auto, 2000vmax);
+  /* height: 10vmax; */
+  width: clamp(350px, auto, 2000vmax);
   border: .15vmax solid white;
   color: white;
   background-color: black;
@@ -2924,21 +2951,21 @@ p {
 
 .spotlight-grid-col {
   border: .15vmax solid white;
-  font-size: clamp(12px, 1vmax, 20px);
+  font-size: clamp(13px, 1vmax, 20px);
   font-weight: bold;
   padding: 1px;
 }
 
 .spotlight-grid-row {
   border: .15vmax solid white;
-  font-size: clamp(10px, 1vmax, 20px);
+  font-size: clamp(13px, 1vmax, 20px);
   font-weight: 400;
   padding: 1px;
 }
 
 .spotlight-graph-cells {
   border: .15vmax solid white;
-  font-size: clamp(8px, 1vmax, 20px);
+  font-size: clamp(10px, 1vmax, 20px);
   font-weight: 400;
   padding: 1px;
 }
@@ -2949,6 +2976,7 @@ p {
   padding-bottom: clamp(0px, 5vmax, 400px);
 
 }
+
 .spotlight-logo-img {
   min-width: 150px;
   max-width: 70%;

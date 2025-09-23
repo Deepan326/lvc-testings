@@ -105,7 +105,7 @@ const Home = () => {
           }}
           className="py-5"
         >
-          <h1 style={{ color: 'white' }}>LVC Spotlight Media</h1>
+          <h1 style={{ color: 'white', fontSize:'clamp(30px, 4vmax, 60px)' }}>LVC Spotlight Media</h1>
           <div className="spotlight-carousel-container">
             <SpotLightCarousel />
           </div>
