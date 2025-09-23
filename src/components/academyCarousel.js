@@ -3,6 +3,8 @@ import { clamp, px } from 'framer-motion';
 import { faVolumeXmark } from '@fortawesome/free-solid-svg-icons';
 import { clamp, px } from 'framer-motion';
 import { faVolumeXmark } from '@fortawesome/free-solid-svg-icons';
+import { clamp, px } from 'framer-motion';
+import { faVolumeXmark } from '@fortawesome/free-solid-svg-icons';
 
 function AcademyCarousel() {
   return (
