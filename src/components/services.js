@@ -75,7 +75,6 @@ const Home = () => {
         </div>
       </div>
 
-
       <section className="grid-section-services">
         <div className="grid-container-services">
           <div className="grid-item-services">
@@ -91,23 +90,23 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="container py-5 section-4">
+      <div className="container-fluid py-5 section-4" style={{ padding: "0 50px" }}>
         <div className="row align-items-center">
-          <div className="col-md-6 text-section" ref={textRef}>
-            <h2 className="mb-4 section-4-heading">What We Offer</h2>
-            <h3>Design Development</h3>
-            <p>
+          <div className="col-md-6 text-section" ref={textRef} style={{ paddingRight: "25px" }}>
+            <h2 className="mb-4" style={{ fontSize: 'clamp(10px, 3vmax, 48px)' }}>What We Offer</h2>
+            <h3 style={{ fontSize: 'clamp(10px, 2vmax, 32px)' }}>Design Development</h3>
+            <p style={{ fontSize: 'clamp(10px, 1.5vmax, 24px)' }}>
               Whether you're a start-up aiming to establish your digital
               presence or a growing enterprise seeking to elevate your brand,
               we’re here to support your journey. You’ve found a partner
               dedicated to your success, with the expertise to deliver real
               results.
             </p>
-            <p>
+            <p style={{ fontSize: 'clamp(10px, 1.5vmax, 80px)' }}>
               Over the past 5 years, we’ve worked with countless clients,
               helping them achieve measurable growth and lasting impact.
             </p>
-            <p>
+            <p style={{ fontSize: 'clamp(10px, 1.5vmax, 80px)' }}>
               <strong>
                 Results, innovation, and growth are what we strive to bring to
                 every project.
@@ -115,7 +114,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="col-md-6 image-section" ref={imageRef}>
+          <div className="col-md-6 image-section" ref={imageRef} style={{ paddingLeft: "25px" }}>
             <img
               className="d-block w-100 custom-carousel-image"
               src="https://images.pexels.com/photos/3184428/pexels-photo-3184428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
