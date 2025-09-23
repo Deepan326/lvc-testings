@@ -81,8 +81,8 @@ const Home = () => {
             <img src="https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sample" className="grid-image" />
           </div>
           <div className="grid-item-services text">
-            <h2>Innovative Solutions</h2>
-            <p>
+            <h2 className="header-1-clamp">Innovative Solutions</h2>
+            <p className="paragraph-clamp">
               We deliver cutting-edge solutions that transform businesses and drive growth. 
               Discover how our expertise can empower your journey to success.
             </p>

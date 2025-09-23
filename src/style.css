@@ -1061,14 +1061,14 @@ p {
 }
 
 .grid-item-services.text h2 {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   margin-bottom: 20px;
   color: #333;
   /* Adjust for text color */
 }
 
 .grid-item-services.text p {
-  font-size: 1.125rem;
+  /* font-size: 1.125rem; */
   margin-bottom: 20px;
   color: #555;
   /* Adjust for text color */
