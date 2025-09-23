@@ -2680,6 +2680,19 @@ p {
   width: 6rem;
 }
 
+/* Font Clamping (Dynamically adjust size based on viewport) */
+.header-1-clamp {
+  font-size: clamp(32px, 2.4vmax, 60px);
+}
+
+.header-2-clamp {
+  font-size: clamp(24px, 2.2vmax, 52px);
+}
+
+.paragraph-clamp {
+  font-size: clamp(12px, 1.5vmax, 44px);
+}
+
 /* Fair Job Portal section */
 #fairjob-section {
   color: #fff;

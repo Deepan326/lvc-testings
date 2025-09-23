@@ -93,9 +93,9 @@ const Home = () => {
       <div className="container-fluid py-5 section-4" style={{ padding: "0 50px" }}>
         <div className="row align-items-center">
           <div className="col-md-6 text-section" ref={textRef} style={{ paddingRight: "25px" }}>
-            <h2 className="mb-4" style={{ fontSize: 'clamp(10px, 3vmax, 48px)' }}>What We Offer</h2>
-            <h3 style={{ fontSize: 'clamp(10px, 2vmax, 32px)' }}>Design Development</h3>
-            <p style={{ fontSize: 'clamp(10px, 1.5vmax, 24px)' }}>
+            <h2 className="mb-4 header-1-clamp">What We Offer</h2>
+            <h3 className="header-2-clamp">Design Development</h3>
+            <p className="paragraph-clamp">
               Whether you're a start-up aiming to establish your digital
               presence or a growing enterprise seeking to elevate your brand,
               we’re here to support your journey. You’ve found a partner
