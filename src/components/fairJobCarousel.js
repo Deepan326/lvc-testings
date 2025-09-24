@@ -11,7 +11,7 @@ function FairJobCarousel() {
     return (
         <Carousel className="gradient-background-color bg-black">
             <Carousel.Item className="fairjob-carousel-scroll">
-                <img alt='vecteezy.com jpeg black and grey background' style={{ width: 'clamp(400px, 67%, 1000px)', height: 'clamp(400px, 67%, 1000px)', opacity: '0' }} src={ExampleCarouselImage} text="First slide" />
+                <img alt='vecteezy.com jpeg black and grey background' className='fairjob-carousel-img' src={ExampleCarouselImage} text="First slide" />
                 <Carousel.Caption className="fairjob-carousel-items-container">
                     <div className="row align-items-center ">
                         <div className="col-12 col-md-5" id="fairjob-item-1-div-1" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -124,8 +124,8 @@ function FairJobCarousel() {
                 </Carousel.Caption>
             </Carousel.Item>
 
-            {/* <Carousel.Item className="fairjob-carousel-scroll">
-                <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: 'clamp(1000px, 100%, 1200px)', opacity: '0' }} src={ExampleCarouselImage} text="Third slide" />
+            <Carousel.Item className="fairjob-carousel-scroll">
+                <img alt='vecteezy.com jpeg black and grey background' className='fairjob-carousel-img' src={ExampleCarouselImage} text="Third slide" />
                 <Carousel.Caption className="fairjob-carousel-items-container align-content-center" style={{ flexDirection: "column", justifyContent: "center", margin: 0 }}>
                     <h3 id="fairjob-item-3-h3" style={{ color: 'white', marginBottom: "25px" }} className="header-1-clamp">Why Choose LVC Fair Job?</h3>
                     <ul style={{ textAlign: 'start'}} className="paragraph-clamp">
@@ -136,10 +136,10 @@ function FairJobCarousel() {
                         <li> Career Hub → Networking, messaging, interview prep & daily tech updates</li>
                     </ul>
                 </Carousel.Caption>
-            </Carousel.Item> */}
+            </Carousel.Item>
 
-            {/* <Carousel.Item className="fairjob-carousel-scroll">
-                <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: 'clamp(1000px, 100%, 1200px)', opacity: '0' }} src={ExampleCarouselImage} text="Fourth slide" />
+            <Carousel.Item className="fairjob-carousel-scroll">
+                <img alt='vecteezy.com jpeg black and grey background' className='fairjob-carousel-img' src={ExampleCarouselImage} text="Fourth slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container align-content-center' style={{ marginTop: '50px' }}>
                     <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 80px)', textAlign: 'center' }}>Competitor Comparison</h2>
                     <p style={{ color: 'white', fontSize: 'clamp(13px, 1vmax, 26px)', textAlign: 'center' }}>Why LVC Fair Job Portal Beats the Rest</p>
@@ -213,15 +213,15 @@ function FairJobCarousel() {
                         </tbody>
                     </table>
                 </Carousel.Caption>
-            </Carousel.Item> */}
+            </Carousel.Item>
 
-            {/* <Carousel.Item className="fairjob-carousel-scroll">
-                <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: 'clamp(1000px, 100%, 1200px)', opacity: '0' }} src={ExampleCarouselImage} text="Fourth slide" />
+            <Carousel.Item className="fairjob-carousel-scroll">
+                <img alt='vecteezy.com jpeg black and grey background' className='fairjob-carousel-img' src={ExampleCarouselImage} text="Fourth slide" />
                 <Carousel.Caption className="fairjob-carousel-items-container" style={{ flexDirection: "column", justifyContent: "center", margin: 0 }}>
                     <h3 style={{ color: 'white' , "marginBottom": "25px" }} className="header-1-clamp">Join the World's First Scam-Free Job Portal!</h3>
                     <Button href="https://www.lvcfairjob.com/" className="header-2-clamp"> Explore Fair Job Portal</Button>
                 </Carousel.Caption>
-            </Carousel.Item> */}
+            </Carousel.Item>
         </Carousel>
     );
 }
