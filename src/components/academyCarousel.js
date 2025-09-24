@@ -64,6 +64,7 @@ function AcademyCarousel() {
           </div>
         </div>
       </Carousel.Item>
+
       <Carousel.Item style={{ bottom: '18%' }}>
         <div
           className="highlight-cards-container"
@@ -123,6 +124,8 @@ function AcademyCarousel() {
             </a>
           </div>
         </div>
+        </Carousel.Item>
+        
       <Carousel.Item style={{ bottom: '18%' }}>
         <div
           className="highlight-cards-container"
