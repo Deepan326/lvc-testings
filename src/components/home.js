@@ -5,7 +5,6 @@ import TransformationStartsHere from './transformationStartsHere.js';
 import Footer from './footer.js';
 // import SpotLogo from "../assets/lvcSpo.jpg";
 import AcaLogo from '../assets/lvcAcaTransparent.png';
-import AcaLogo from '../assets/lvcAcaTransparent.png';
 import FairJobCarousel from './fairJobCarousel.js';
 import SpotLightCarousel from './spotlightCarousel.js';
 import AcademyCarousel from './academyCarousel.js';
