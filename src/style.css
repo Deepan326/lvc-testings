@@ -2740,17 +2740,15 @@ p.paragraph-clamp {
 }
 
 .fairjob-carousel-items-container {
-  position: absolute;
   overflow: auto;
-  padding: 0px 20px;
-  /* margin-bottom: 20px; */
-  width: clamp(300px, 90%, 1600px);
-  /* min-height: 275px;
-  height: 67%; */
-  left: 10%;
-  top: 8vw;
+  padding: 0px 5%;
+  height: clamp(300px, 90%, 1600px);
   -webkit-mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
   mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
+
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
 }
 
 .fairjob-carousel-scroll::-webkit-scrollbar {
