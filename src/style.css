@@ -3053,20 +3053,13 @@ p {
   padding: 1px;
 }
 
-/* Make sure the header row also stays black */
+
 .academy-carousel .table-blackwhite thead th {
   background-color: #000 !important;
   color: #fff !important;
   border-color: #fff !important;
 }
 
-.academy-carousel .carousel-control-prev {
-  left: -22rem;               /* negative = farther left (outside the slide) */
-}
-
-.academy-carousel .carousel-control-next {
-  right: -22rem;              /* negative = farther right (outside the slide) */
-}
 
 .academy-heading-row {
   display: grid;
