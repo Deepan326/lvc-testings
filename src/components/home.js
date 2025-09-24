@@ -67,20 +67,22 @@ const Home = () => {
         }}
       >
         <section className="container py-5 section-4">
-          <div style={{
-            textAlign: 'center',
-            display: 'grid'
-            }}>
-            <img
-              src={AcaLogo}
-              alt="LVC Academy Logo"
-              style={{ maxWidth: '300px', height: 'auto' }}
-            />
-          </div>
-          <div>
-            <h1 style={{ color: 'white', fontSize: 'clamp(30px, 4vmax, 60px)' }}>
-            LVC Academy - Future-Ready Tech Bootcamps
-          </h1>
+          <div className="academy-heading-row">
+            <div style={{
+              textAlign: 'center',
+              display: 'grid'
+              }}>
+              <img
+                src={AcaLogo}
+                alt="LVC Academy Logo"
+                style={{ maxWidth: '300px', height: 'auto' }}
+              />
+            </div>
+            <div>
+              <h1 style={{ color: 'white', fontSize: 'clamp(30px, 4vmax, 60px)' }}>
+              LVC Academy - Future-Ready Tech Bootcamps
+            </h1>
+            </div>
           </div>
           <div
             className="academy-carousel-container bg-black"

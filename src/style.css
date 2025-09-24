@@ -3068,3 +3068,43 @@ p {
   right: -22rem;              /* negative = farther right (outside the slide) */
 }
 
+.academy-heading-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr); /* logo | flexible title */
+  align-items: center;
+  justify-content: center;
+  column-gap: clamp(10px, 2vw, 24px);
+}
+
+/* Keep your existing inline-grid but add safe sizing for the image */
+.academy-heading-row > :first-child {
+  min-width: 0;
+  display: inline-grid;
+}
+.academy-heading-row > :first-child img {
+  height: clamp(40px, 6vw, 72px);  /* responsive logo size */
+  width: auto;
+  transform: translateY(-10px);    /* your small upward nudge */
+}
+
+/* Make the H1 wrap nicely instead of pushing into the logo */
+.academy-heading-row h1 {
+  margin: 0;
+  line-height: 1.15;
+  overflow-wrap: anywhere;         /* prevents long words from forcing overlap */
+}
+
+/* On small screens, stack to guarantee no overlap */
+@media (max-width: 560px) {
+  .academy-heading-row {
+    grid-template-columns: 1fr;    /* stack: logo on top, title below */
+    row-gap: 10px;
+    text-align: center;
+    justify-items: center;
+  }
+  .academy-heading-row > :first-child img {
+    transform: none;                /* remove nudge when stacked */
+    height: clamp(36px, 10vw, 60px);
+    max-width: 65vw;
+  }
+}
