@@ -79,7 +79,7 @@ const Home = () => {
               />
             </div>
             <div>
-              <h1 style={{ color: 'white', fontSize: 'clamp(30px, 4vmax, 60px)' }}>
+              <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
               LVC Academy - Future-Ready Tech Bootcamps
             </h1>
             </div>
@@ -118,7 +118,7 @@ const Home = () => {
           }}
           className="py-5"
         >
-          <h1 style={{ color: 'white', fontSize: 'clamp(30px, 4vmax, 60px)' }}>
+          <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
             LVC Spotlight Media
           </h1>
           <div className="spotlight-carousel-container">
