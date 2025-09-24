@@ -10,7 +10,7 @@ function AcademyCarousel() {
             style={{
               textAlign: "center",
               color: "white",
-              fontSize: "clamp(32px, 2.5vmax, 60px)",
+              fontSize: "clamp(17px, 2vmax, 45px)",
               fontWeight: "400",
             }}
           >
@@ -44,11 +44,11 @@ function AcademyCarousel() {
             justifyContent: "center",
           }}
         >
-          <div className="p-5 opacity-75" style={{ flex: "1 1 300px", maxWidth: "400px" }}>
-            <h2 style={{ fontSize: "clamp(28px, 2.2vmax, 48px)" }}>
+          <div className="p-5" style={{ flex: "1 1 300px", maxWidth: "400px" }}>
+            <h2 style={{ color: 'white', fontSize: "clamp(24px, 2vmax, 40px)" }}>
               Fast-Track 6-Month Bootcamps
             </h2>
-            <ul style={{ fontSize: "clamp(15px, 1.4vmax, 20px)" }}>
+            <ul style={{ color: 'white', fontSize: "clamp(15px, 1.4vmax, 20px)" }}>
               <li>
                 For students & professionals who want to <strong>upskill quickly</strong>
               </li>
@@ -62,11 +62,11 @@ function AcademyCarousel() {
             </a>
           </div>
 
-          <div className="p-5 opacity-75" style={{ flex: "1 1 300px", maxWidth: "400px" }}>
+          <div className="p-5" style={{ flex: "1 1 300px", maxWidth: "400px" }}>
             <h3 style={{ fontSize: "clamp(24px, 2vmax, 40px)" }}>
               Comprehensive 12-Month Bootcamps
             </h3>
-            <ul style={{ fontSize: "clamp(15px, 1.4vmax, 20px)" }}>
+            <ul style={{ color: 'white', fontSize: "clamp(15px, 1.4vmax, 20px)" }}>
               <li>Deeper curriculum with advanced specializations</li>
               <li>
                 Extended <strong>shadowing + capstone projects</strong>
@@ -84,7 +84,7 @@ function AcademyCarousel() {
 
       {/* Slide 3: Why Choose */}
       <Carousel.Item>
-        <div className="p-5 opacity-75">
+        <div className="p-5">
           <h2
             style={{
               color: "white",
@@ -95,7 +95,7 @@ function AcademyCarousel() {
           >
             Why Choose LVC Academy?
           </h2>
-          <div className="card-content" style={{ fontSize: "30px" }}>
+          <div className="card-content" style={{ background: 'transparent', boxShadow: 'none', border: '0',fontSize: "30px", textAlign: "left" }}>
             <ul style={{ fontSize: "clamp(15px, 1.4vmax, 20px)" }}>
               <li>
                 <strong>Shadowing Opportunities →</strong> Learn directly by observing professionals
@@ -123,7 +123,7 @@ function AcademyCarousel() {
           <h2 className="mb-4 text-center" style={{ color: "white" }}>
             Feature Comparison
           </h2>
-          <table className="academy-grid-col academy-grid-row academy-grid-celld table-dark opacity-75 table-bordered text-center align-middle">
+          <table className="academy-grid-col academy-grid-row academy-grid-celld table-dark table-bordered text-center align-middle">
             <thead className="table-dark">
               <tr>
                 <th>Feature</th>

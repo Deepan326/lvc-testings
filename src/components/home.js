@@ -77,10 +77,10 @@ const Home = () => {
               style={{ maxWidth: '300px', height: 'auto' }}
             />
           </div>
-          <div style={{ textAlign: 'center', marginBottom: '20px', color: 'white' }}>
-            <h2 class="fontSize: clamp(30px, 2.5vmax, 60px)">
-              LVC Academy - Future-Ready Tech Bootcamps
-            </h2>
+          <div>
+            <h1 style={{ color: 'white', fontSize: 'clamp(30px, 4vmax, 60px)' }}>
+            LVC Academy - Future-Ready Tech Bootcamps
+          </h1>
           </div>
           <div
             className="academy-carousel-container bg-black"

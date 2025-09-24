@@ -3059,3 +3059,11 @@ p {
   color: #fff !important;
   border-color: #fff !important;
 }
+
+.academy-carousel .carousel-control-prev {
+  left: -22rem;               /* negative = farther left (outside the slide) */
+}
+
+.academy-carousel .carousel-control-next {
+  right: -22rem;              /* negative = farther right (outside the slide) */
+}
