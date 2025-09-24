@@ -1,10 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
-import { clamp, px } from 'framer-motion';
-import { faVolumeXmark } from '@fortawesome/free-solid-svg-icons';
-import { clamp, px } from 'framer-motion';
-import { faVolumeXmark } from '@fortawesome/free-solid-svg-icons';
-import { clamp, px } from 'framer-motion';
-import { faVolumeXmark } from '@fortawesome/free-solid-svg-icons';
+// import { clamp, px } from 'framer-motion';
+// import { faVolumeXmark } from '@fortawesome/free-solid-svg-icons';
 
 function AcademyCarousel() {
   return (
@@ -16,7 +12,7 @@ function AcademyCarousel() {
             style={{
               textAlign: 'center',
               color: 'white',
-              fontSize: 'clamp(32px, 2.5faVolumeXmark, 60px)',
+              fontSize: 'clamp(32px, 2.5vmax, 60px)',
               fontWeight: '400',
             }}
           >
@@ -44,7 +40,7 @@ function AcademyCarousel() {
             style={{
               textAlign: 'center',
               color: 'white',
-              fontSize: 'clamp(32px, 2.5faVolumeXmark, 60px)',
+              fontSize: 'clamp(32px, 2.5vmax, 60px)',
               fontWeight: '400',
             }}
           >
@@ -287,8 +283,8 @@ function AcademyCarousel() {
             >
               Feature Comparison
             </h2>
-            <table class="academy-grid-col academy-grid-row academy-grid-celld table-dark opacity-75 table-bordered text-center align-middle">
-              <thead class="table-dark">
+            <table className="academy-grid-col academy-grid-row academy-grid-celld table-dark opacity-75 table-bordered text-center align-middle">
+              <thead className="table-dark">
                 <tr>
                   <th>Feature</th>
                   <th>LVC Academy</th>
@@ -350,8 +346,8 @@ function AcademyCarousel() {
             >
               Feature Comparison
             </h2>
-            <table class="academy-grid-col academy-grid-row academy-grid-celld table-dark opacity-75 table-bordered text-center align-middle">
-              <thead class="table-dark">
+            <table className="academy-grid-col academy-grid-row academy-grid-celld table-dark opacity-75 table-bordered text-center align-middle">
+              <thead className="table-dark">
                 <tr>
                   <th>Feature</th>
                   <th>LVC Academy</th>
