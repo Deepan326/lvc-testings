@@ -95,7 +95,7 @@ function AcademyCarousel() {
           >
             Why Choose LVC Academy?
           </h2>
-          <div className="card-content" style={{ background: 'transparent', boxShadow: 'none', border: '0',fontSize: "30px", textAlign: "left" }}>
+          <div className="card-content" style={{ background: 'transparent', boxShadow: 'none', border: '0',fontSize: "30px", textAlign: "left", justifyContent: 'center' }}>
             <ul style={{ fontSize: "clamp(15px, 1.4vmax, 20px)" }}>
               <li>
                 <strong>Shadowing Opportunities →</strong> Learn directly by observing professionals
