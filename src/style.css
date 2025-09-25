@@ -851,6 +851,9 @@ p {
   background-color: #1e2222;
   color: white;
   padding: 120px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .footer-section-flex {
