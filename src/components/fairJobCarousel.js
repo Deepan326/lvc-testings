@@ -54,7 +54,7 @@ function FairJobCarousel() {
             </Carousel.Item>
 
             <Carousel.Item className="fairjob-carousel-scroll fairjob-carousel-items-container">
-                <Row xs={1} md={1} lg={1} xl={2} className="g-4" style={{ "margin-left": "100px", "margin-right": "100px", paddingTop: "5%" }}>
+                <Row xs={1} md={1} lg={1} xl={2} className="g-4 mx-auto" style={{ "margin-left": "100px", "margin-right": "100px", paddingTop: "5%" }}>
                     <Col>
                         <Card className='fairjob-cards' id="fairjob-card-1">
                             <Card.Body>

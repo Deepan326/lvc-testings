@@ -1,20 +1,23 @@
 import Carousel from 'react-bootstrap/Carousel';
 import ExampleCarouselImage from '../assets/vecteezy_black-and-gray-background-vector-illustration-lighting_6417811-1.jpg';
 import spotlightLogo from '../assets/spotlight-media.png'
+
 function SpotLightCarousel() {
 
 
     return (
         <Carousel className='gradient-background-color bg-black'>
+
             <Carousel.Item className='spotlight-carousel-scroll' style={{ marginBottom: '0px' }}>
-                <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '100%', minHeight: '275px', opacity: '0' }} src={ExampleCarouselImage} text="First slide" />
-                <Carousel.Caption className='spotlight-carousel-items-container'>
+                <img alt='vecteezy.com jpeg black and grey background' 
+                style={{ width: '100%', height: '100%', minHeight: '275px', opacity: '0' }} 
+                src={ExampleCarouselImage} text="First slide" />
+
+                <Carousel.Caption 
+                    className='spotlight-carousel-items-container' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <div className='d-flex flex-row h-30'>
-                        <div style={{width:'30%', maxHeight:'150px',minWidth:'120px', paddingRight:'5%'}}>
-                            <img alt='spotlight media logo' className='spotlight-media-logo-slide1' src={spotlightLogo} />
-                        </div>
                         <div className='mw-80 align-content-end'>
-                            <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(30px, 2.5vmax, 60px)', marginBottom:'0'}}>PR, Branding & Digital Growth</h2>
+                            <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(30px, 2.5vmax, 60px)', marginBottom:'0', textAlign: 'center'}}>PR, Branding & Digital Growth</h2>
                         </div>
                     </div>
                     <p style={{ color: 'white', paddingTop: '5.5vw', textAlign: 'center', fontSize: 'clamp(17px, 2vmax, 45px)', fontWeight: 'normal' }}>
@@ -22,9 +25,11 @@ function SpotLightCarousel() {
                         <br />
                         <b style={{ color: 'white' }}>get trusted, and get remembered.</b>
                         <br />
-                        We don’t just promote — <b style={{ color: 'white' }}>we spotlight your brand and fuel your growth.</b></p>
+                        We don’t just promote — <b style={{ color: 'white' }}>we spotlight your brand and fuel your growth.</b>
+                    </p>
                 </Carousel.Caption>
             </Carousel.Item>
+
             <Carousel.Item className='spotlight-carousel-scroll' style={{ overflow: 'auto' }} >
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', minHeight: '275px', opacity: '0' }} src={ExampleCarouselImage} text="Second slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
@@ -116,6 +121,7 @@ function SpotLightCarousel() {
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
+
             <Carousel.Item className='spotlight-carousel-scroll' style={{ overflow: 'auto' }}>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', minHeight: '260px', opacity: '0' }} src={ExampleCarouselImage} text="Third slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
@@ -141,6 +147,7 @@ function SpotLightCarousel() {
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
+
             <Carousel.Item className='spotlight-carousel-scroll' style={{ overflow: 'auto' }}>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', minHeight: '275px', opacity: '0' }} src={ExampleCarouselImage} text="Fourth slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
@@ -196,6 +203,7 @@ function SpotLightCarousel() {
                     </table>
                 </Carousel.Caption>
             </Carousel.Item>
+
             <Carousel.Item className='spotlight-carousel-scroll'>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', minHeight: '275px', opacity: '0' }} src={ExampleCarouselImage} text="fifth slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container d-flex justify-content-center align-items-center' style={{overflow:'hidden'}}>
@@ -204,6 +212,7 @@ function SpotLightCarousel() {
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
+
             <Carousel.Item className='spotlight-carousel-scroll'>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', minHeight: '275px', opacity: '0' }} src={ExampleCarouselImage} text="sixth slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>

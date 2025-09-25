@@ -5,6 +5,7 @@ import TransformationStartsHere from './transformationStartsHere.js';
 import Footer from './footer.js';
 // import SpotLogo from "../assets/lvcSpo.jpg";
 import AcaLogo from '../assets/lvcAcaTransparent.png';
+import SpotLogo from '../assets/spotlight-media.png'
 import FairJobCarousel from './fairJobCarousel.js';
 import SpotLightCarousel from './spotlightCarousel.js';
 import AcademyCarousel from './academyCarousel.js';
@@ -126,9 +127,23 @@ const Home = () => {
           }}
           className="py-5"
         >
-          <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
+          <div className="container section-4" style={{ paddingTop: 0, paddingBottom: 0 }}>
+      <div className="academy-heading-row">
+        <div style={{ textAlign: 'center', display: 'grid' }}>
+          <img
+            src={SpotLogo}
+            alt="LVC Spotlight Media Logo"
+            style={{ maxWidth: '300px', height: 'auto' }}
+          />
+        </div>
+        <div>
+          <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)', margin: 0, transform: 'translateX(-120px)', willChange: 'transform' }}>
             LVC Spotlight Media
           </h1>
+        </div>
+      </div>
+    </div>
+          
           <div className="spotlight-carousel-container">
             <SpotLightCarousel />
           </div>
