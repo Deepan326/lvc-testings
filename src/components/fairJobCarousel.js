@@ -39,7 +39,7 @@ function FairJobCarousel() {
                                 </em>
                             </h3>
                         </div>
-                        <p className="paragraph-clamp">
+                        <p className="paragraph-clamp" style={{color:'white'}}>
                         Unlike LinkedIn, Indeed, ZipRecruiter, Monster, or Naukri — we eliminate fake profiles, spam jobs, and scam recruiters. 
                         <br /> <br />
         
@@ -58,7 +58,7 @@ function FairJobCarousel() {
                     <Col>
                         <Card className='fairjob-cards' id="fairjob-card-1">
                             <Card.Body>
-                                <Card.Title className="card-titles header-1-clamp">Verified Profiles</Card.Title>
+                                <Card.Title className="card-titles" style={{fontSize: 'clamp(25px, 2vmax, 40px'}}>Verified Profiles</Card.Title>
                                 <Card.Text>
                                     <ul id="fairjob-list" className="paragraph-clamp">
                                         <li> No fake job seekers → Strict ID & education verification</li>
@@ -71,7 +71,7 @@ function FairJobCarousel() {
                     <Col>
                         <Card className='fairjob-cards'>
                             <Card.Body>
-                                <Card.Title className="card-titles header-1-clamp">AI-Powered Screening</Card.Title>
+                                <Card.Title className="card-titles" style={{fontSize: 'clamp(25px, 2vmax, 40px'}}>AI-Powered Screening</Card.Title>
                                 <Card.Text>
                                     <ul id="fairjob-list" className="paragraph-clamp">
                                         <li> Virtual AI interview calls & chatbot assessments</li>
@@ -84,7 +84,7 @@ function FairJobCarousel() {
                     <Col>
                         <Card className='fairjob-cards'>
                             <Card.Body>
-                                <Card.Title className="card-titles header-1-clamp">Smart Matching Engine</Card.Title>
+                                <Card.Title className="card-titles" style={{fontSize: 'clamp(25px, 2vmax, 40px'}}>Smart Matching Engine</Card.Title>
                                 <Card.Text>
                                     <ul id="fairjob-list" className="paragraph-clamp">
                                         <li> ATS + Generative AI → Job–Resume precision matching</li>
@@ -97,7 +97,7 @@ function FairJobCarousel() {
                     <Col>
                         <Card className='fairjob-cards' style={{ marginBottom: "50px" }}>
                             <Card.Body>
-                                <Card.Title className="card-titles header-1-clamp">Transparent Hiring</Card.Title>
+                                <Card.Title className="card-titles" style={{fontSize: 'clamp(25px, 2vmax, 40px'}}>Transparent Hiring</Card.Title>
                                 <Card.Text>
                                     <ul id="fairjob-list" className="paragraph-clamp">
                                         <li> Real-time application tracking</li>
@@ -115,11 +115,11 @@ function FairJobCarousel() {
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center", paddingBottom: "40px" }}>
                     <h3 id="fairjob-item-3-h3" style={{ color: 'white', marginBottom: "25px" }} className="header-1-clamp">Why Choose LVC Fair Job?</h3>
                     <ul style={{ textAlign: 'start', color:'white'}} className="paragraph-clamp">
-                        <li> Scam-Free Ecosystem → 100% verified recruiters, job seekers, and postings</li>
-                        <li> AI Recruiting Tools → Smart resume-job matching + AI interview chatbots</li>
-                        <li> Transparency First → Application status updates & real-time job closure</li>
-                        <li> Data Privacy Guaranteed → No data resale, no spam calls/emails</li>
-                        <li> Career Hub → Networking, messaging, interview prep & daily tech updates</li>
+                        <li> <strong>Scam-Free Ecosystem</strong> → 100% verified recruiters, job seekers, and postings</li>
+                        <li> <strong>AI Recruiting Tools</strong> → Smart resume-job matching + AI interview chatbots</li>
+                        <li> <strong>Transparency First</strong> → Application status updates & real-time job closure</li>
+                        <li> <strong>Data Privacy Guaranteed</strong> → No data resale, no spam calls/emails</li>
+                        <li> <strong>Career Hub</strong> → Networking, messaging, interview prep & daily tech updates</li>
                     </ul>
                 </div>
             </Carousel.Item>

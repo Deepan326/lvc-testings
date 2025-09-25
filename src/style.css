@@ -2691,15 +2691,20 @@ p {
   font-size: clamp(24px, 2.2vmax, 52px);
 }
 
+.ul-header-clamp {
+  font-size: clamp(25px, 2vmax, 40px);
+}
+
 h3.header-2-clamp {
   font-size: clamp(24px, 2.2vmax, 52px);
 }
 
 .paragraph-clamp {
-  font-size: clamp(12px, 1.5vmax, 20px);
+  font-size: clamp(15px, 1.4vmax, 20px);
 
   li {
-    font-size: clamp(12px, 1.5vmax, 44px);
+    font-size: clamp(15px, 1.4vmax, 20px);
+    text-align: left;
   }
 }
 
