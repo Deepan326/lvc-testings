@@ -2706,14 +2706,6 @@ p.paragraph-clamp {
 }
 
 /* Fair Job Portal section */
-#fairjob-section {
-  color: #fff;
-}
-
-#fairjob-right {
-  text-align: center;
-}
-
 .fairjob-carousel-items-container {
   overflow: auto;
   padding: 0px 5%;
@@ -2724,6 +2716,14 @@ p.paragraph-clamp {
 
 .fairjob-carousel-scroll::-webkit-scrollbar {
   width: 0px;
+}
+
+#fairjob-section {
+  color: #fff;
+}
+
+#fairjob-right {
+  text-align: center;
 }
 
 #fairjob-title {
