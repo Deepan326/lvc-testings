@@ -2,7 +2,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card'
 import Carousel from 'react-bootstrap/Carousel';
 import Col from 'react-bootstrap/Col';
-import ExampleCarouselImage from '../assets/vecteezy_black-and-gray-background-vector-illustration-lighting_6417811-1.jpg';
 import FairJob from "../assets/fairJob-icon.png";
 import Row from 'react-bootstrap/Row';
 
