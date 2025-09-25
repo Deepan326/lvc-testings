@@ -3151,3 +3151,47 @@ p {
   .academy-carousel.carousel .carousel-control-prev  { left: 8px !important;  }
   .academy-carousel.carousel .carousel-control-next  { right: 8px !important; }
 }
+
+main > div:first-of-type {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+main > div:first-of-type::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: #fff;
+  opacity: 0.7;
+}
+
+/* 2) Inside ANY <main>, add a line BEFORE every subsequent direct <div> */
+main > div + div {
+  position: relative;
+  margin-top: 20px;           /* space above the line */
+  padding-top: 20px;          /* space below the line */
+}
+main > div + div::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 1px;
+  background: #fff;
+  opacity: 0.7;
+}
+
+/* 3) Add a line BEFORE the Academy block (the .bg-black section that follows the first <main>) */
+main + .bg-black {
+  border-top: 1px solid rgba(255,255,255,0.7);
+  margin-top: 24px;           /* breathing room above the line */
+  padding-top: 24px;          /* breathing room below the line */
+}
+
+/* 4) Add a line BEFORE and AFTER the Spotlight section (it's the <section class="py-5"> inside the second <main>) */
+main > section.py-5 {
+  border-top: 1px solid rgba(255,255,255,0.7);
+  border-bottom: 1px solid rgba(255,255,255,0.7);
+  padding-top: calc(1rem + 12px);   /* keep visual spacing with the line */
+  padding-bottom: calc(1rem + 12px);
+}
