@@ -2982,6 +2982,31 @@ p.paragraph-clamp {
   width: 0px;
 }
 
+.spotlight-heading {
+  margin: 0;
+  /* shift left between 8px and 36px depending on viewport */
+  margin-left: clamp(-8px, -1vw, -72px);
+}
+
+.spotlight-heading-row { 
+  column-gap: clamp(6px, 1vw, 14px); /* keep a small, responsive gap by default */
+}
+
+@media (min-width: 1200px) {
+  .spotlight-heading-row { column-gap: clamp(4px, 0.8vw, 12px); }
+  .spotlight-heading-row h1 { margin-left: -24px; }
+}
+
+
+@media (min-width: 1600px) {
+  .spotlight-heading-row h1 { margin-left: -40px; } /* a bit more pull on ultrawide */
+}
+
+/* Safety: center text again when stacked on small screens (already true for Academy) */
+@media (max-width: 560px) {
+  .spotlight-heading-row h1 { text-align: center; margin-left: 0; }
+}
+
 /* LVC Academy carousel tweaks */
 
 .academy-grid-col {

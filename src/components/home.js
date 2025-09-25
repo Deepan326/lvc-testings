@@ -128,7 +128,7 @@ const Home = () => {
           className="py-5"
         >
           <div className="container section-4" style={{ paddingTop: 0, paddingBottom: 0 }}>
-      <div className="academy-heading-row">
+      <div className="academy-heading-row spotlight-heading-row" style={{ columnGap: 'clamp(6px, 1vw, 12px)' }}>
         <div style={{ textAlign: 'center', display: 'grid' }}>
           <img
             src={SpotLogo}
@@ -137,7 +137,7 @@ const Home = () => {
           />
         </div>
         <div>
-          <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)', margin: 0, transform: 'translateX(-120px)', willChange: 'transform' }}>
+          <h1 className="sportlight-heading" style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)', margin: 0, willChange: 'transform' }}>
             LVC Spotlight Media
           </h1>
         </div>
