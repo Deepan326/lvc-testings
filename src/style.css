@@ -87,6 +87,7 @@ body {
   position: relative;
   z-index: 2;
 }
+
 /*
 .navbar-nav button.nav-link {
   margin-left: 45px;
@@ -2903,8 +2904,14 @@ p {
   /* padding-bottom: 1px; */
 }
 
-.spotlight-media-logo-slide1 {
+.spotlight-media-logo-title {
   width: 100% !important;
+  /* width: clamp(100px, 20vmax, 300px); */
+  height: auto;
+  max-height: 290px;
+  max-width: 290px;
+  min-width: 180px;
+  min-height: 180px;
   /* height: 80% !important; */
   /* margin-right: 70px; */
   /* margin-bottom:20px; */
@@ -3063,40 +3070,48 @@ p {
 
 .academy-heading-row {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr); /* logo | flexible title */
+  grid-template-columns: auto minmax(0, 1fr);
+  /* logo | flexible title */
   align-items: center;
   justify-content: center;
   column-gap: clamp(10px, 2vw, 24px);
 }
 
 /* Keep your existing inline-grid but add safe sizing for the image */
-.academy-heading-row > :first-child {
+.academy-heading-row> :first-child {
   min-width: 0;
   display: inline-grid;
 }
-.academy-heading-row > :first-child img {
-  height: clamp(40px, 6vw, 72px);  /* responsive logo size */
+
+.academy-heading-row> :first-child img {
+  height: clamp(40px, 6vw, 72px);
+  /* responsive logo size */
   width: auto;
-  transform: translateY(-10px);    /* your small upward nudge */
+  transform: translateY(-10px);
+  /* your small upward nudge */
 }
 
 /* Make the H1 wrap nicely instead of pushing into the logo */
 .academy-heading-row h1 {
   margin: 0;
   line-height: 1.15;
-  overflow-wrap: anywhere;         /* prevents long words from forcing overlap */
+  overflow-wrap: anywhere;
+  /* prevents long words from forcing overlap */
 }
 
 /* On small screens, stack to guarantee no overlap */
 @media (max-width: 560px) {
   .academy-heading-row {
-    grid-template-columns: 1fr;    /* stack: logo on top, title below */
+    grid-template-columns: 1fr;
+    /* stack: logo on top, title below */
     row-gap: 10px;
     text-align: center;
     justify-items: center;
   }
-  .academy-heading-row > :first-child img {
-    transform: none;                /* remove nudge when stacked */
+
+  .academy-heading-row> :first-child img {
+    transform: none;
+    /* remove nudge when stacked */
     height: clamp(36px, 10vw, 60px);
     max-width: 65vw;
   }
@@ -3106,14 +3121,17 @@ p {
   /* content column width that scales with viewport */
   --slide-max: 1100px;
   --content-w: clamp(320px, 92vw, var(--slide-max));
-  --arrow-gap: 14px; /* space between content edge and arrows */
+  --arrow-gap: 14px;
+  /* space between content edge and arrows */
   position: relative;
 }
 
-.academy-carousel .carousel-inner { overflow: visible; }
+.academy-carousel .carousel-inner {
+  overflow: visible;
+}
 
 /* Center the top-level block in each slide and keep it inside the content column */
-.academy-carousel .carousel-item > * {
+.academy-carousel .carousel-item>* {
   max-width: var(--content-w);
   margin-inline: auto;
   padding-inline: clamp(12px, 3vw, 40px);
@@ -3122,17 +3140,20 @@ p {
 /* Make Bootstrap controls small and placeable (Bootstrap sets width:15%) */
 .academy-carousel.carousel .carousel-control-prev,
 .academy-carousel.carousel .carousel-control-next {
-  width: auto !important;            /* kill the 15% overlay */
+  width: auto !important;
+  /* kill the 15% overlay */
   padding: 0 !important;
   opacity: .95;
   top: 50% !important;
-  transform: translateY(-50%);       /* vertically center the buttons */
+  transform: translateY(-50%);
+  /* vertically center the buttons */
 }
 
 /* Put arrows just outside the content column on larger screens */
 .academy-carousel.carousel .carousel-control-prev {
   left: calc((100% - var(--content-w)) / 2 - var(--arrow-gap)) !important;
 }
+
 .academy-carousel.carousel .carousel-control-next {
   right: calc((100% - var(--content-w)) / 2 - var(--arrow-gap)) !important;
 }
@@ -3147,7 +3168,15 @@ p {
 
 /* On narrow screens, pin to viewport edges so they don't sit on content */
 @media (max-width: 768px) {
-  .academy-carousel { --arrow-gap: 8px; }
-  .academy-carousel.carousel .carousel-control-prev  { left: 8px !important;  }
-  .academy-carousel.carousel .carousel-control-next  { right: 8px !important; }
+  .academy-carousel {
+    --arrow-gap: 8px;
+  }
+
+  .academy-carousel.carousel .carousel-control-prev {
+    left: 8px !important;
+  }
+
+  .academy-carousel.carousel .carousel-control-next {
+    right: 8px !important;
+  }
 }

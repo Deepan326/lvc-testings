@@ -9,13 +9,8 @@ function SpotLightCarousel() {
             <Carousel.Item className='spotlight-carousel-scroll' style={{ marginBottom: '0px' }}>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', height: '100%', minHeight: '275px', opacity: '0' }} src={ExampleCarouselImage} text="First slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
-                    <div className='d-flex flex-row h-30'>
-                        <div style={{width:'30%', maxHeight:'150px',minWidth:'120px', paddingRight:'5%'}}>
-                            <img alt='spotlight media logo' className='spotlight-media-logo-slide1' src={spotlightLogo} />
-                        </div>
-                        <div className='mw-80 align-content-end'>
-                            <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(30px, 2.5vmax, 60px)', marginBottom:'0'}}>PR, Branding & Digital Growth</h2>
-                        </div>
+                    <div>
+                        <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(30px, 2.5vmax, 60px)', marginBottom: '0' }}>PR, Branding & Digital Growth</h2>
                     </div>
                     <p style={{ color: 'white', paddingTop: '5.5vw', textAlign: 'center', fontSize: 'clamp(17px, 2vmax, 45px)', fontWeight: 'normal' }}>
                         From <b style={{ color: 'white' }}>Forbes features to viral digital campaigns</b>, we help founders, CEOs, and startups <b style={{ color: 'white' }}>get seen,</b>
@@ -119,7 +114,7 @@ function SpotLightCarousel() {
             <Carousel.Item className='spotlight-carousel-scroll' style={{ overflow: 'auto' }}>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', minHeight: '260px', opacity: '0' }} src={ExampleCarouselImage} text="Third slide" />
                 <Carousel.Caption className='spotlight-carousel-items-container'>
-                    <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(32px, 2.5vmax, 60px)'}}>Why Choose LVC Spotlight Media?</h2>
+                    <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(32px, 2.5vmax, 60px)' }}>Why Choose LVC Spotlight Media?</h2>
                     <div className='spotlight-slide2-cards'>
                         <ul className='ul-list-padding-carousel' style={{ paddingBottom: '', marginTop: '' }}>
                             <li style={{ fontSize: 'clamp(17px, 1.vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
@@ -198,9 +193,9 @@ function SpotLightCarousel() {
             </Carousel.Item>
             <Carousel.Item className='spotlight-carousel-scroll'>
                 <img alt='vecteezy.com jpeg black and grey background' style={{ width: '100%', minHeight: '275px', opacity: '0' }} src={ExampleCarouselImage} text="fifth slide" />
-                <Carousel.Caption className='spotlight-carousel-items-container d-flex justify-content-center align-items-center' style={{overflow:'hidden'}}>
+                <Carousel.Caption className='spotlight-carousel-items-container d-flex justify-content-center align-items-center' style={{ overflow: 'hidden' }}>
                     <div className='spotlight-logo-slide'>
-                        <img className='img-fluid d-block mx-auto' alt='spotlight media logo' style={{ maxWidth: '100%', maxHeight: '400px', minHeight:'100px', minWidth:'100px'}} src={spotlightLogo} />
+                        <img className='img-fluid d-block mx-auto' alt='spotlight media logo' style={{ maxWidth: '100%', maxHeight: '400px', minHeight: '100px', minWidth: '100px' }} src={spotlightLogo} />
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
