@@ -4,7 +4,7 @@ import '../style.css';
 import TransformationStartsHere from './transformationStartsHere.js';
 import Footer from './footer.js';
 // import SpotLogo from "../assets/lvcSpo.jpg";
-import AcaLogo from '../assets/lvcAca.jpg';
+import AcaLogo from '../assets/lvcAcaTransparent.png';
 import FairJobCarousel from './fairJobCarousel.js';
 import SpotLightCarousel from './spotlightCarousel.js';
 import AcademyCarousel from './academyCarousel.js';
@@ -16,7 +16,7 @@ const Home = () => {
         <div className="carsouelheight">
           <CarouselComponent />
         </div>
-        <FairJobCarousel/>
+        <FairJobCarousel />
       </main>
 
       {/* FULL-BLEED: Smart HR Scheduler */}
@@ -58,7 +58,7 @@ const Home = () => {
 
       {/* LVC Academy info */}
       <div
-        className="bg-white"
+        className="bg-black"
         style={{
           display: 'flex',
           justifyContent: 'center',
@@ -67,17 +67,30 @@ const Home = () => {
         }}
       >
         <section className="container py-5 section-4">
-          <h1 style={{ color: 'white' }}>
-            LVC Academy - Future-Ready Tech Bootcamps
-          </h1>
+          <div className="academy-heading-row">
+            <div style={{
+              textAlign: 'center',
+              display: 'grid'
+              }}>
+              <img
+                src={AcaLogo}
+                alt="LVC Academy Logo"
+                style={{ maxWidth: '300px', height: 'auto' }}
+              />
+            </div>
+            <div>
+              <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
+              LVC Academy - Future-Ready Tech Bootcamps
+            </h1>
+            </div>
+          </div>
           <div
-            id="LVCAcademyCarousel"
-            className="academy-carousel-container bg-white"
+            className="academy-carousel-container bg-black"
           >
             <AcademyCarousel />
           </div>
           <div class="container my-5">
-            <div class="p-5 bg-dark text-center rounded shadow">
+            <div class="p-5 text-center">
               <h2 class="fw-bold mb-4">
                 Choose Your Path: 6-Month Fast Track or 12-Month Comprehensive
                 Bootcamp.
@@ -105,7 +118,9 @@ const Home = () => {
           }}
           className="py-5"
         >
-          <h1 style={{ color: 'white', fontSize:'clamp(30px, 4vmax, 60px)' }}>LVC Spotlight Media</h1>
+          <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
+            LVC Spotlight Media
+          </h1>
           <div className="spotlight-carousel-container">
             <SpotLightCarousel />
           </div>

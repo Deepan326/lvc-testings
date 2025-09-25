@@ -224,6 +224,8 @@ footer .logo {
   width: 100%;
 }
 
+
+
 .custom-carousel-image {
   height: 600px;
   object-fit: cover;
@@ -2839,7 +2841,7 @@ p.paragraph-clamp {
 }
 
 .spotlight-slide2-bulletpoints {
-  font-size: clamp(17px, 1.5vmax, 20px);
+  font-size: clamp(15px, 1.4vmax, 20px);
   text-align: start;
   padding-bottom: clamp(.5px, 1vmax, 4px);
   /* padding-bottom: 1px; */
@@ -2974,11 +2976,166 @@ p.paragraph-clamp {
 
 /* LVC Academy carousel tweaks */
 
-#LVCAcademyCarousel .carousel-indicators [data-bs-target] {
-  background-color: black;
+.academy-grid-col {
+  border: .15vmax solid white;
+  font-size: clamp(13px, 1vmax, 20px);
+  font-weight: bold;
+  padding: 1px;
 }
 
-#LVCAcademyCarousel .carousel-control-prev-icon,
-#LVCAcademyCarousel .carousel-control-next-icon {
-  filter: invert(1);
+.academy-grid-row {
+  border: .15vmax solid white;
+  font-size: clamp(13px, 1vmax, 20px);
+  font-weight: 400;
+  padding: 1px;
+}
+
+.academy-grid-cells {
+  border: .15vmax solid white;
+  font-size: clamp(10px, 1vmax, 20px);
+  font-weight: 400;
+  padding: 1px;
+}
+
+
+.academy-carousel .table-blackwhite thead th {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+
+.academy-heading-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr); /* logo | flexible title */
+  align-items: center;
+  justify-content: center;
+  column-gap: clamp(10px, 2vw, 24px);
+}
+
+/* Keep your existing inline-grid but add safe sizing for the image */
+.academy-heading-row > :first-child {
+  min-width: 0;
+  display: inline-grid;
+}
+.academy-heading-row > :first-child img {
+  height: clamp(40px, 6vw, 72px);  /* responsive logo size */
+  width: auto;
+  transform: translateY(-10px);    /* your small upward nudge */
+}
+
+/* Make the H1 wrap nicely instead of pushing into the logo */
+.academy-heading-row h1 {
+  margin: 0;
+  line-height: 1.15;
+  overflow-wrap: anywhere;         /* prevents long words from forcing overlap */
+}
+
+/* On small screens, stack to guarantee no overlap */
+@media (max-width: 560px) {
+  .academy-heading-row {
+    grid-template-columns: 1fr;    /* stack: logo on top, title below */
+    row-gap: 10px;
+    text-align: center;
+    justify-items: center;
+  }
+  .academy-heading-row > :first-child img {
+    transform: none;                /* remove nudge when stacked */
+    height: clamp(36px, 10vw, 60px);
+    max-width: 65vw;
+  }
+}
+
+.academy-carousel {
+  /* content column width that scales with viewport */
+  --slide-max: 1100px;
+  --content-w: clamp(320px, 92vw, var(--slide-max));
+  --arrow-gap: 14px; /* space between content edge and arrows */
+  position: relative;
+}
+
+.academy-carousel .carousel-inner { overflow: visible; }
+
+/* Center the top-level block in each slide and keep it inside the content column */
+.academy-carousel .carousel-item > * {
+  max-width: var(--content-w);
+  margin-inline: auto;
+  padding-inline: clamp(12px, 3vw, 40px);
+}
+
+/* Make Bootstrap controls small and placeable (Bootstrap sets width:15%) */
+.academy-carousel.carousel .carousel-control-prev,
+.academy-carousel.carousel .carousel-control-next {
+  width: auto !important;            /* kill the 15% overlay */
+  padding: 0 !important;
+  opacity: .95;
+  top: 50% !important;
+  transform: translateY(-50%);       /* vertically center the buttons */
+}
+
+/* Put arrows just outside the content column on larger screens */
+.academy-carousel.carousel .carousel-control-prev {
+  left: calc((100% - var(--content-w)) / 2 - var(--arrow-gap)) !important;
+}
+.academy-carousel.carousel .carousel-control-next {
+  right: calc((100% - var(--content-w)) / 2 - var(--arrow-gap)) !important;
+}
+
+/* Keep the arrow icons a sensible size */
+.academy-carousel .carousel-control-prev-icon,
+.academy-carousel .carousel-control-next-icon {
+  width: clamp(22px, 3vw, 36px) !important;
+  height: clamp(22px, 3vw, 36px) !important;
+  background-size: 100% 100% !important;
+}
+
+/* On narrow screens, pin to viewport edges so they don't sit on content */
+@media (max-width: 768px) {
+  .academy-carousel { --arrow-gap: 8px; }
+  .academy-carousel.carousel .carousel-control-prev  { left: 8px !important;  }
+  .academy-carousel.carousel .carousel-control-next  { right: 8px !important; }
+}
+
+main > div:first-of-type {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+main > div:first-of-type::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: #fff;
+  opacity: 0.7;
+}
+
+
+main > div + div {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+main > div + div::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 1px;
+  background: #fff;
+  opacity: 0.7;
+}
+
+
+main + .bg-black {
+  border-top: 1px solid rgba(255,255,255,0.7);
+  margin-top: 24px;        
+  padding-top: 24px;    
+}
+
+
+main > section.py-5 {
+  border-top: 1px solid rgba(255,255,255,0.7);
+  border-bottom: 1px solid rgba(255,255,255,0.7);
+  padding-top: calc(1rem + 12px);
+  padding-bottom: calc(1rem + 12px);
 }
