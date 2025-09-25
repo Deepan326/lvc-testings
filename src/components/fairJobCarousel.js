@@ -10,7 +10,7 @@ function FairJobCarousel() {
     return (
         <Carousel className="gradient-background-color bg-black">
             <Carousel.Item className="fairjob-carousel-scroll fairjob-carousel-items-container">
-                <div className="row align-items-center" style={{ paddingTop: "8%", display: "flex", alignItems: "center", marginBottom: "40px" }}>
+                <div className="row align-items-center" style={{ paddingTop: "14.5%", display: "flex", alignItems: "center", marginBottom: "40px" }}>
                     <div className="col-12 col-md-4" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: "40px" }}>
                         <img
                         src={FairJob}
