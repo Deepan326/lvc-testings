@@ -10,7 +10,7 @@ function FairJobCarousel() {
     return (
         <Carousel className="gradient-background-color bg-black">
             <Carousel.Item className="fairjob-carousel-scroll fairjob-carousel-items-container">
-                <div className="row align-items-center" style={{ paddingTop: "8%", display: "flex", alignItems: "center" }}>
+                <div className="row align-items-center" style={{ paddingTop: "8%", display: "flex", alignItems: "center", marginBottom: "40px" }}>
                     <div className="col-12 col-md-4" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: "40px" }}>
                         <img
                         src={FairJob}
@@ -33,17 +33,11 @@ function FairJobCarousel() {
         
                     <div className="col-12 col-md-8 d-flex flex-column justify-content-center h-100" id="fairjob-right" style={{ paddingRight: '12px' }}>
                         <div id="fairjob-title">
-                        <h2 className='header-1-clamp'>
-                            <strong>
-                            LVC Fair Job <br />
-                            The World's First Scam-Free Job Portal
-                            </strong>
-                        </h2>
-                        <h3 className='header-2-clamp'>
-                            <em>
-                            Built for Trust, Transparency & Real Results
-                            </em>
-                        </h3>
+                            <h3 className='header-2-clamp'>
+                                <em>
+                                Built for Trust, Transparency & Real Results
+                                </em>
+                            </h3>
                         </div>
                         <p className="paragraph-clamp">
                         Unlike LinkedIn, Indeed, ZipRecruiter, Monster, or Naukri — we eliminate fake profiles, spam jobs, and scam recruiters. 
@@ -118,7 +112,7 @@ function FairJobCarousel() {
             </Carousel.Item>
 
             <Carousel.Item className="fairjob-carousel-scroll fairjob-carousel-items-container" style={{ paddingTop: '13%'}}>
-                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", paddingBottom: "20px" }}>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", paddingBottom: "40px" }}>
                     <h3 id="fairjob-item-3-h3" style={{ color: 'white', marginBottom: "25px" }} className="header-1-clamp">Why Choose LVC Fair Job?</h3>
                     <ul style={{ textAlign: 'start'}} className="paragraph-clamp">
                         <li> Scam-Free Ecosystem → 100% verified recruiters, job seekers, and postings</li>
@@ -131,7 +125,7 @@ function FairJobCarousel() {
             </Carousel.Item>
 
             <Carousel.Item className="fairjob-carousel-scroll fairjob-carousel-items-container">
-                <div style={{ paddingTop: "7%", paddingBottom: '20px' }}>
+                <div style={{ paddingTop: "7%", paddingBottom: '40px' }}>
                     <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 80px)', textAlign: 'center' }}>Competitor Comparison</h2>
                     <p style={{ color: 'white', fontSize: 'clamp(13px, 1vmax, 26px)', textAlign: 'center' }}>Why LVC Fair Job Portal Beats the Rest</p>
                     <table className='spotlight-slide2-grid'>
