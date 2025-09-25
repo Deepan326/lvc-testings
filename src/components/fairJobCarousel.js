@@ -10,119 +10,115 @@ function FairJobCarousel() {
     return (
         <Carousel className="gradient-background-color bg-black">
             <Carousel.Item className="fairjob-carousel-scroll fairjob-carousel-items-container">
-                <div>
-                    <div className="row align-items-center ">
-                        <div className="col-12 col-md-5" style={{ display: 'flex', flexDirection: 'column', alignItems: 'end'}}>
-                            <img
-                            src={FairJob}
-                            alt="Fair Job Portal preview"
-                            className="img-fluid rounded shadow-sm"
-                            id="fairjob-img"
-                            />
-            
-                            <a
-                            href="https://www.lvcfairjob.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-outline-light mt-3"
-                            id="fairjob-btn"
-                            aria-label="Open the Fair Job Portal website"
-                            >
-                            Visit Fair Job Portal
-                            </a>
-                        </div>
-            
-                        <div className="col-12 col-md-6 d-flex flex-column justify-content-center h-100" id="fairjob-right" style={{ paddingRight: '12px' }}>
-                            <div id="fairjob-title">
-                            <h2 className='header-1-clamp'>
-                                <strong>
-                                LVC Fair Job <br />
-                                The World's First Scam-Free Job Portal
-                                </strong>
-                            </h2>
-                            <h3 lassName='header-2-clamp'>
-                                <em>
-                                Built for Trust, Transparency & Real Results
-                                </em>
-                            </h3>
-                            </div>
-                            <p id="fairjob-subtext paragraph-clamp'">
-                            Unlike LinkedIn, Indeed, ZipRecruiter, Monster, or Naukri — we eliminate fake profiles, spam jobs, and scam recruiters. 
-                            <br /> <br />
-            
-                            At LVC Fair Job, we’re building the most trusted hiring ecosystem — where genuine job seekers meet verified recruiters with complete transparency.
-                            <br /><br />
+                <div className="row align-items-center" style={{ paddingTop: "8%", display: "flex", alignItems: "center" }}>
+                    <div className="col-12 col-md-4" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: "40px" }}>
+                        <img
+                        src={FairJob}
+                        alt="Fair Job Portal preview"
+                        className="img-fluid rounded shadow-sm"
+                        id="fairjob-img"
+                        />
+        
+                        <a
+                        href="https://www.lvcfairjob.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-outline-light mt-3"
+                        id="fairjob-btn"
+                        aria-label="Open the Fair Job Portal website"
+                        >
+                        Visit Fair Job Portal
+                        </a>
+                    </div>
+        
+                    <div className="col-12 col-md-8 d-flex flex-column justify-content-center h-100" id="fairjob-right" style={{ paddingRight: '12px' }}>
+                        <div id="fairjob-title">
+                        <h2 className='header-1-clamp'>
+                            <strong>
+                            LVC Fair Job <br />
+                            The World's First Scam-Free Job Portal
+                            </strong>
+                        </h2>
+                        <h3 className='header-2-clamp'>
                             <em>
-                                 “No scams. No spam. Just real opportunities.”
+                            Built for Trust, Transparency & Real Results
                             </em>
-                            </p>
+                        </h3>
                         </div>
+                        <p className="paragraph-clamp">
+                        Unlike LinkedIn, Indeed, ZipRecruiter, Monster, or Naukri — we eliminate fake profiles, spam jobs, and scam recruiters. 
+                        <br /> <br />
+        
+                        At LVC Fair Job, we’re building the most trusted hiring ecosystem — where genuine job seekers meet verified recruiters with complete transparency.
+                        <br /><br />
+                        <em>
+                                “No scams. No spam. Just real opportunities.”
+                        </em>
+                        </p>
                     </div>
                 </div>
             </Carousel.Item>
 
             <Carousel.Item className="fairjob-carousel-scroll fairjob-carousel-items-container">
-                <div>
-                    <Row xs={1} md={1} lg={1} xl={2} className="g-4" style={{ "margin-left": "100px", "margin-right": "100px" }}>
-                        <Col>
-                            <Card className='fairjob-cards' id="fairjob-card-1">
-                                <Card.Body>
-                                    <Card.Title className="card-titles header-1-clamp">Verified Profiles</Card.Title>
-                                    <Card.Text>
-                                        <ul id="fairjob-list" className="paragraph-clamp">
-                                            <li> No fake job seekers → Strict ID & education verification</li>
-                                            <li> No fake recruiters → Company & individual checks</li>
-                                        </ul>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className='fairjob-cards'>
-                                <Card.Body>
-                                    <Card.Title className="card-titles header-1-clamp">AI-Powered Screening</Card.Title>
-                                    <Card.Text>
-                                        <ul id="fairjob-list" className="paragraph-clamp">
-                                            <li> Virtual AI interview calls & chatbot assessments</li>
-                                            <li> Shortlist only authentic, skilled candidates</li>
-                                        </ul>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className='fairjob-cards'>
-                                <Card.Body>
-                                    <Card.Title className="card-titles header-1-clamp">Smart Matching Engine</Card.Title>
-                                    <Card.Text>
-                                        <ul id="fairjob-list" className="paragraph-clamp">
-                                            <li> ATS + Generative AI → Job–Resume precision matching</li>
-                                            <li> Saves time for both recruiters & job seekers</li>
-                                        </ul>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card className='fairjob-cards' style={{ marginBottom: "50px" }}>
-                                <Card.Body>
-                                    <Card.Title className="card-titles header-1-clamp">Transparent Hiring</Card.Title>
-                                    <Card.Text>
-                                        <ul id="fairjob-list" className="paragraph-clamp">
-                                            <li> Real-time application tracking</li>
-                                            <li> No “black hole” after applying</li>
-                                            <li> Zero misuse of personal data</li>
-                                        </ul>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
-                </div>
+                <Row xs={1} md={1} lg={1} xl={2} className="g-4" style={{ "margin-left": "100px", "margin-right": "100px", paddingTop: "5%" }}>
+                    <Col>
+                        <Card className='fairjob-cards' id="fairjob-card-1">
+                            <Card.Body>
+                                <Card.Title className="card-titles header-1-clamp">Verified Profiles</Card.Title>
+                                <Card.Text>
+                                    <ul id="fairjob-list" className="paragraph-clamp">
+                                        <li> No fake job seekers → Strict ID & education verification</li>
+                                        <li> No fake recruiters → Company & individual checks</li>
+                                    </ul>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card className='fairjob-cards'>
+                            <Card.Body>
+                                <Card.Title className="card-titles header-1-clamp">AI-Powered Screening</Card.Title>
+                                <Card.Text>
+                                    <ul id="fairjob-list" className="paragraph-clamp">
+                                        <li> Virtual AI interview calls & chatbot assessments</li>
+                                        <li> Shortlist only authentic, skilled candidates</li>
+                                    </ul>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card className='fairjob-cards'>
+                            <Card.Body>
+                                <Card.Title className="card-titles header-1-clamp">Smart Matching Engine</Card.Title>
+                                <Card.Text>
+                                    <ul id="fairjob-list" className="paragraph-clamp">
+                                        <li> ATS + Generative AI → Job–Resume precision matching</li>
+                                        <li> Saves time for both recruiters & job seekers</li>
+                                    </ul>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card className='fairjob-cards' style={{ marginBottom: "50px" }}>
+                            <Card.Body>
+                                <Card.Title className="card-titles header-1-clamp">Transparent Hiring</Card.Title>
+                                <Card.Text>
+                                    <ul id="fairjob-list" className="paragraph-clamp">
+                                        <li> Real-time application tracking</li>
+                                        <li> No “black hole” after applying</li>
+                                        <li> Zero misuse of personal data</li>
+                                    </ul>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
             </Carousel.Item>
 
-            <Carousel.Item className="fairjob-carousel-scroll fairjob-carousel-items-container">
-                <div>
+            <Carousel.Item className="fairjob-carousel-scroll fairjob-carousel-items-container" style={{ paddingTop: '13%'}}>
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", paddingBottom: "20px" }}>
                     <h3 id="fairjob-item-3-h3" style={{ color: 'white', marginBottom: "25px" }} className="header-1-clamp">Why Choose LVC Fair Job?</h3>
                     <ul style={{ textAlign: 'start'}} className="paragraph-clamp">
                         <li> Scam-Free Ecosystem → 100% verified recruiters, job seekers, and postings</li>
@@ -135,7 +131,7 @@ function FairJobCarousel() {
             </Carousel.Item>
 
             <Carousel.Item className="fairjob-carousel-scroll fairjob-carousel-items-container">
-                <div>
+                <div style={{ paddingTop: "7%", paddingBottom: '20px' }}>
                     <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 80px)', textAlign: 'center' }}>Competitor Comparison</h2>
                     <p style={{ color: 'white', fontSize: 'clamp(13px, 1vmax, 26px)', textAlign: 'center' }}>Why LVC Fair Job Portal Beats the Rest</p>
                     <table className='spotlight-slide2-grid'>
@@ -210,7 +206,7 @@ function FairJobCarousel() {
                 </div>
             </Carousel.Item>
 
-            <Carousel.Item className="fairjob-carousel-scroll fairjob-carousel-items-container">
+            <Carousel.Item className="fairjob-carousel-scroll fairjob-carousel-items-container" style={{  paddingTop: "18%" }}>
                 <div>
                     <h3 style={{ color: 'white' , "marginBottom": "25px" }} className="header-1-clamp">Join the World's First Scam-Free Job Portal!</h3>
                     <Button href="https://www.lvcfairjob.com/" className="header-2-clamp"> Explore Fair Job Portal</Button>
