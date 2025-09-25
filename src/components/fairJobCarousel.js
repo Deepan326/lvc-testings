@@ -58,9 +58,9 @@ function FairJobCarousel() {
                     <Col>
                         <Card className='fairjob-cards' id="fairjob-card-1">
                             <Card.Body>
-                                <Card.Title className="card-titles" style={{fontSize: 'clamp(25px, 2vmax, 40px'}}>Verified Profiles</Card.Title>
+                                <Card.Title className="card-titles" style={{fontSize: 'clamp(25px, 2vmax, 40px', textDecoration: 'underline', textUnderlineOffset: '.3rem'}}>Verified Profiles</Card.Title>
                                 <Card.Text>
-                                    <ul id="fairjob-list" className="paragraph-clamp">
+                                    <ul id="fairjob-list" className="paragraph-clamp ">
                                         <li> No fake job seekers → Strict ID & education verification</li>
                                         <li> No fake recruiters → Company & individual checks</li>
                                     </ul>
@@ -71,7 +71,7 @@ function FairJobCarousel() {
                     <Col>
                         <Card className='fairjob-cards'>
                             <Card.Body>
-                                <Card.Title className="card-titles" style={{fontSize: 'clamp(25px, 2vmax, 40px'}}>AI-Powered Screening</Card.Title>
+                                <Card.Title className="card-titles" style={{fontSize: 'clamp(25px, 2vmax, 40px', textDecoration: 'underline', textUnderlineOffset: '.3rem'}}>AI-Powered Screening</Card.Title>
                                 <Card.Text>
                                     <ul id="fairjob-list" className="paragraph-clamp">
                                         <li> Virtual AI interview calls & chatbot assessments</li>
@@ -84,7 +84,7 @@ function FairJobCarousel() {
                     <Col>
                         <Card className='fairjob-cards'>
                             <Card.Body>
-                                <Card.Title className="card-titles" style={{fontSize: 'clamp(25px, 2vmax, 40px'}}>Smart Matching Engine</Card.Title>
+                                <Card.Title className="card-titles" style={{fontSize: 'clamp(25px, 2vmax, 40px', textDecoration: 'underline', textUnderlineOffset: '.3rem'}}>Smart Matching Engine</Card.Title>
                                 <Card.Text>
                                     <ul id="fairjob-list" className="paragraph-clamp">
                                         <li> ATS + Generative AI → Job–Resume precision matching</li>
@@ -97,7 +97,7 @@ function FairJobCarousel() {
                     <Col>
                         <Card className='fairjob-cards' style={{ marginBottom: "50px" }}>
                             <Card.Body>
-                                <Card.Title className="card-titles" style={{fontSize: 'clamp(25px, 2vmax, 40px'}}>Transparent Hiring</Card.Title>
+                                <Card.Title className="card-titles" style={{fontSize: 'clamp(25px, 2vmax, 40px', textDecoration: 'underline', textUnderlineOffset: '.3rem'}}>Transparent Hiring</Card.Title>
                                 <Card.Text>
                                     <ul id="fairjob-list" className="paragraph-clamp">
                                         <li> Real-time application tracking</li>

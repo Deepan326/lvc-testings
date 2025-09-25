@@ -2789,6 +2789,26 @@ p.paragraph-clamp {
   transform: translateY(-10px);
 }
 
+#fairjob-list {
+  /* keep bullets, but bring them into the centered text flow */
+  list-style: disc inside;
+
+  /* remove default left indent and center the block */
+  padding-left: 0;
+  margin: 0.5rem auto 0;
+
+  /* center each line of text */
+  text-align: center;
+
+  /* optional: prevent super-wide lines */
+  max-width: 40ch;
+}
+
+/* nice, even spacing between items */
+#fairjob-list li {
+  margin: 0.25rem 0;
+}
+
 /* carousel spotlight media home page */
 
 .spotlight-carousel-container {
