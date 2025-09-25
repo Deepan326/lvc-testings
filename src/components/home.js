@@ -18,8 +18,8 @@ const Home = () => {
         </div>
         <section>
           <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
-            <strong>
               LVC Fair Job Portal <br/>
+            <strong>
               The World's First Scam-Free Job Portal
             </strong>
           </h1>
