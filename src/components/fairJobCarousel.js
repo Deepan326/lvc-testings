@@ -135,7 +135,7 @@ function FairJobCarousel() {
                 </div>
             </Carousel.Item>
 
-            <Carousel.Item className="fairjob-carousel-scroll">
+            <Carousel.Item className="fairjob-carousel-scroll ">
                 <div className="fairjob-carousel-items-container">
                     <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(10px, 3vmax, 80px)', textAlign: 'center' }}>Competitor Comparison</h2>
                     <p style={{ color: 'white', fontSize: 'clamp(13px, 1vmax, 26px)', textAlign: 'center' }}>Why LVC Fair Job Portal Beats the Rest</p>

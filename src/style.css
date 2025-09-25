@@ -2714,41 +2714,12 @@ p.paragraph-clamp {
   text-align: center;
 }
 
-.fairjob-carousel {
-  height: 800px;
-  overflow: auto;
-  -webkit-mask-image: linear-gradient(to top bottom, black 87%, transparent 98%);
-  mask-image: linear-gradient(to top bottom, black 87%, transparent 98%);
-}
-
-.fairjob-carousel-items {
-  padding-top: 5rem;
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-.fairjob-carousel-img {
-  width: clamp(400px, 90%, 1600px); 
-  opacity: 0;
-}
-
-.fairjob-carousel-container {
-  width: clamp(300px, 40vmax, 1600px);
-  min-height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .fairjob-carousel-items-container {
   overflow: auto;
   padding: 0px 5%;
-  height: clamp(300px, 90%, 1600px);
+  height: clamp(400px, 90%, 1600px);
   -webkit-mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
   mask-image: linear-gradient(to bottom, black 87%, transparent 98%);
-
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* align-items: center; */
 }
 
 .fairjob-carousel-scroll::-webkit-scrollbar {
