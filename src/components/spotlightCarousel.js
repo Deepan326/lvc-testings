@@ -9,11 +9,11 @@ function SpotLightCarousel() {
         <Carousel className='gradient-background-color bg-black'>
 
             <Carousel.Item className='spotlight-carousel-scroll' style={{ marginBottom: '0px' }}>
-                <img alt='vecteezy.com jpeg black and grey background' 
-                style={{ width: '100%', height: '100%', minHeight: '275px', opacity: '0' }} 
+                <img alt='vecteezy.com jpeg black and grey background'
+                style={{ width: '100%', height: '100%', minHeight: '275px', opacity: '0' }}
                 src={ExampleCarouselImage} text="First slide" />
 
-                <Carousel.Caption 
+                <Carousel.Caption
                     className='spotlight-carousel-items-container' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <div className='d-flex flex-row h-30'>
                         <div className='mw-80 align-content-end'>
@@ -128,19 +128,19 @@ function SpotLightCarousel() {
                     <h2 style={{ color: 'white', fontWeight: 'bolder', fontSize: 'clamp(32px, 2.5vmax, 60px)'}}>Why Choose LVC Spotlight Media?</h2>
                     <div className='spotlight-slide2-cards' style={{ display: 'flex', justifyContent: 'center'}}>
                         <ul className='ul-list-padding-carousel' style={{ margin: 0, textAlign: 'center', listStylePosition: 'inside', width: 'fit-content' }}>
-                            <li style={{ fontSize: 'clamp(17px, 1vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(17px, 1.6vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b style={{ color: 'white' }}> Founder-First Approach</b> → We put leaders in the spotlight, not just products
                             </li>
-                            <li style={{ fontSize: 'clamp(17px, 1vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(17px, 1.6vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b style={{ color: 'white' }}> Guaranteed Media Features </b>→ Direct partnerships with global platforms
                             </li>
-                            <li style={{ fontSize: 'clamp(17px, 1vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(17px, 1.6vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b style={{ color: 'white' }}> Integrated Growth </b> → PR + Branding + Digital Marketing in one
                             </li>
-                            <li style={{ fontSize: 'clamp(17px, 1vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(17px, 1.6vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b style={{ color: 'white' }}> Tech & Startup Focus </b>→ Specialized in SaaS, AI, and innovation-driven businesses
                             </li>
-                            <li style={{ fontSize: 'clamp(17px, 1vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
+                            <li style={{ fontSize: 'clamp(17px, 1.6vmax, 4rem)' }} className='spotlight-slide2-bulletpoints'>
                                 <b style={{ color: 'white' }}> Affordable Packages </b>→ Growth plans that scale with your journey
                             </li>
                         </ul>
