@@ -5,6 +5,7 @@ import TransformationStartsHere from './transformationStartsHere.js';
 import Footer from './footer.js';
 import spotlightLogo from '../assets/spotlight-media.png'
 import AcaLogo from '../assets/lvcAcaTransparent.png';
+import SpotLogo from '../assets/spotlight-media.png'
 import FairJobCarousel from './fairJobCarousel.js';
 import SpotLightCarousel from './spotlightCarousel.js';
 import AcademyCarousel from './academyCarousel.js';
@@ -12,10 +13,18 @@ import AcademyCarousel from './academyCarousel.js';
 const Home = () => {
   return (
     <>
-      <main style={{ padding: '20px', marginTop: '50px' }}>
+      <main className="page-home" style={{ padding: '20px', marginTop: '50px' }}>
         <div className="carsouelheight">
           <CarouselComponent />
         </div>
+        <section>
+          <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
+              LVC Fair Job Portal <br/>
+            <strong>
+              The World's First Scam-Free Job Portal
+            </strong>
+          </h1>
+        </section>
         <FairJobCarousel />
       </main>
 
@@ -109,7 +118,7 @@ const Home = () => {
 
       <div style={{ border: '1px solid white'}} />
       {/* Resume normal page padding/content */}
-      <main style={{ padding: '20px' }}>
+      <main className="page-home" style={{ padding: '20px' }}>
         {/* Spotlight Media */}
         <section
           style={{
@@ -120,36 +129,22 @@ const Home = () => {
           }}
           className="py-5"
         >
-
-          <div className="academy-heading-row" style={{ width: '90%', margin: 'auto' }}>
-            <div style={{
-              textAlign: 'center',
-              display: 'grid'
-            }}>
-              <img
-                src={spotlightLogo}
-                alt="LVC spotlight media Logo"
-                style={{ maxWidth: '300px', height: 'auto' }}
-              />
-            </div>
-            <div>
-              <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)', paddingRight: '30%' }}>
-                LVC Spotlight Media
-              </h1>
-            </div>
-          </div>
-          {/* <div className='d-flex flex-row mb-5' style={{minHeight:'200px'}}>
-            <div style={{height: '13vmax',marginLeft:'3%'}}>
-              <img alt='spotlight media logo' className='spotlight-media-logo-title' src={spotlightLogo} />
-            </div>
-
-            <div style={{marginLeft:'12%'}} className='mw-80 align-content-end pb-3'>
-              <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
-                LVC Spotlight Media
-              </h1>
-            </div>
-
-          </div> */}
+          <div className="container section-4" style={{ paddingTop: 0, paddingBottom: 0 }}>
+      <div className="academy-heading-row spotlight-heading-row" style={{ columnGap: 'clamp(6px, 1vw, 12px)' }}>
+        <div style={{ textAlign: 'center', display: 'grid' }}>
+          <img
+            src={SpotLogo}
+            alt="LVC Spotlight Media Logo"
+            style={{ maxWidth: '300px', height: 'auto' }}
+          />
+        </div>
+        <div>
+          <h1 className="sportlight-heading" style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)', margin: 0, willChange: 'transform' }}>
+            LVC Spotlight Media
+          </h1>
+        </div>
+      </div>
+    </div>
 
           <div className="spotlight-carousel-container">
             <SpotLightCarousel />

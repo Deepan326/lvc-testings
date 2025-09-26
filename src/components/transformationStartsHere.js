@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"; //added link import for the useful links
+import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style.css";
 
