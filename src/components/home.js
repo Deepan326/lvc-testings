@@ -13,7 +13,7 @@ import AcademyCarousel from './academyCarousel.js';
 const Home = () => {
   return (
     <>
-      <main style={{ padding: '20px', marginTop: '50px' }}>
+      <main className="page-home" style={{ padding: '20px', marginTop: '50px' }}>
         <div className="carsouelheight">
           <CarouselComponent />
         </div>
@@ -116,7 +116,7 @@ const Home = () => {
       </div>
 
       {/* Resume normal page padding/content */}
-      <main style={{ padding: '20px' }}>
+      <main className="page-home" style={{ padding: '20px' }}>
         {/* Spotlight Media */}
         <section
           style={{

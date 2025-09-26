@@ -3150,30 +3150,29 @@ p.paragraph-clamp {
 }
 
 /* Landing page section dividers */
-main > div:first-of-type {
+main.page-home > div:first-of-type {
   position: relative;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
-main > div:first-of-type::after {
+main.page-home > div:first-of-type::after {
   content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 100vw;                  
+  width: 100vw;
   bottom: 0;
   height: 1px;
   background: #fff;
   opacity: 0.7;
 }
 
-
-main > div + div {
+main.page-home > div + div {
   position: relative;
   margin-top: 20px;
   padding-top: 20px;
 }
-main > div + div::before {
+main.page-home > div + div::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -3185,14 +3184,13 @@ main > div + div::before {
   opacity: 0.7;
 }
 
-
-main + .bg-black {
+main.page-home + .bg-black {
   position: relative;
   margin-top: 24px;
   padding-top: 24px;
   border-top: none;
 }
-main + .bg-black::before {
+main.page-home + .bg-black::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -3203,16 +3201,15 @@ main + .bg-black::before {
   background: rgba(255,255,255,0.7);
 }
 
-
-main > section.py-5 {
+main.page-home > section.py-5 {
   position: relative;
   padding-top: calc(1rem + 12px);
   padding-bottom: calc(1rem + 12px);
   border-top: none;
   border-bottom: none;
 }
-main > section.py-5::before,
-main > section.py-5::after {
+main.page-home > section.py-5::before,
+main.page-home > section.py-5::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -3222,5 +3219,14 @@ main > section.py-5::after {
   background: rgba(255,255,255,0.7);
   opacity: 1;
 }
-main > section.py-5::before { top: 0; }
-main > section.py-5::after  { bottom: 0; }
+main.page-home > section.py-5::before { top: 0; }
+main.page-home > section.py-5::after  { bottom: 0; }
+
+/* Disable on non-home pages */
+main:not(.page-home) > div:first-of-type::after,
+main:not(.page-home) > div + div::before,
+main:not(.page-home) + .bg-black::before,
+main:not(.page-home) > section.py-5::before,
+main:not(.page-home) > section.py-5::after {
+  content: none !important;
+}
