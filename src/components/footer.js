@@ -119,8 +119,12 @@ const Footer = () => {
                   <h6 className="text-uppercase fw-bold">Contact</h6>
                   <hr className="mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px", backgroundColor: "#7c4dff", height: "2px" }} />
                   <p>
-                    <i className="fas fa-home mr-3"></i> 5015 Addison Circle, #1025,
-                    Addison,TX 75001, United States
+                    <i className="fas fa-home mr-3"></i> 5015 Addison Circle,<br/>
+                    Addison, TX 75001, United States
+                  </p>
+                  <p>
+                    <i className="fas fa-home mr-3"></i> 228 Hamilton Ave 3rd Floor,<br/>
+                    Palo Alto, CA 94301, United States
                   </p>
                   {/* <p>
                     <i className="fas fa-envelope mr-3"></i> info@example.com
