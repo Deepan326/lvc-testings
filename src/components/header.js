@@ -79,14 +79,19 @@ const searchData = [
     location: 'Contact Us page'
   },
   {
-    name: 'Projects',
-    link: '/projects',
-    location: 'Projects page'
+    name: 'FairJob',
+    link: 'https://www.lvcfairjob.com/',
+    location: 'Projects and Home pages'
   },
   {
-    name: 'Services',
-    link: '/services',
-    location: 'Services page'
+    name: 'LVC Academy',
+    link: 'https://www.lvcacademy.com/',
+    location: 'Home page'
+  },
+{
+    name: 'Spotlight Media',
+    link: 'https://www.lvcspotlightmedia.com/',
+    location: 'Home page'
   },
 ]
 
