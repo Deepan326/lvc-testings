@@ -3,12 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style.css';
 import TransformationStartsHere from './transformationStartsHere.js';
 import Footer from './footer.js';
-import spotlightLogo from '../assets/spotlight-media.png'
-import AcaLogo from '../assets/lvcAcaTransparent.png';
 import SpotLogo from '../assets/spotlight-media.png'
 import FairJobCarousel from './fairJobCarousel.js';
 import SpotLightCarousel from './spotlightCarousel.js';
 import AcademyCarousel from './academyCarousel.js';
+import { Bold } from 'lucide-react';
+import lvc360logo from '../assets/lvc360logo.png';
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
         <section>
           <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
               LVC Fair Job Portal <br/>
-            <strong>
+            <strong style={{ color: 'white' }}>
               The World's First Scam-Free Job Portal
             </strong>
           </h1>
@@ -83,14 +83,15 @@ const Home = () => {
               display: 'grid'
             }}>
               <img
-                src={AcaLogo}
-                alt="LVC Academy Logo"
-                style={{ maxWidth: '300px', height: 'auto' }}
+                src={lvc360logo}
+                alt="LVC360 Logo"
+                style={{ maxWidth: '100px', height: 'auto' }}
               />
             </div>
             <div>
-              <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
-                LVC Academy - Future-Ready Tech Bootcamps
+              <h1 style={{ color: 'yellow', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
+                LVC360 career program -<span style={{ color: 'white', text:Bold }}>Stop guessing.
+Let your career be managed.</span> 
               </h1>
             </div>
           </div>

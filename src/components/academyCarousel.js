@@ -3,180 +3,191 @@ import Carousel from "react-bootstrap/Carousel";
 function AcademyCarousel() {
   return (
     <Carousel className="academy-carousel gradient-background-color bg-black">
-      {/* Slide 1: Hero */}
+
+      {/* SLIDE 1 — THE REAL PROBLEM vs HOW WE FIX IT */}
+      <Carousel.Item>
+        <div className="p-5" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "3rem" }}>
+          
+          {/* LEFT */}
+          <div>
+            <h5 style={{ color: "#d4af37", letterSpacing: "3px" }}>THE REAL PROBLEM</h5>
+            <h2 style={{ color: "white", marginTop: "12px" }}>
+              The job search problem no one talks about.
+            </h2>
+          
+
+            <div className="mt-4 p-4" style={{ border: "1px solid #3a7bd5", borderRadius: "14px" }}>
+              <h6 style={{ color: "#d4af37" }}>PAIN · CONFUSION</h6>
+              <ul style={{ color: "white", marginTop: "12px" }}>
+                <li>100+ applications, zero responses</li>
+                <li>No structure or roadmap</li>
+                <li>Weak resume & LinkedIn</li>
+                <li>Fear and low confidence in interviews</li>
+                <li>No recruiter or vendor network</li>
+                <li>Months wasted guessing</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div>
+            <h5 style={{ color: "#d4af37", letterSpacing: "3px" }}>HOW WE FIX IT</h5>
+            <h2 style={{ color: "white", marginTop: "12px" }}>
+              LVC 360° replaces struggle with a professional engine.
+            </h2>
+
+            <div className="mt-4 p-4" style={{ border: "1px solid #3a7bd5", borderRadius: "14px" }}>
+              <h6 style={{ color: "#d4af37" }}>CLARITY · SUPPORT</h6>
+              <ul style={{ color: "white", marginTop: "12px" }}>
+                <li>Daily structured job marketing by LVC team</li>
+                <li>Clear 360° roadmap from application to offer</li>
+                <li>Premium resume & LinkedIn branding </li>
+                <li>Unlimited mock interviews & coaching</li>
+                <li>Recruiter & vendor outreach engine</li>
+                <li>Live dashboard with real progress</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </Carousel.Item>
+
+      {/* SLIDE 2 — WHY LVC 360 IS DIFFERENT */}
       <Carousel.Item>
         <div className="p-5 text-center">
-          <h2
-            style={{
-              textAlign: "center",
-              color: "white",
-              fontSize: "clamp(17px, 2vmax, 45px)",
-              fontWeight: "400",
-            }}
-          >
-            Master the skills that matter in today&apos;s world —{" "}
-            <strong>AI, Machine Learning, Data Science, and Full Stack Development.</strong>{" "}
-            Our bootcamps combine <strong>70% hands-on learning with 30% theory,</strong> designed to make you{" "}
-            <strong>career-ready within 6 to 12 months.</strong>
+          <h5 style={{ color: "#d4af37", letterSpacing: "3px" }}>
+            WHY LVC 360° IS DIFFERENT
+          </h5>
+          <h2 style={{ color: "white", marginTop: "16px" }}>
+            Not another consultancy. A managed career engine.
           </h2>
+          <p style={{ color: "#cfcfcf", maxWidth: "900px", margin: "16px auto" }}>
+            We don’t just train you and disappear. We actively manage your job-search
+            engine and stay accountable until placement.
+          </p>
+
           <div
             style={{
-              textAlign: "center",
-              marginTop: "20px",
-              fontSize: "clamp(15px, 1.4vmax, 20px)",
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: "1.5rem",
+              marginTop: "3rem",
             }}
           >
-            <em style={{ color: "white", fontWeight: "400" }}>
-              Learn. Shadow. Practice. Get Hired
-            </em>
+            {[
+              ["Selective Admissions", "Only serious, interview-cleared candidates"],
+              ["Real-Time Dashboard", "Submissions, mocks & status in one place"],
+              ["Dedicated Case Manager", "One owner for your entire journey"],
+              ["Daily Job Marketing", "High-volume, targeted submissions"],
+              ["Unlimited Mocks", "Practice until confidence is real"],
+              ["Pay After Placement", "Success-aligned pricing models"],
+            ].map(([title, desc]) => (
+              <div
+                key={title}
+                style={{
+                  border: "1px solid #3a7bd5",
+                  borderRadius: "14px",
+                  padding: "1.5rem",
+                  color: "white",
+                  textAlign: "left",
+                }}
+              >
+                <h5>{title}</h5>
+                <p style={{ color: "#cfcfcf", marginTop: "8px" }}>{desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </Carousel.Item>
 
-      {/* Slide 2: Programs */}
+      {/* SLIDE 3 — WHO IS THIS PROGRAM FOR */}
       <Carousel.Item>
-        <div
-          className="highlight-cards-container"
-          style={{
-            display: "flex",
-            gap: "2rem",
-            flexWrap: "wrap",
-            justifyContent: "center",
-          }}
-        >
-          <div className="p-5" style={{ flex: "1 1 300px", maxWidth: "400px" }}>
-            <h2 style={{ color: 'white', fontSize: "clamp(24px, 2vmax, 40px)" }}>
-              Fast-Track 6-Month Bootcamps
-            </h2>
-            <ul style={{ color: 'white', fontSize: "clamp(15px, 1.4vmax, 20px)" }}>
-              <li>
-                For students & professionals who want to <strong>upskill quickly</strong>
-              </li>
-              <li>Covers all core modules + real projects + shadowing</li>
-              <li>
-                Get <strong>job-ready in half a year</strong>
-              </li>
-            </ul>
-            <a href="http://www.lvcacademy.com">
-              <span className="learn-more">Learn More</span>
-            </a>
-          </div>
+        <div className="p-5 text-center">
+          <h5 style={{ color: "#d4af37", letterSpacing: "3px" }}>
+            WHO IS THIS PROGRAM FOR?
+          </h5>
+          <p style={{ color: "#cfcfcf", marginTop: "12px" }}>
+            Built for ambitious people who want real change and real offers.
+          </p>
 
-          <div className="p-5" style={{ flex: "1 1 300px", maxWidth: "400px" }}>
-            <h3 style={{ fontSize: "clamp(24px, 2vmax, 40px)" }}>
-              Comprehensive 12-Month Bootcamps
-            </h3>
-            <ul style={{ color: 'white', fontSize: "clamp(15px, 1.4vmax, 20px)" }}>
-              <li>Deeper curriculum with advanced specializations</li>
-              <li>
-                Extended <strong>shadowing + capstone projects</strong>
-              </li>
-              <li>
-                Ideal for those seeking <strong>global career opportunities</strong>
-              </li>
-            </ul>
-            <a href="http://www.lvcacademy.com">
-              <span className="learn-more">Learn More</span>
-            </a>
-          </div>
-        </div>
-      </Carousel.Item>
-
-      {/* Slide 3: Why Choose */}
-      <Carousel.Item>
-        <div className="p-5">
-          <h2
+          <div
             style={{
-              color: "white",
-              textAlign: "center",
-              marginTop: "20px",
-              fontSize: "clamp(32px, 2.5vmax, 60px)",
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: "1.5rem",
+              marginTop: "3rem",
             }}
           >
-            Why Choose LVC Academy?
-          </h2>
-          <div className="card-content" style={{ background: 'transparent', boxShadow: 'none', border: '0',fontSize: "30px", textAlign: "left", justifyContent: 'center' }}>
-            <ul style={{ fontSize: "clamp(15px, 1.4vmax, 20px)" }}>
-              <li>
-                <strong>Shadowing Opportunities →</strong> Learn directly by observing professionals
-              </li>
-              <li>
-                <strong>Hands-On First →</strong> 70% real projects, not just lectures
-              </li>
-              <li>
-                <strong>Career-Ready Pathways →</strong> Resume prep, mock interviews, recruiter connects
-              </li>
-              <li>
-                <strong>Flexible Durations →</strong> 6-month fast-track OR 12-month comprehensive
-              </li>
-              <li>
-                <strong>Global Recognition →</strong> Certificates trusted by employers
-              </li>
-            </ul>
+            {[
+              "OPT / CPT / STEM students",
+              "International graduates struggling with interviews",
+              "Career gap candidates",
+              "H1B / H4 / EAD holders",
+              "Career switchers (Non-IT → IT)",
+              "People afraid of interviews",
+              "Candidates lacking strong resume/projects",
+              "Anyone serious about REAL job marketing",
+            ].map((item) => (
+              <div
+                key={item}
+                style={{
+                  border: "1px solid #3a7bd5",
+                  borderRadius: "14px",
+                  padding: "1.5rem",
+                  color: "white",
+                  textAlign: "left",
+                }}
+              >
+                ✓ {item}
+              </div>
+            ))}
           </div>
         </div>
       </Carousel.Item>
 
-      {/* Slide 4: Comparison Table */}
+      {/* SLIDE 4 — WHY CHOOSE LVC 360 */}
       <Carousel.Item>
-        <div className="table-responsive my-5">
-          <h2 className="mb-4 text-center" style={{ color: "white" }}>
-            Feature Comparison
-          </h2>
-          <table className="academy-grid-col academy-grid-row academy-grid-celld table-dark table-bordered text-center align-middle">
-            <thead className="table-dark">
-              <tr>
-                <th>Feature</th>
-                <th>LVC Academy</th>
-                <th>Udemy</th>
-                <th>Coursera</th>
-                <th>Scaler</th>
-                <th>UpGrad</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Duration Options</td>
-                <td>✅ 6 &amp; 12 months</td>
-                <td>❌ Undefined</td>
-                <td>❌ Long timelines</td>
-                <td>⚠️ Variable</td>
-                <td>⚠️ 6–12 months only</td>
-              </tr>
-              <tr>
-                <td>Shadowing</td>
-                <td>✅ Yes</td>
-                <td>❌ No</td>
-                <td>❌ No</td>
-                <td>❌ No</td>
-                <td>❌ No</td>
-              </tr>
-              <tr>
-                <td>Hands-On %</td>
-                <td>✅ 70% practical</td>
-                <td>❌ &lt;20%</td>
-                <td>❌ &lt;25%</td>
-                <td>⚠️ Coding only</td>
-                <td>⚠️ Mixed</td>
-              </tr>
-              <tr>
-                <td>Career Support</td>
-                <td>✅ Resume, mock interviews, placements</td>
-                <td>❌ None</td>
-                <td>❌ Limited</td>
-                <td>⚠️ Basic</td>
-                <td>⚠️ General</td>
-              </tr>
-              <tr>
-                <td>Outcome Focus</td>
-                <td>✅ Job-ready in 6 or 12 months</td>
-                <td>❌ Self-paced only</td>
-                <td>❌ Academic</td>
-                <td>⚠️ Narrow</td>
-                <td>⚠️ Mixed ROI</td>
-              </tr>
-            </tbody>
-          </table>
+        <div className="p-5 text-center">
+          <h5 style={{ color: "#d4af37", letterSpacing: "3px" }}>
+            WHY CHOOSE LVC 360° CAREER PROGRAM?
+          </h5>
+          <p style={{ color: "#cfcfcf", marginTop: "12px" }}>
+            Other institutes teach. We transform careers.
+          </p>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(2, 1fr)",
+              gap: "1.5rem",
+              marginTop: "3rem",
+            }}
+          >
+            {[
+              "Daily job marketing",
+              "USA-based program & support",
+              "Vendor & client network access",
+              "LVC Spotlight Media branding boost",
+              "Fair Job Portal advantage",
+              "Strict grooming & performance tracking",
+              "Real projects & shadowing",
+              "Multiple mock interviews",
+              "Personalized training support",
+              "Premium quality at affordable pricing",
+            ].map((item) => (
+              <div
+                key={item}
+                style={{
+                  border: "1px solid #3a7bd5",
+                  borderRadius: "14px",
+                  padding: "1.5rem",
+                  color: "white",
+                  textAlign: "left",
+                }}
+              >
+                ✓ {item}
+              </div>
+            ))}
+          </div>
         </div>
       </Carousel.Item>
     </Carousel>

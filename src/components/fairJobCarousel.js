@@ -143,57 +143,96 @@ function FairJobCarousel() {
                         <tbody>
                             <tr>
                                 <th className='spotlight-grid-row' scope='row'><b style={{color:'white'}}>Profile Authenticity</b></th>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>✅ Verified job seekers & recruiters</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Anyone can join</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Limited checks</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Basic checks</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Weak verification</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Many fake profiles</td>
+                                <td  className="spotlight-graph-cells">
+  <span className="gold-tick">✔</span>
+  Verified job seekers & recruiters
+</td>
+
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Anyone can join</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Limited checks</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Basic checks</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Weak verification</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Many fake profiles</td>
                             </tr>
                             <tr>
                                 <th className='spotlight-grid-row' scope='row'><b style={{color:'white'}}>Job Post Quality</b></th>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>✅ AI-verified & scam-free</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Fake & expired posts</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Mix of genuine + scam</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Sponsored-heavy</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Spammy, duplicates</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Expired jobs remain</td>
+                                <td className="spotlight-graph-cells">
+  <span className="gold-tick">✔</span> AI-verified & scam-free</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Fake & expired posts</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Mix of genuine + scam</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Sponsored-heavy</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Spammy, duplicates</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Expired jobs remain</td>
                             </tr>
                             <tr>
                                 <th className='spotlight-grid-row' scope='row'><b style={{color:'white'}}>AI Screening</b></th>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>✅ Virtual interview bots + JD matching</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Manual filtering</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Keyword-based</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Resume keyword match</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Generic</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Manual</td>
+                                <td  className="spotlight-graph-cells">
+  <span className="gold-tick">✔</span> Virtual interview bots + JD matching</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Manual filtering</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Keyword-based</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Resume keyword match</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Generic</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Manual</td>
                             </tr>
                             <tr>
                                 <th className='spotlight-grid-row' scope='row'><b style={{color:'white'}}>Application Tracking</b></th>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>✅ Real-time updates & closure tracking</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ None</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Very limited</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Recruiter-driven only</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ No clarity</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Rare updates</td>
+                                <td  className="spotlight-graph-cells">
+  <span className="gold-tick">✔</span>Real-time updates & closure tracking</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> None</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Very limited</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Recruiter-driven only</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> No clarity</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Rare updates</td>
                             </tr>
                             <tr>
                                 <th className='spotlight-grid-row' scope='row'><b style={{color:'white'}}>Data Privacy</b></th>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>✅ No resale, zero spam</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Data for ads</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Candidate data resold</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Outreach-heavy</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Shared widely</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Recruiter misuse</td>
+                                <td  className="spotlight-graph-cells">
+  <span className="gold-tick">✔</span>No resale, zero spam</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Data for ads</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Candidate data resold</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Outreach-heavy</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Shared widely</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Recruiter misuse</td>
                             </tr>
                             <tr>
                                 <th className='spotlight-grid-row' scope='row'><b style={{color:'white'}}>Networking & Growth</b></th>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>✅ Messaging + intent tags + career prep</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Vanity networking</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Job-only</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Job alerts only</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Outdated</td>
-                                <td className='spotlight-graph-cells' style={{color:'white'}}>❌ Jobs only</td>
+                                <td  className="spotlight-graph-cells">
+  <span className="gold-tick">✔</span> Messaging + intent tags + career prep</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Vanity networking</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Job-only</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Job alerts only</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Outdated</td>
+                                <td className="spotlight-graph-cells">
+  <span className="warn-symbol">❗</span> Jobs only</td>
                             </tr>
                         </tbody>
                     </table>

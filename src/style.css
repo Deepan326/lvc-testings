@@ -3260,3 +3260,68 @@ main:not(.page-home) > section.py-5::before,
 main:not(.page-home) > section.py-5::after {
   content: none !important;
 }
+/* 🔒 TABLE ISOLATION */
+.table-isolation-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* FORCE REAL TABLE */
+.spotlight-slide2-grid {
+  display: table !important;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.spotlight-slide2-grid thead {
+  display: table-header-group;
+}
+
+.spotlight-slide2-grid tbody {
+  display: table-row-group;
+}
+
+.spotlight-slide2-grid tr {
+  display: table-row;
+}
+
+.spotlight-slide2-grid th,
+.spotlight-slide2-grid td {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding: 14px 10px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* --------- TABLE CELL CONTENT ALIGNMENT (FIX) --------- */
+.spotlight-graph-cells {
+  border: .15vmax solid white;
+
+  /* alignment fix */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  /* text tuning */
+  font-size: 0.75rem;        /* smaller, premium */
+  line-height: 1.35;
+  font-weight: 400;
+  text-align: center;
+  white-space: normal;
+
+  /* spacing */
+  padding: 10px 8px;
+}
+
+/* GOLD TICK */
+.gold-tick {
+  font-weight: 700;
+  background: linear-gradient(135deg, #f1e4b3, #f9bf03, #fdb100);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
