@@ -7,7 +7,6 @@ import SpotLogo from '../assets/spotlight-media.png'
 import FairJobCarousel from './fairJobCarousel.js';
 import SpotLightCarousel from './spotlightCarousel.js';
 import AcademyCarousel from './academyCarousel.js';
-import { Bold } from 'lucide-react';
 import lvc360logo from '../assets/lvc360logo.png';
 
 const Home = () => {
@@ -89,8 +88,8 @@ const Home = () => {
               />
             </div>
             <div>
-              <h1 style={{ color: 'yellow', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
-                LVC360 career program -<span style={{ color: 'white', text:Bold }}>Stop guessing.
+              <h1 style={{  color: "#d4af37", fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
+                LVC360 career program -<span style={{ color: 'white', fontWeight: 'bold', fontSize: 'clamp(20px, 1.5vmax, 40px)' }}>Stop guessing.
 Let your career be managed.</span> 
               </h1>
             </div>
@@ -111,7 +110,7 @@ Let your career be managed.</span>
                 class="btn btn-primary btn-lg"
               >
                 View More Bootcamps
-              </a>
+            </a>
             </div>
           </div>
         </section>
