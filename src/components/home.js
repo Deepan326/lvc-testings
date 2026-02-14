@@ -1,22 +1,25 @@
-import CarouselComponent from './carsouel.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style.css';
-import TransformationStartsHere from './transformationStartsHere.js';
-import Footer from './footer.js';
-import SpotLogo from '../assets/spotlight-media.png'
-import FairJobCarousel from './fairJobCarousel.js';
-import SpotLightCarousel from './spotlightCarousel.js';
-import AcademyCarousel from './academyCarousel.js';
-import lvc360logo from '../assets/lvc360logo.png';
+import CarouselComponent from "./carsouel.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../style.css";
+import TransformationStartsHere from "./transformationStartsHere.js";
+import Footer from "./footer.js";
+import SpotLogo from "../assets/spotlight-media.png";
+import FairJobCarousel from "./fairJobCarousel.js";
+import SpotLightCarousel from "./spotlightCarousel.js";
+import AcademyCarousel from "./academyCarousel.js";
+import lvc360logo from "../assets/lvc360logo.png";
 
 const Home = () => {
   return (
     <>
-      <main className="page-home" style={{ padding: '20px', marginTop: '50px' }}>
+      <main
+        className="page-home"
+        // style={{ padding: "20px", marginTop: "50px" }}
+      >
         <div className="carsouelheight">
           <CarouselComponent />
         </div>
-        <section>
+        {/* <section>
           <h1 style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
               LVC Fair Job Portal <br/>
             <strong style={{ color: 'white' }}>
@@ -24,7 +27,7 @@ const Home = () => {
             </strong>
           </h1>
         </section>
-        <FairJobCarousel />
+        <FairJobCarousel /> */}
       </main>
 
       {/* FULL-BLEED: Smart HR Scheduler */}
@@ -63,40 +66,53 @@ const Home = () => {
       {/* <section style={{ backgroundColor: "white" }} className="py-5">
         <h1 style={{ color: "black", }}>Section</h1>
       </section> */}
-      <div style={{ border: '1px solid white' }} />
+      {/* <div style={{ border: "1px solid white" }} /> */}
 
       {/* LVC Academy info */}
-      <div
+      {/* <div
         className="bg-black"
         style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          padding: '20px',
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "20px",
         }}
-      >
-        <section className="container py-5 section-4">
+      > */}
+        {/* <section className="container py-5 section-4">
           <div className="academy-heading-row">
-            <div style={{
-              textAlign: 'center',
-              display: 'grid'
-            }}>
+            <div
+              style={{
+                textAlign: "center",
+                display: "grid",
+              }}
+            >
               <img
                 src={lvc360logo}
                 alt="LVC360 Logo"
-                style={{ maxWidth: '100px', height: 'auto' }}
+                style={{ maxWidth: "100px", height: "auto" }}
               />
             </div>
             <div>
-              <h1 style={{  color: "#d4af37", fontSize: 'clamp(30px, 2.5vmax, 60px)' }}>
-                LVC360 career program -<span style={{ color: 'white', fontWeight: 'bold', fontSize: 'clamp(20px, 1.5vmax, 40px)' }}>Stop guessing.
-Let your career be managed.</span> 
+              <h1
+                style={{
+                  color: "#d4af37",
+                  fontSize: "clamp(30px, 2.5vmax, 60px)",
+                }}
+              >
+                LVC360 career program -
+                <span
+                  style={{
+                    color: "white",
+                    fontWeight: "bold",
+                    fontSize: "clamp(20px, 1.5vmax, 40px)",
+                  }}
+                >
+                  Stop guessing. Let your career be managed.
+                </span>
               </h1>
             </div>
           </div>
-          <div
-            className="academy-carousel-container bg-black"
-          >
+          <div className="academy-carousel-container bg-black">
             <AcademyCarousel />
           </div>
           <div class="container my-5">
@@ -110,51 +126,66 @@ Let your career be managed.</span>
                 class="btn btn-primary btn-lg"
               >
                 View More Bootcamps
-            </a>
+              </a>
             </div>
           </div>
-        </section>
-      </div>
+        </section> */}
+      {/* </div> */}
 
-      <div style={{ border: '1px solid white'}} />
+      {/* <div style={{ border: "1px solid white" }} /> */}
       {/* Resume normal page padding/content */}
-      <main className="page-home" style={{ padding: '20px' }}>
+      {/* <main className="page-home" style={{ padding: "20px" }}> */}
         {/* Spotlight Media */}
-        <section
+        {/* <section
           style={{
-            fontSize: '14px',
-            color: '000',
-            fontWeight: '500',
-            background: 'black',
+            fontSize: "14px",
+            color: "000",
+            fontWeight: "500",
+            background: "black",
           }}
           className="py-5"
         >
-          <div className="container section-4" style={{ paddingTop: 0, paddingBottom: 0 }}>
-      <div className="academy-heading-row spotlight-heading-row" style={{ columnGap: 'clamp(6px, 1vw, 12px)' }}>
-        <div style={{ textAlign: 'center', display: 'grid' }}>
-          <img
-            src={SpotLogo}
-            alt="LVC Spotlight Media Logo"
-            style={{ maxWidth: '300px', height: 'auto' }}
-          />
-        </div>
-        <div>
-          <h1 className="sportlight-heading" style={{ color: 'white', fontSize: 'clamp(30px, 2.5vmax, 60px)', margin: 0, willChange: 'transform' }}>
-            LVC Spotlight Media
-          </h1>
-        </div>
-      </div>
-    </div>
+          <div
+            className="container section-4"
+            style={{ paddingTop: 0, paddingBottom: 0 }}
+          >
+            <div
+              className="academy-heading-row spotlight-heading-row"
+              style={{ columnGap: "clamp(6px, 1vw, 12px)" }}
+            >
+              <div style={{ textAlign: "center", display: "grid" }}>
+                <img
+                  src={SpotLogo}
+                  alt="LVC Spotlight Media Logo"
+                  style={{ maxWidth: "300px", height: "auto" }}
+                />
+              </div>
+              <div>
+                <h1
+                  className="sportlight-heading"
+                  style={{
+                    color: "white",
+                    fontSize: "clamp(30px, 2.5vmax, 60px)",
+                    margin: 0,
+                    willChange: "transform",
+                  }}
+                >
+                  LVC Spotlight Media
+                </h1>
+              </div>
+            </div>
+          </div>
 
           <div className="spotlight-carousel-container">
             <SpotLightCarousel />
           </div>
-          <div style={{ textAlign: 'center' }}>
-            <p style={{ fontSize: '25px', color: 'white' }}>
+          <div style={{ textAlign: "center" }}>
+            <p style={{ fontSize: "25px", color: "white" }}>
               As Seen In → Forbes | Entrepreneur | Yahoo | TechCrunch | Medium
             </p>
           </div>
-        </section>
+        </section> */}
+
 
         {/* section 5 transform your goals */}
         {/* <div className="section-5">
@@ -200,7 +231,7 @@ Let your career be managed.</span>
 
         <TransformationStartsHere />
         <Footer />
-      </main>
+      {/* </main> */}
     </>
   );
 };

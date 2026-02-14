@@ -11,8 +11,10 @@ import Projects from './components/projects';
 import Careers from './components/careers';
 import BlogPage from './components/blog';
 
-import ProductsPage from './components/products';
+import Products from './components/products';
 import BlogArticle from './components/blogPost';
+import FairJobCarousel from './components/fairJobCarousel';
+import FairjobProduct from './components/fairjobProduct';
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -36,7 +38,8 @@ function App() {
           <Route path='/blog/:blogId' element={<BlogArticle />} />
           {/* <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} /> */}
-          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/products" element={<Products />} />
+          
         </Routes>
       </div>
       {/* <Footer /> */}
