@@ -1,22 +1,22 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 import Home from './components/home';
 import About from './components/aboutus';
 import Service from "./components/services"
 import Insight from "./components/insight"
-// import Footer from './components/footer';
 import Header from './components/header';
 import Contact from './components/contact';
 import Projects from './components/projects';
 import Careers from './components/careers';
 import BlogPage from './components/blog';
+import CareersIntern from './components/CareersIntern';
+import InternForm from './components/internForm';
 
 import Products from './components/products';
 import BlogArticle from './components/blogPost';
-import FairJobCarousel from './components/fairJobCarousel';
-import FairjobProduct from './components/fairjobProduct';
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 function App() {
@@ -36,8 +36,8 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path='/blog/:blogId' element={<BlogArticle />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/careers-intern" element={<CareersIntern />} />
+          <Route path="/careers-intern/form" element={<InternForm />} />
           <Route path="/products" element={<Products />} />
           
         </Routes>
