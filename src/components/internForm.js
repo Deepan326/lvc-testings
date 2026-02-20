@@ -3,6 +3,7 @@ import "../styles/internForm.css";
 
 const InternForm = () => {
   const [step, setStep] = useState(1);
+  const [errors, setErrors] = useState({});
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -27,7 +28,44 @@ const InternForm = () => {
     });
   };
 
-  const nextStep = () => setStep(step + 1);
+  const validateStep = () => {
+    let newErrors = {};
+
+    if (step === 1) {
+      if (!formData.firstName) newErrors.firstName = "First Name is required";
+      if (!formData.lastName) newErrors.lastName = "Last Name is required";
+      if (!formData.phone) newErrors.phone = "Phone is required";
+      if (!formData.email) newErrors.email = "Email is required";
+      if (!formData.dob) newErrors.dob = "Date of Birth is required";
+    }
+
+    if (step === 2) {
+      if (!formData.degree) newErrors.degree = "Degree is required";
+      if (!formData.institution)
+        newErrors.institution = "Institution is required";
+      if (!formData.graduationYear)
+        newErrors.graduationYear = "Graduation Year is required";
+      if (!formData.percentage) newErrors.percentage = "Percentage is required";
+    }
+
+    if (step === 3) {
+      if (!formData.country) newErrors.country = "Country is required";
+      if (!formData.state) newErrors.state = "State is required";
+      if (!formData.city) newErrors.city = "City is required";
+      if (!formData.pincode) newErrors.pincode = "Pincode is required";
+    }
+
+    setErrors(newErrors);
+
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const nextStep = () => {
+    if (validateStep()) {
+      setStep(step + 1);
+    }
+  };
+
   const prevStep = () => setStep(step - 1);
 
   const handleSubmit = (e) => {
@@ -37,39 +75,39 @@ const InternForm = () => {
   };
 
   return (
-    <div className="form-container" style={{marginTop:"40px"}}>
+    <div className="form-container" style={{ marginTop: "40px" }}>
       <div className="form-card">
         <div className="progress-bar">
           <div
             className="progress"
             style={{
-              width:
-                step === 1 ? "33%" :
-                step === 2 ? "66%" :
-                "100%"
+              width: step === 1 ? "33%" : step === 2 ? "66%" : "100%",
             }}
           ></div>
         </div>
 
-        <h2>
+        <h2 style={{ color: "#d4af37" }}>
           {step === 1 && "Personal Information"}
           {step === 2 && "Education Information"}
           {step === 3 && "Address Information"}
         </h2>
 
         <form onSubmit={handleSubmit}>
-          
           {step === 1 && (
             <>
-              <div >
+              <div>
                 <input
                   type="text"
                   name="firstName"
+                  //  className="gold-input"
                   placeholder="First Name *"
                   value={formData.firstName}
                   onChange={handleChange}
                   required
                 />
+                {errors.firstName && (
+                  <p className="error">{errors.firstName}</p>
+                )}
 
                 <input
                   type="text"
@@ -79,6 +117,10 @@ const InternForm = () => {
                   onChange={handleChange}
                   required
                 />
+                {errors.lastName && (
+                  <p className="error">{errors.lastName}</p>
+                )}
+
               </div>
 
               <input
@@ -89,6 +131,9 @@ const InternForm = () => {
                 onChange={handleChange}
                 required
               />
+               {errors.phone && (
+                  <p className="error">{errors.phone}</p>
+                )}
 
               <input
                 type="email"
@@ -98,14 +143,21 @@ const InternForm = () => {
                 onChange={handleChange}
                 required
               />
+               {errors.email && (
+                  <p className="error">{errors.email}</p>
+                )}
 
               <input
-                type="date"
+                // type="date"
                 name="dob"
+                placeholder="Date of Birth (DD/MM/YYYY) *"
                 value={formData.dob}
                 onChange={handleChange}
                 required
               />
+               {errors.dob && (
+                  <p className="error">{errors.dob}</p>
+                )}
 
               <button type="button" onClick={nextStep}>
                 Next
@@ -122,6 +174,9 @@ const InternForm = () => {
                 onChange={handleChange}
                 required
               />
+               {errors.degree && (
+                  <p className="error">{errors.degree}</p>
+                )}
 
               <input
                 type="text"
@@ -131,6 +186,9 @@ const InternForm = () => {
                 onChange={handleChange}
                 required
               />
+               {errors.institution && (
+                  <p className="error">{errors.institution}</p>
+                )}
 
               <input
                 type="number"
@@ -140,6 +198,10 @@ const InternForm = () => {
                 onChange={handleChange}
                 required
               />
+               {errors.graduationYear && (
+                  <p className="error">{errors.graduationYear}</p>
+                )}
+
 
               <input
                 type="number"
@@ -149,6 +211,9 @@ const InternForm = () => {
                 onChange={handleChange}
                 required
               />
+              {errors.percentage && (
+                  <p className="error">{errors.percentage}</p>
+                )}
 
               <div className="button-group">
                 <button type="button" onClick={prevStep}>
@@ -170,6 +235,9 @@ const InternForm = () => {
                 onChange={handleChange}
                 required
               />
+               {errors.country && (
+                  <p className="error">{errors.country}</p>
+                )}
 
               <input
                 type="text"
@@ -188,6 +256,9 @@ const InternForm = () => {
                 onChange={handleChange}
                 required
               />
+               {errors.City && (
+                  <p className="error">{errors.City}</p>
+                )}
 
               <input
                 type="text"
@@ -197,6 +268,9 @@ const InternForm = () => {
                 onChange={handleChange}
                 required
               />
+              {errors.pincode && (
+                  <p className="error">{errors.pincode}</p>
+                )}
 
               <div className="button-group">
                 <button type="button" onClick={prevStep}>

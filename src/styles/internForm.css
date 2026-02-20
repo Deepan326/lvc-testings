@@ -57,6 +57,10 @@ input {
   color: white;
   outline: none;
 }
+input::placeholder {
+  color: #d4af37;
+  opacity: 1; 
+}
 
 input:focus {
   border: 1px solid #7c3aed;
