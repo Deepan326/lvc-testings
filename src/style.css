@@ -293,6 +293,7 @@ footer .logo {
   color: white;
   font-size: 18px;
   font-weight: 400;
+  width: 22%;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
