@@ -26,16 +26,16 @@ const InternshipCard = ({ title, description,  }) => {
 const internshipData = [
   {
     id: 1,
-    title: "Frontend  Intern",
+    title: "AI/ML Intern",
     description:
-      "Work with React, Bootstrap and build responsive UI components.",
-    link: "/careers-intern/frontend",
+      "Work with AI and Machine Learning technologies.",
+    link: "/careers-intern/ai-ml",
   },
   {
     id: 2,
-    title: "Backend Developer Intern",
-    description: "Work with Node.js, Express and build APIs.",
-    link: "/careers-intern/backend",
+    title: "Gen AI Intern",
+    description: "Work with Generative AI technologies.",
+    link: "/careers-intern/gen-ai",
   },
   {
     id: 3,
