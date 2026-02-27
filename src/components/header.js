@@ -193,7 +193,7 @@ const Header = () => {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link to="/about" className="nav-link" onClick={handleNavAction}>
-                  Who We Are
+                  About Us
                 </Link>
               </li>
               <li className="nav-item">
