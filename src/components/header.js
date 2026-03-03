@@ -241,7 +241,7 @@ const Header = () => {
                   className="nav-link"
                   onClick={handleNavAction}
                 >
-                  Who We Are
+                  About Us
                 </Link>
               </li>
               <li className="nav-item">
