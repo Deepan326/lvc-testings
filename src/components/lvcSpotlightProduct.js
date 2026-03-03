@@ -30,7 +30,7 @@ const LvcSpotlightProduct = () => {
                 />
               </div>
               <div>
-                <h1
+                {/* <h1
                   className="sportlight-heading"
                   style={{
                     color: "white",
@@ -40,7 +40,7 @@ const LvcSpotlightProduct = () => {
                   }}
                 >
                   LVC Spotlight Media
-                </h1>
+                </h1> */}
               </div>
             </div>
           </div>

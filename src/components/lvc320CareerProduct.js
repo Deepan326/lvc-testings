@@ -21,11 +21,11 @@ const Lvc320CareerProduct = () => {
             <div>
               <h1
                 style={{
-                  color: "#d4af37",
+                  color: "white",
                   fontSize: "clamp(30px, 2.5vmax, 60px)",
                 }}
               >
-                LVC360 career program -
+                LVC360 career program - 
                 <span
                   style={{
                     color: "white",
@@ -33,7 +33,7 @@ const Lvc320CareerProduct = () => {
                     fontSize: "clamp(20px, 1.5vmax, 40px)",
                   }}
                 >
-                  Stop guessing. Let your career be managed.
+                   Stop guessing. Let your career be managed.
                 </span>
               </h1>
             </div>
