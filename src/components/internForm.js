@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Disclaimer from "./disclaimer";
 import "../styles/internForm.css";
 
 const InternForm = () => {
@@ -6,37 +7,66 @@ const InternForm = () => {
   const [errors, setErrors] = useState({});
 
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    fullName: "",
+    // lastName: "",
     phone: "",
     email: "",
-    dob: "",
+    // dob: "",
     degree: "",
     institution: "",
     graduationYear: "",
+    branch: "",
     percentage: "",
+    role: "",
+    resume: null,
     country: "",
     state: "",
     city: "",
     pincode: "",
+    feeConsent: false,
+    selectionConsent: false,
+    contactConsent: false,
   });
 
+  const roles = [
+    "AI/ML Intern",
+    "Gen AI Intern",
+    "UI/UX Design Intern",
+    "Digital Marketing Intern",
+    "Data Science Intern",
+    "DevOps Intern",
+    "Full Stack Intern",
+    "Mobile App Developer Intern"
+  ];
+
   const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
 
+    setFormData(prev => ({
+      ...prev,
+      resume: file
+    }));
+
+    setErrors(prev => ({
+      ...prev,
+      resume: ""
+  }));
+  };
   const validateStep = () => {
     let newErrors = {};
 
     if (step === 1) {
-      if (!formData.firstName) newErrors.firstName = "First Name is required";
-      if (!formData.lastName) newErrors.lastName = "Last Name is required";
+      if (!formData.fullName) newErrors.fullName = "Full Name is required";
       if (!formData.phone) newErrors.phone = "Phone is required";
       if (!formData.email) newErrors.email = "Email is required";
-      if (!formData.dob) newErrors.dob = "Date of Birth is required";
+      // if (!formData.dob) newErrors.dob = "Date of Birth is required";
     }
 
     if (step === 2) {
@@ -45,7 +75,12 @@ const InternForm = () => {
         newErrors.institution = "Institution is required";
       if (!formData.graduationYear)
         newErrors.graduationYear = "Graduation Year is required";
+      if (!formData.branch) 
+        newErrors.branch = "Branch is required";
       if (!formData.percentage) newErrors.percentage = "Percentage is required";
+      if (!formData.role) newErrors.role = "Internship Role is required";
+      if (!formData.resume)
+        newErrors.resume = "Resume is required";
     }
 
     if (step === 3) {
@@ -53,6 +88,13 @@ const InternForm = () => {
       if (!formData.state) newErrors.state = "State is required";
       if (!formData.city) newErrors.city = "City is required";
       if (!formData.pincode) newErrors.pincode = "Pincode is required";
+      if (!formData.state) newErrors.state = "State is required";
+      if (!formData.feeConsent)
+        newErrors.feeConsent = "You must agree that fee is non-refundable";
+      if (!formData.selectionConsent)
+        newErrors.selectionConsent ="You must agree selection is not guaranteed";
+      if (!formData.contactConsent)
+        newErrors.contactConsent ="You must agree to be contacted";
     }
 
     setErrors(newErrors);
@@ -70,6 +112,7 @@ const InternForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!validateStep()) return; 
     console.log(formData);
     alert("Form Submitted Successfully!");
   };
@@ -96,37 +139,30 @@ const InternForm = () => {
           {step === 1 && (
             <>
               <div>
+                <label className="input-label">
+                  Full Name <span className="required">*</span>
+                </label>
                 <input
                   type="text"
-                  name="firstName"
+                  name="fullName"
                   //  className="gold-input"
-                  placeholder="First Name *"
-                  value={formData.firstName}
+                  placeholder="Enter Your Full Name"
+                  value={formData.fullName}
                   onChange={handleChange}
                   required
                 />
-                {errors.firstName && (
-                  <p className="error">{errors.firstName}</p>
+                {errors.fullName && (
+                  <p className="error">{errors.fullName}</p>
                 )}
-
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last Name *"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                  required
-                />
-                {errors.lastName && (
-                  <p className="error">{errors.lastName}</p>
-                )}
-
               </div>
-
+              
+              <label className="input-label">
+                  Phone Number <span className="required">*</span>
+              </label>
               <input
                 type="tel"
                 name="phone"
-                placeholder="Phone Number *"
+                placeholder="Enter Your Phone Number"
                 value={formData.phone}
                 onChange={handleChange}
                 required
@@ -134,11 +170,14 @@ const InternForm = () => {
                {errors.phone && (
                   <p className="error">{errors.phone}</p>
                 )}
-
+              
+              <label className="input-label">
+                  Email Address <span className="required">*</span>
+                </label>
               <input
                 type="email"
                 name="email"
-                placeholder="Email Address *"
+                placeholder="Enter Your Email Address"
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -147,7 +186,7 @@ const InternForm = () => {
                   <p className="error">{errors.email}</p>
                 )}
 
-              <input
+              {/* <input
                 // type="date"
                 name="dob"
                 placeholder="Date of Birth (DD/MM/YYYY) *"
@@ -157,7 +196,7 @@ const InternForm = () => {
               />
                {errors.dob && (
                   <p className="error">{errors.dob}</p>
-                )}
+                )} */}
 
               <button type="button" onClick={nextStep}>
                 Next
@@ -166,10 +205,13 @@ const InternForm = () => {
           )}
           {step === 2 && (
             <>
+              <label className="input-label">
+                  Degree (B.E / B.Tech / B.Sc) <span className="required">*</span>
+              </label>
               <input
                 type="text"
                 name="degree"
-                placeholder="Degree (B.E / B.Tech / B.Sc) *"
+                placeholder="Enter Your Degree"
                 value={formData.degree}
                 onChange={handleChange}
                 required
@@ -177,11 +219,14 @@ const InternForm = () => {
                {errors.degree && (
                   <p className="error">{errors.degree}</p>
                 )}
-
+              
+              <label className="input-label">
+                  Institution Name <span className="required">*</span>
+              </label>
               <input
                 type="text"
                 name="institution"
-                placeholder="Institution Name *"
+                placeholder="Enter Your Institution Name"
                 value={formData.institution}
                 onChange={handleChange}
                 required
@@ -189,11 +234,13 @@ const InternForm = () => {
                {errors.institution && (
                   <p className="error">{errors.institution}</p>
                 )}
-
+              <label className="input-label">
+                  Year of Graduation <span className="required">*</span>
+              </label>
               <input
                 type="number"
                 name="graduationYear"
-                placeholder="Year of Graduation *"
+                placeholder="Enter Year of Graduation"
                 value={formData.graduationYear}
                 onChange={handleChange}
                 required
@@ -202,11 +249,27 @@ const InternForm = () => {
                   <p className="error">{errors.graduationYear}</p>
                 )}
 
-
+              <label className="input-label">
+                  Branch <span className="required">*</span>
+              </label>
+              <input
+                type="text"
+                name="branch"
+                placeholder="Enter Your Branch"
+                value={formData.branch}
+                onChange={handleChange}
+                required
+              />
+               {errors.branch && (
+                  <p className="error">{errors.branch}</p>
+                )}
+              <label className="input-label">
+                  Percentage / CGPA <span className="required">*</span>
+              </label>
               <input
                 type="number"
                 name="percentage"
-                placeholder="Percentage / CGPA *"
+                placeholder="Enter Your Percentage / CGPA "
                 value={formData.percentage}
                 onChange={handleChange}
                 required
@@ -214,6 +277,50 @@ const InternForm = () => {
               {errors.percentage && (
                   <p className="error">{errors.percentage}</p>
                 )}
+              
+              <label className="input-label">
+                Internship Role <span className="required">*</span>
+              </label>
+              <select 
+                name="role" 
+                value={formData.role} 
+                onChange={handleChange}
+                className="input">
+                <option value="">Select Internship Role *</option>
+
+                  {roles.map((role, index) => (
+                  <option key={index} value={role}>
+                {role}
+                </option>
+                ))}
+              </select>
+              {errors.role && (
+                  <p className="error">{errors.role}</p>
+                )}
+
+              <label className="input-label">
+                Upload Resume <span className="required">*</span>
+              </label>
+              <input
+                type="file"
+                name="resume"
+                accept=".pdf,.docx"
+                onChange={handleFileChange}
+                className={`input-file ${errors.resume ? "error-input" : ""}`}
+              />
+              {errors.resume && (
+                  <p className="error">{errors.resume}</p>
+                )}
+              <label className="input-label">
+                GitHub/Portfolio/LinkedIn Link
+              </label>
+              <input
+                type="text"
+                name="portfolio"
+                placeholder="Enter GitHub/Portfolio/LinkedIn Link"
+                value={formData.portfolio}
+                onChange={handleChange}
+              />
 
               <div className="button-group">
                 <button type="button" onClick={prevStep}>
@@ -227,10 +334,13 @@ const InternForm = () => {
           )}
           {step === 3 && (
             <>
+              <label className="input-label">
+                Country <span className="required">*</span>
+              </label>
               <input
                 type="text"
                 name="country"
-                placeholder="Country *"
+                placeholder="Enter Your Country"
                 value={formData.country}
                 onChange={handleChange}
                 required
@@ -238,32 +348,44 @@ const InternForm = () => {
                {errors.country && (
                   <p className="error">{errors.country}</p>
                 )}
-
+              
+              <label className="input-label">
+                State <span className="required">*</span>
+              </label>
               <input
                 type="text"
                 name="state"
-                placeholder="State *"
+                placeholder="Enter Your State"
                 value={formData.state}
                 onChange={handleChange}
                 required
               />
+              {errors.state && (
+                <p className="error">{errors.state}</p>
+              )}
 
+              <label className="input-label">
+                City <span className="required">*</span>
+              </label>
               <input
                 type="text"
                 name="city"
-                placeholder="City *"
+                placeholder="Enter Your City"
                 value={formData.city}
                 onChange={handleChange}
                 required
               />
-               {errors.City && (
-                  <p className="error">{errors.City}</p>
+               {errors.city && (
+                  <p className="error">{errors.city}</p>
                 )}
-
+              
+              <label className="input-label">
+                Pincode <span className="required">*</span>
+              </label>
               <input
                 type="text"
                 name="pincode"
-                placeholder="Pincode *"
+                placeholder="Enter Your Pincode"
                 value={formData.pincode}
                 onChange={handleChange}
                 required
@@ -271,7 +393,47 @@ const InternForm = () => {
               {errors.pincode && (
                   <p className="error">{errors.pincode}</p>
                 )}
+              
+            <div className="consent-section">
+              <label className="checkbox-label">
+                <input
+                  type="checkbox"
+                  name="feeConsent"
+                  checked={formData.feeConsent}
+                  onChange={handleChange}
+                />
+                I agree the fee is non-refundable
+              </label>
+              {errors.feeConsent && (
+                <p className="error">{errors.feeConsent}</p>
+              )}
 
+              <label className="checkbox-label">
+                <input
+                type="checkbox"
+                name="selectionConsent"
+                checked={formData.selectionConsent}
+                onChange={handleChange}
+                />
+                I agree selection is not guaranteed
+              </label>
+              {errors.selectionConsent && (
+              <p className="error">{errors.selectionConsent}</p>
+              )}
+
+              <label className="checkbox-label">
+                <input
+                type="checkbox"
+                name="contactConsent"
+                checked={formData.contactConsent}
+                onChange={handleChange}
+              />
+              I agree to be contacted via email/phone
+              </label>
+              {errors.contactConsent && (
+                <p className="error">{errors.contactConsent}</p>
+              )}
+            </div>
               <div className="button-group">
                 <button type="button" onClick={prevStep}>
                   Back
@@ -283,6 +445,7 @@ const InternForm = () => {
           )}
 
         </form>
+        <Disclaimer />
       </div>
     </div>
   );
