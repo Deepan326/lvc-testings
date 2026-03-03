@@ -236,17 +236,12 @@ const Header = () => {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-<<<<<<< HEAD
                 <Link
                   to="/about"
                   className="nav-link"
                   onClick={handleNavAction}
                 >
                   Who We Are
-=======
-                <Link to="/about" className="nav-link" onClick={handleNavAction}>
-                  About Us
->>>>>>> origin/changes/Header
                 </Link>
               </li>
               <li className="nav-item">
