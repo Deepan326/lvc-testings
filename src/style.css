@@ -944,14 +944,24 @@ p {
   padding: 4px 1pc;
   border: 1.5px solid #b4b4b8;
   border-radius: 6.25rem;
-  background: #1e2222 !important;
+  background: #d4af37 !important;
   border-color: #b4b4b8 !important;
 }
 
+.background-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0.95;
+  background: url("./assets/bg_image.jpg") no-repeat center center/cover;
+}
+
+
+
 .footer-section button:hover {
-  background: #dfdfe0 !important;
+  background: #d4af37 !important;
   border-color: #1e2222 !important;
-  color: #1e2222;
+  color: white;
 }
 
 .divider {
@@ -3394,4 +3404,5 @@ main:not(.page-home) > section.py-5::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
