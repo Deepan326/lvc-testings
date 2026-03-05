@@ -3,7 +3,7 @@ import logo from "../assets/lvc-icon-removebg-preview.png";
 import search from "../assets/white-search-logo.png";
 import search2 from "../assets/Search-logo-no-background.png";
 import "../style.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState,useRef  } from "react";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const handleNavAction = (e) => {
@@ -113,6 +113,7 @@ const searchData = [
 const Header = () => {
   const [res, setRes] = useState("");
   const location = useLocation();
+  const inputRef = useRef(null);
 
   const searchBarVals = (e) => {
     setRes(e.target.value);
@@ -126,6 +127,17 @@ const Header = () => {
     });
   }, [location]);
 
+useEffect(() => {
+  const modal = document.getElementById("search-bar-modal");
+
+  if (!modal) return;
+
+  modal.addEventListener("shown.bs.modal", () => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  });
+}, []);
   return (
     <header>
       {/* search bar modal, needs to be up top so it doesn't have any interference when appearing*/}
@@ -136,64 +148,76 @@ const Header = () => {
         aria-labelledby="searchBarModal"
         aria-hidden="true"
       >
-        <div className="modal-dialog custom-width">
-          <div id="modal-content-holder" className="modal-content bg-dark">
-            <div className="modal-body">
-              <div className="search-bar-container">
-                <img
-                  className="img-in-search-bar"
-                  alt="interactive search logo"
-                  src={search2}
-                />
-                <input
-                  className="search-bar form-control mr-sm-2"
-                  type="text"
-                  value={res}
-                  onChange={searchBarVals}
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-              </div>
-              {/* search bars suggestions when user types, filters for characters used in res useState */}
-              <div className="search-dropdown">
-                {searchData
-                  .filter((data) => {
-                    let searchTerm = res.toLowerCase();
-                    let title = data.name.toLowerCase();
-                    return searchTerm && title.startsWith(searchTerm);
-                  })
-                  .map((data) => {
-                    return (
-                      <Link
-                        className="suggested-search-link"
-                        to={data.link}
-                        onClick={() => setRes("")}
+        <div className="modal-dialog">
+          <div
+            id="modal-content"
+            className="modal-content"
+            style={{ background: "#1e2222" }}
+          >
+            {/* <div className="modal-body"> */}
+            {/* <div className="search-bar-container"> */}
+            <div className="search-bar-wrapper">
+              <img
+                className="img-in-search-bar"
+                alt="interactive search logo"
+                src={search2}
+              />
+
+              <input
+                className="search-bar"
+                ref={inputRef}
+                style={{outline:"none",border:"none",color:"white",fontSize:"18px",}}
+                type="text"
+                value={res}
+                onChange={searchBarVals}
+                placeholder="Search Here..."
+              />
+
+              <p className="search-close" data-bs-dismiss="modal">
+                ✕
+              </p>
+            </div>
+            {/* </div> */}
+            {/* search bars suggestions when user types, filters for characters used in res useState */}
+            <div className="search-dropdown">
+              {searchData
+                .filter((data) => {
+                  let searchTerm = res.toLowerCase();
+                  let title = data.name.toLowerCase();
+                  return searchTerm && title.startsWith(searchTerm);
+                })
+                .map((data) => {
+                  return (
+                    <Link
+                      className="suggested-search-link"
+                      to={data.link}
+                      onClick={() => setRes("")}
+                    >
+                      <div
+                        data-bs-dismiss="modal"
+                        className="suggested-search-dropdown"
+                        style={{ paddingLeft: "50px" }}
                       >
-                        <div
-                          data-bs-dismiss="modal"
-                          className="suggested-search-dropdown"
-                          style={{ paddingLeft: "50px" }}
+                        {data.name}
+                      </div>
+                      <div
+                        data-bs-dismiss="modal"
+                        className="suggested-search-dropdown"
+                        style={{ textAlign: "left" }}
+                      >
+                        <p
+                          style={{
+                            color: "rgba(74, 74, 74, 1)",
+                            margin: "0px",
+                          }}
                         >
-                          {data.name}
-                        </div>
-                        <div
-                          data-bs-dismiss="modal"
-                          className="suggested-search-dropdown"
-                          style={{ textAlign: "left" }}
-                        >
-                          <p
-                            style={{
-                              color: "rgba(74, 74, 74, 1)",
-                              margin: "0px",
-                            }}
-                          >
-                            Found in the {data.location}
-                          </p>
-                        </div>
-                      </Link>
-                    );
-                  })}
-              </div>
+                          Found in the {data.location}
+                        </p>
+                      </div>
+                    </Link>
+                  );
+                })}
+              {/* </div> */}
             </div>
           </div>
         </div>
@@ -315,7 +339,7 @@ const Header = () => {
                   className="nav-link dropdown-toggle btn btn-link"
                   type="button"
                   aria-expanded="false"
-                    data-bs-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   // onClick={handleNavAction}
                 >
                   Careers
