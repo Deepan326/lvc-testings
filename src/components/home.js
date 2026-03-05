@@ -2,6 +2,7 @@ import CarouselComponent from "./carsouel.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style.css";
 import TransformationStartsHere from "./transformationStartsHere.js";
+import WithYouForLong from "./withYouForLong.js";
 import Footer from "./footer.js";
 import SpotLogo from "../assets/spotlight-media.png";
 import FairJobCarousel from "./fairJobCarousel.js";
@@ -230,6 +231,7 @@ const Home = () => {
         </div> */}
 
         <TransformationStartsHere />
+        <WithYouForLong/>
         <Footer />
       {/* </main> */}
     </>
