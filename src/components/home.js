@@ -232,8 +232,8 @@ const Home = () => {
         </div> */}
 
         <TransformationStartsHere />
-        <WithYouForLong/>
         <ServiceLandingPage/>
+        <WithYouForLong/>
         <Footer />
       {/* </main> */}
     </>
