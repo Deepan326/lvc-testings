@@ -3404,5 +3404,11 @@ main:not(.page-home) > section.py-5::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.card-title{
+  font-size: 20px;
+}
 
+.internship-container{
+  color: black;
+}
 

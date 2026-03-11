@@ -36,8 +36,10 @@ const InternForm = () => {
     "AI/ML Intern",
     "Gen AI Intern",
     "UI/UX Design Intern",
-    "Digital Marketing Intern",
-    "Data Science Intern",
+    // "Digital Marketing Intern",
+    "Business Analyst Intern",
+    // "Data Science Intern",
+    "Data Analyst Intern",
     "DevOps Intern",
     "Full Stack Intern",
     "Mobile App Developer Intern",
@@ -77,8 +79,11 @@ const InternForm = () => {
       if (!formData.degree) newErrors.degree = "Degree is required";
       if (!formData.institution)
         newErrors.institution = "Institution is required";
-      if (!formData.graduationYear)
+      if (!formData.graduationYear){
         newErrors.graduationYear = "Graduation Year is required";
+      } else if (formData.graduationYear < 2000 || formData.graduationYear > 2035) {
+        newErrors.graduationYear = "Enter a valid graduation year";
+      }
       if (!formData.branch) newErrors.branch = "Branch is required";
       if (!formData.percentage) newErrors.percentage = "Percentage is required";
       if (!formData.role) newErrors.role = "Internship Role is required";
@@ -91,13 +96,15 @@ const InternForm = () => {
       if (!formData.city) newErrors.city = "City is required";
       if (!formData.pinCode) newErrors.pinCode = "pinCode is required";
       if (!formData.state) newErrors.state = "State is required";
-      if (!formData.feeConsent)
-        newErrors.feeConsent = "You must agree that fee is non-refundable";
-      if (!formData.selectionConsent)
-        newErrors.selectionConsent =
-          "You must agree selection is not guaranteed";
-      if (!formData.contactConsent)
-        newErrors.contactConsent = "You must agree to be contacted";
+      // if (!formData.feeConsent)
+      //   newErrors.feeConsent = "You must agree that fee is non-refundable";
+      // if (!formData.selectionConsent)
+      //   newErrors.selectionConsent =
+      //     "You must agree selection is not guaranteed";
+      // if (!formData.contactConsent)
+      //   newErrors.contactConsent = "You must agree to be contacted";
+      if (!formData.feeConsent || !formData.selectionConsent || !formData.contactConsent)
+        newErrors.consent = "You must agree to all consents to proceed";
     }
 
     setErrors(newErrors);
@@ -181,7 +188,9 @@ const InternForm = () => {
           {step === 2 && "Education Information"}
           {step === 3 && "Address Information"}
         </h2>
-
+        {step === 3 && errors.consent && (
+          <p className="error">{errors.consent}</p>
+        )}
         <form onSubmit={handleSubmit}>
           {step === 1 && (
             <>
@@ -270,6 +279,8 @@ const InternForm = () => {
                 value={formData.graduationYear}
                 onChange={handleChange}
                 required
+                min = "0"
+                className="no-spinner"
               />
               {errors.graduationYear && (
                 <p className="error">{errors.graduationYear}</p>
@@ -297,6 +308,7 @@ const InternForm = () => {
                 value={formData.percentage}
                 onChange={handleChange}
                 required
+                className="no-spinner"
               />
               {errors.percentage && (
                 <p className="error">{errors.percentage}</p>
@@ -311,7 +323,7 @@ const InternForm = () => {
                 onChange={handleChange}
                 className="input"
               >
-                <option value="">Select Internship Role *</option>
+                <option value="">Select Internship Role</option>
 
                 {roles.map((role, index) => (
                   <option key={index} value={role}>
@@ -417,9 +429,9 @@ const InternForm = () => {
                   />
                   I agree the fee is non-refundable
                 </label>
-                {errors.feeConsent && (
+                {/* {errors.feeConsent && (
                   <p className="error">{errors.feeConsent}</p>
-                )}
+                )} */}
 
                 <label className="checkbox-label">
                   <input
@@ -430,9 +442,9 @@ const InternForm = () => {
                   />
                   I agree selection is not guaranteed
                 </label>
-                {errors.selectionConsent && (
+                {/* {errors.selectionConsent && (
                   <p className="error">{errors.selectionConsent}</p>
-                )}
+                )} */}
 
                 <label className="checkbox-label">
                   <input
@@ -443,9 +455,9 @@ const InternForm = () => {
                   />
                   I agree to be contacted via email/phone
                 </label>
-                {errors.contactConsent && (
+                {/* {errors.contactConsent && (
                   <p className="error">{errors.contactConsent}</p>
-                )}
+                )} */}
               </div>
               <div className="button-group">
                 <button type="button" onClick={prevStep}>
