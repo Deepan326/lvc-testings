@@ -233,7 +233,7 @@ const Home = () => {
 
         <TransformationStartsHere />
         <ServiceLandingPage/>
-        <WithYouForLong/>
+        {/* <WithYouForLong/> */}
         <Footer />
       {/* </main> */}
     </>
