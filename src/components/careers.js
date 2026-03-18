@@ -49,7 +49,7 @@ const Careers = () => {
             </p>
             <button 
               onClick={scrollToOpenRoles}
-              className="btn btn-primary-whatwedo"
+              className="btn-career"
             >
               Apply Now
             </button>
@@ -562,7 +562,7 @@ const Careers = () => {
                   <br />• Master's Degree is a plus
                 </p>
                 <button
-                  className="btn btn-primary-whatwedo mt-4"
+                  className="btn-career-apply mt-4"
                   onClick={() => handleApplyClick("Frontend Developer")}
                 >
                   Apply Now
@@ -639,7 +639,7 @@ const Careers = () => {
                   <br />• Master's Degree is a plus
                 </p>
                 <button
-                  className="btn btn-primary-whatwedo mt-4"
+                  className="btn-career-apply mt-4"
                   onClick={() => handleApplyClick("Backend Developer")}
                 >
                   Apply Now
@@ -678,7 +678,7 @@ const Careers = () => {
                   Required Skills: TBA
                 </p>
                 <button
-                  className="btn btn-primary-whatwedo mt-4"
+                  className="btn-career-apply mt-4"
                   onClick={() => handleApplyClick("Full Stack Developer")}
                 >
                   Apply Now
@@ -717,7 +717,7 @@ const Careers = () => {
                   Required Skills: TBA
                 </p>
                 <button
-                  className="btn btn-primary-whatwedo mt-4"
+                  className="btn-career-apply mt-4"
                   onClick={() => handleApplyClick("AI & ML Engineer")}
                 >
                   Apply Now
@@ -756,7 +756,7 @@ const Careers = () => {
                   Required Skills: TBA
                 </p>
                 <button
-                  className="btn btn-primary-whatwedo mt-4"
+                  className="btn-career-apply mt-4"
                   onClick={() => handleApplyClick("Generative AI Engineer")}
                 >
                   Apply Now
@@ -795,7 +795,7 @@ const Careers = () => {
                   Required Skills: TBA
                 </p>
                 <button
-                  className="btn btn-primary-whatwedo mt-4"
+                  className="btn-career-apply mt-4"
                   onClick={() => handleApplyClick("AI Agents Developer")}
                 >
                   Apply Now

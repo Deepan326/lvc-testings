@@ -49,7 +49,7 @@ const Lvc320CareerProduct = () => {
               </h2>
               <a
                 href="https://www.lvcacademy.com"
-                class="btn btn-primary btn-lg"
+                class="btn btn-primary-whatwedo btn-lg"
               >
                 View More Bootcamps
               </a>

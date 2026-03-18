@@ -112,7 +112,7 @@ const Insight = () => {
             <hr className="underline" />
             <h1 className="insight-title">Where Ideas Meet Action</h1>
             <h5>Insights that shape the future.</h5>
-            <Link to="/contact" className="btn btn-primary-insight">
+            <Link to="/contact" className="btn btn-primary-whatwedo mt-4">
               Let's Talk
             </Link>
           </div>

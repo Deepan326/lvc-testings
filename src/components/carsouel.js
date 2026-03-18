@@ -57,7 +57,7 @@ function UncontrolledExample() {
                 Whether you're looking to grow your e-commerce site or refine
                 your marketing site, we can help.
               </p>
-              <button className="read-more-btn">Read More</button>
+              <button className="btn-career">Read More</button>
             </div>
           </div>
         </Carousel.Item>
@@ -72,7 +72,7 @@ function UncontrolledExample() {
               <p className="carousel-description">
                 We help teams and businesses thrive through technology.
               </p>
-              <button className="read-more-btn">Read More</button>
+              <button className="btn-career">Read More</button>
             </div>
           </div>
         </Carousel.Item>
@@ -96,7 +96,7 @@ function UncontrolledExample() {
                 Leverage our expertise in cloud transformation and engineering
                 excellence
               </p>
-              <button className="read-more-btn">Read More</button>
+              <button className="btn-career">Read More</button>
             </div>
           </div>
         </Carousel.Item>
