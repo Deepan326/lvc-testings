@@ -1,20 +1,110 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
+import intern1 from "../assets/intern1.png"
+import intern2 from "../assets/intern2.jpg"
+import intern3 from "../assets/intern3.jpg"
+import intern4 from "../assets/intern4.jpg"
+import intern5 from "../assets/intern5.jpeg"
+import intern6 from "../assets/intern6.jpeg"
+import intern7 from "../assets/intern7.jpeg"
+import intern8 from "../assets/intern8.jpeg"
+import intern9 from "../assets/intern9.jpeg"
 
+const internImages = [
+  intern1,
+  intern2,
+  intern3,
+  intern4,
+  intern5,
+  intern6,
+  intern7,
+  intern8,
+  intern9,
+];
 
-const InternshipCard = ({ title, description, fullDescription,onApplyClick }) => {
+const InternshipCard = ({ title, description, fullDescription, image, onApplyClick }) => {
   // const navigate = useNavigate();
   // const handleFormClick = () => { 
   //   navigate("/careers-intern/form");
   // }
 
   return (
-    <div className="card" style={{ width: "19rem" }}>
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
-        <a  className="btn btn-primary" style={{ marginTop: "20px", marginLeft: "70px" }}
-         onClick={()=> onApplyClick(title, fullDescription) }
+    <div
+      className="card"
+      style={{
+        width: "19rem",
+        border: "none",
+        borderRadius: "18px",
+        overflow: "hidden",
+        background: "#000",
+        boxShadow: "0 14px 30px rgba(0, 0, 0, 0.12)",
+        position: "relative",
+        minHeight: "430px",
+      }}
+    >
+      <div style={{ position: "absolute", inset: 0 }}>
+        <img
+          src={image}
+          alt={title}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "linear-gradient(to top, rgba(0,0,0,0.82), rgba(0,0,0,0.12))",
+          }}
+        />
+      </div>
+      <div
+        className="card-body"
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          zIndex: 2,
+          padding: "20px 16px 18px 16px",
+        }}
+      >
+        <h5 className="card-title" style={{ marginBottom: "8px", fontWeight: "700", color: "#ffffff", fontSize: "1.55rem" }}>{title}</h5>
+        <p className="card-text" style={{ color: "#f1f5f9", minHeight: "52px", marginBottom: "14px", fontSize: "1.02rem" }}>{description}</p>
+        <a
+          className="btn"
+          style={{
+            marginTop: "8px",
+            width: "86%",
+            marginLeft: "auto",
+            marginRight: "auto",
+            display: "block",
+            borderRadius: "14px",
+            fontWeight: "700",
+            letterSpacing: "0.4px",
+            border: "1.5px solid rgba(255,255,255,0.92)",
+            padding: "11px 14px",
+            background: "#000000",
+            color: "#ffffff",
+            boxShadow: "0 10px 18px rgba(0,0,0,0.45), inset 0 0 0 1px rgba(255,255,255,0.08)",
+            textAlign: "center",
+            transition: "transform 180ms ease, box-shadow 180ms ease, filter 180ms ease",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "translateY(-2px)";
+            e.currentTarget.style.boxShadow = "0 14px 24px rgba(0,0,0,0.55), inset 0 0 0 1px rgba(255,255,255,0.12)";
+            e.currentTarget.style.filter = "brightness(1.05)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "translateY(0)";
+            e.currentTarget.style.boxShadow = "0 10px 18px rgba(0,0,0,0.45), inset 0 0 0 1px rgba(255,255,255,0.08)";
+            e.currentTarget.style.filter = "brightness(1)";
+          }}
+          onMouseDown={(e) => {
+            e.currentTarget.style.transform = "translateY(0)";
+          }}
+          onMouseUp={(e) => {
+            e.currentTarget.style.transform = "translateY(-2px)";
+          }}
+          onClick={()=> onApplyClick(title, fullDescription) }
         >
           Apply Now
         </a>
@@ -764,13 +854,14 @@ const CareersIntern = () => {
   };
   return (
     <>
-    <div style={{ marginTop: "120px", paddingLeft: "80px" }}>
-      <div className="d-flex gap-4 flex-wrap">
+    <div style={{ marginTop: "120px", padding: "0 40px 20px 40px" }}>
+      <div className="d-flex gap-4 flex-wrap justify-content-center">
         {internshipData.map((item) => (
           <InternshipCard
             key={item.id}
             title={item.title}
             description={item.description}
+            image={internImages[(item.id - 1) % internImages.length]}
             // link={item.link}
             fullDescription={item.fullDescription}
             onApplyClick={handleApplyClick}
