@@ -284,9 +284,7 @@ footer .logo {
 }
 
 /* Button styles */
-.read-more-btn {
-  /* position: absolute;
-    top: 30%; */
+/* .read-more-btn {
   text-align: justify;
   transform: translateX(-50%) translateY(20px);
   background-color: rgb(0, 0, 0);
@@ -301,7 +299,6 @@ footer .logo {
   padding: 12px 14px;
   border-radius: 25px;
   border: none;
-  /* background: #2469bc; */
   border-radius: 6.25rem;
   font-size: 1.125rem;
   color: #fff;
@@ -314,7 +311,7 @@ footer .logo {
   transition: all 0.5s ease;
   display: inline-block;
   box-sizing: border-box;
-} */
+}  */
 
 /* Hover effect on button */
 /* .read-more-btn:hover {
